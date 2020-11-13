@@ -27,29 +27,29 @@ Cut through the noise and get real results with a step-by-step approach to learn
 Labs for this course are available at endpoints shared below. Update `<host-ip>` with the lab environment DNS.
 
 1. ##### Writing and Running Ruby Programs
-		* <host-ip>:<port>/lab/workspaces/lab1_Programs
+		* http://<host-ip>/lab/workspaces/lab1_Programs
 2. ##### Ruby Data Types and Operations
-		* <host-ip>:<port>/lab/workspaces/lab2_DataTypes
+		* http://<host-ip>/lab/workspaces/lab2_DataTypes
 3. ##### Program Flow
-		* <host-ip>:<port>/lab/workspaces/lab3_Flow
+		* http://<host-ip>/lab/workspaces/lab3_Flow
 4. ##### Ruby Methods
-		* <host-ip>:<port>/lab/workspaces/lab4_Methods
+		* http://<host-ip>/lab/workspaces/lab4_Methods
 5. ##### Object-Oriented programming with Ruby
-		* <host-ip>:<port>/lab/workspaces/lab5_OOP
+		* http://<host-ip>/lab/workspaces/lab5_OOP
 6. ##### Modules and Mixins
-		* <host-ip>:<port>/lab/workspaces/lab6_Modules
+		* http://<host-ip>/lab/workspaces/lab6_Modules
 7. ##### Introduction to Ruby Gems
-		* <host-ip>:<port>/lab/workspaces/lab7_Ruby Gems
+		* http://<host-ip>/lab/workspaces/lab7_Ruby Gems
 8. ##### Debugging with Ruby
-		* <host-ip>:<port>/lab/workspaces/lab8_Debugging
+		* http://<host-ip>/lab/workspaces/lab8_Debugging
 9. ##### Ruby Beyond the Basics l
-		* <host-ip>:<port>/lab/workspaces/lab9_Rubyl
+		* http://<host-ip>/lab/workspaces/lab9_Rubyl
 10. ##### Ruby Beyond the Basics ll
-		* <host-ip>:<port>/lab/workspaces/lab10_Rubyll
+		* http://<host-ip>/lab/workspaces/lab10_Rubyll
 11. ##### Introduction to Ruby on Rails l
-		* <host-ip>:<port>/lab/workspaces/lab11_Railsl
+		* http://<host-ip>/lab/workspaces/lab11_Railsl
 12. ##### Introduction to Ruby on Rails ll
-		* <host-ip>:<port>/lab/workspaces/lab12_Railsll
+		* http://<host-ip>/lab/workspaces/lab12_Railsll
 
 ### About
 
