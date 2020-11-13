@@ -1,0 +1,23 @@
+<h1>Add new review</h1>
+
+
+<%= form_with scope: :review, url: reviews_path, local: true do |form| %>
+  <p>
+    <%= form.label :name %><br>
+    <%= form.text_field :name %>
+  </p>
+ 
+  <p>
+    <%= form.label :description %><br>
+    <%= form.text_area :description %>
+  </p>
+ 
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %>
+<<<<<<< HEAD
+=======
+
+>>>>>>> 88b40968253a32e3a8970abefece90e73131f0db
+<%= link_to 'Back', root_path %>
