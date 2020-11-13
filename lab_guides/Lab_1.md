@@ -44,7 +44,7 @@ All examples are present in `work/intro-ruby/Lab01` folder. You can access lab a
 
 To copy and paste: use **Control-C** and to paste inside of a terminal, use **Control-V**
 
-**Note:** 
+**Note:**
 
 - To open new terminal, click `File` > `New` > `Terminal`.
 - Open file browser to open lab exercise(s) as shown below:
@@ -67,7 +67,7 @@ that make it a delight to program with:
 -   Reflection
 -   Metaprogramming
     
-    ![Figure 1.1: Key features of Ruby ](./images/C14197_01_01.jpg)
+    ![](./images/C14197_01_01.jpg)
 
 
 Figure 1.1: Key features of Ruby
@@ -279,19 +279,14 @@ IRB comes out of the box with Ruby, and you can access it using the
 
     The output should be as follows:
 
-<div>
+
+![](./images/C14197_01_02.jpg)
 
 
-![Figure 1.2: Output for \"Hello World\" ](./images/C14197_01_02.jpg)
-
-
-</div>
 
 Figure 1.2: Output for \"Hello World\"
 
-Note
-
-`puts` or `p` is used to print any string or value
+**Note** `puts` or `p` is used to print any string or value
 of a variable that follows `puts` or `p`.
 
 Let\'s do some addition with the Interactive Ruby Shell:
@@ -309,19 +304,14 @@ Let\'s do some addition with the Interactive Ruby Shell:
 
     The output should be as follows:
 
-<div>
+
+![](./images/C14197_01_03.jpg)
 
 
-![Figure 1.3: Addition output on irb ](./images/C14197_01_03.jpg)
-
-
-</div>
 
 Figure 1.3: Addition output on irb
 
-Note
-
-You can use IRB or any IDE to complete the exercises/activities in this book.
+**Note** You can use IRB or any IDE to complete the exercises/activities in this book.
 
 
 
@@ -357,19 +347,14 @@ variable, such as the number of students, and print it in IRB:
 
     The output should be as follows:
 
-<div>
+
+![](./images/C14197_01_04.jpg)
 
 
-![Figure 1.4: Output for assigning variables ](./images/C14197_01_04.jpg)
-
-
-</div>
 
 Figure 1.4: Output for assigning variables
 
-Note
-
-The Ruby variable stores the value assigned to a variable in one IRB
+**Note** The Ruby variable stores the value assigned to a variable in one IRB
 session, as seen here with `number_of_students`.
 
 Before we start the next exercise, please note that data types in Ruby
@@ -417,14 +402,11 @@ integer and another variable that has a string value:
 
     The output should be as follows:
 
-<div>
-
 
 ![Figure 1.5: The output for variables assigned to a different data type
 ](./images/C14197_01_05.jpg)
 
 
-</div>
 
 Figure 1.5: The output for variables assigned to a different data type
 
@@ -463,7 +445,7 @@ operator on the variable itself.
     The output should be as follows:
 
     
-    ![Figure 1.6: Output of the data type of a variable](./images/C14197_01_06.jpg)
+    ![](./images/C14197_01_06.jpg)
 
 
     Figure 1.6: Output of the data type of a variable
@@ -505,13 +487,10 @@ number_of_students.public_methods
 
 The output should be as follows:
 
-<div>
+
+![](./images/C14197_01_07.jpg)
 
 
-![Figure 1.7: Output for public methods ](./images/C14197_01_07.jpg)
-
-
-</div>
 
 Figure 1.7: Output for public methods
 
@@ -566,14 +545,11 @@ Terminal.
 
     The output should be as follows:
 
-<div>
-
 
 ![Figure 1.8: Output of the hello world program
 ](./images/C14197_01_08.jpg)
 
 
-</div>
 
 Figure 1.8: Output of the hello world program
 
@@ -624,13 +600,10 @@ perform a simple addition. To do so, follow these steps:
 
     The output should be as follows:
 
-<div>
+
+![](./images/C14197_01_09.jpg)
 
 
-![Figure 1.9: Output for user input in Ruby ](./images/C14197_01_09.jpg)
-
-
-</div>
 
 Figure 1.9: Output for user input in Ruby
 
@@ -666,13 +639,10 @@ Number
 Numbers in Ruby are objects that derive from the **Numeric** class.
 Let\'s look at the class hierarchy for various number types:
 
-<div>
+
+![](./images/C14197_01_10.jpg)
 
 
-![Figure 1.10: Number class hierarchy ](./images/C14197_01_10.jpg)
-
-
-</div>
 
 Figure 1.10: Number class hierarchy
 
@@ -684,13 +654,10 @@ one by one.
 In Ruby, integers are represented by two classes: **Fixnum** and
 **Bignum**:
 
-<div>
+
+![](./images/C14197_01_11.jpg)
 
 
-![Figure 1.11: Integer types ](./images/C14197_01_11.jpg)
-
-
-</div>
 
 Figure 1.11: Integer types
 
@@ -728,7 +695,7 @@ addition (`+`), subtraction (`-`), multiplication
     The output should be as follows:
 
     
-    ![Figure 1.12: Output for the addition operator](./images/C14197_01_12.jpg)
+    ![](./images/C14197_01_12.jpg)
 
 
     Figure 1.12: Output for the addition operator
@@ -745,7 +712,7 @@ addition (`+`), subtraction (`-`), multiplication
     The output should be as follows:
 
     
-    ![Figure 1.13: Output for the subtraction operator](./images/C14197_01_13.jpg)
+    ![](./images/C14197_01_13.jpg)
 
 
     Figure 1.13: Output for the subtraction operator
@@ -762,7 +729,7 @@ addition (`+`), subtraction (`-`), multiplication
     The output should be as follows:
 
     
-    ![Figure 1.14: Output for the multiplication operator](./images/C14197_01_14.jpg)
+    ![](./images/C14197_01_14.jpg)
 
 
     Figure 1.14: Output for the multiplication operator
@@ -778,14 +745,11 @@ addition (`+`), subtraction (`-`), multiplication
 
     The output should be as follows:
 
-<div>
-
 
 ![Figure 1.15: Output for the division operator
 ](./images/C14197_01_15.jpg)
 
 
-</div>
 
 Figure 1.15: Output for the division operator
 
@@ -796,9 +760,7 @@ defines the order in which the operators will take priority in any
 equation. We will learn about precedence in *Lab 3, Program
 Workflow.*
 
-Note
-
-You can also divide up long integers by separating them with an
+**Note** You can also divide up long integers by separating them with an
 underscore. For example, 121\_334 will be read in Ruby as 121334
 
 
@@ -834,7 +796,7 @@ The following steps should help you with the solution:
     The output should be as follows:
 
     
-    ![Figure 1.16: Output for the next number](./images/C14197_01_16.jpg)
+    ![](./images/C14197_01_16.jpg)
 
 
     Figure 1.16: Output for the next number
@@ -884,13 +846,10 @@ The following steps should help you with the solution:
 
     The output should be as follows:
 
-<div>
-
 
 ![](./images/C14197_01_19.jpg)
 
 
-</div>
 
 Figure 1.19: Output for the GCD of 2 and 3
 
@@ -918,13 +877,10 @@ following code:
 
 The output should be as follows:
 
-<div>
-
 
 ![](./images/C14197_01_20.jpg)
 
 
-</div>
 
 
 Floating-Point Numbers
@@ -998,14 +954,11 @@ number completely or up to a certain decimal point:
 
     The output should be as follows:
 
-<div>
-
 
 ![Figure 1.21: Output for floating-point number operations
 ](./images/C14197_01_21.jpg)
 
 
-</div>
 
 Figure 1.21: Output for floating-point number operations
 
@@ -1025,19 +978,14 @@ which you can play around with. Simply check them against
 
 The output should be as follows:
 
-<div>
+
+![](./images/C14197_01_22.jpg)
 
 
-![Figure 1.22: Methods for the Float class ](./images/C14197_01_22.jpg)
-
-
-</div>
 
 Figure 1.22: Methods for the Float class
 
-Note
-
-To find out more about all the methods and the operations they can
+**Note** To find out more about all the methods and the operations they can
 perform, refer to the official documentation at <https://ruby-doc.org/core-2.5.0/Float.html>.
 
 
@@ -1062,9 +1010,7 @@ ruby strings.rb
 ```
 
 
-Note
-
-If you remove the comment, by default, it will be UTF-8.
+**Note** If you remove the comment, by default, it will be UTF-8.
 
 There are various ways to write strings in Ruby. These are some of the
 most common ones:
@@ -1119,13 +1065,10 @@ most common ones:
 
     The output of all the preceding code should be as follows:
 
-<div>
+
+![](./images/C14197_01_23.jpg)
 
 
-![Figure 1.23: Ways to write strings in Ruby ](./images/C14197_01_23.jpg)
-
-
-</div>
 
 Figure 1.23: Ways to write strings in Ruby
 
@@ -1157,7 +1100,7 @@ class\' built-in methods. Lastly, we will discuss the bang
     The output should be as follows:
 
     
-    ![Figure 1.24: Output for string definition](./images/C14197_01_24.jpg)
+    ![](./images/C14197_01_24.jpg)
 
 
     Figure 1.24: Output for string definition
@@ -1179,7 +1122,7 @@ class\' built-in methods. Lastly, we will discuss the bang
     The output should be as follows:
 
     
-    ![Figure 1.25: Character count of a string](./images/C14197_01_25.jpg)
+    ![](./images/C14197_01_25.jpg)
 
 
     Figure 1.25: Character count of a string
@@ -1197,7 +1140,7 @@ class\' built-in methods. Lastly, we will discuss the bang
     The output should be as follows:
 
     
-    ![Figure 1.26: String length calculation ](./images/C14197_01_26.jpg)
+    ![](./images/C14197_01_26.jpg)
 
 
     Figure 1.26: String length calculation
@@ -1221,7 +1164,7 @@ class\' built-in methods. Lastly, we will discuss the bang
     The output should be as follows:
 
     
-    ![Figure 1.27: Uppercase string characters](./images/C14197_01_27.jpg)
+    ![](./images/C14197_01_27.jpg)
 
 
     Figure 1.27: Uppercase string characters
@@ -1239,7 +1182,7 @@ class\' built-in methods. Lastly, we will discuss the bang
     The output should be as follows:
 
     
-    ![Figure 1.28: Lowercase string characters](./images/C14197_01_28.jpg)
+    ![](./images/C14197_01_28.jpg)
 
 
     Figure 1.28: Lowercase string characters
@@ -1257,12 +1200,12 @@ class\' built-in methods. Lastly, we will discuss the bang
     The output should be as follows:
 
     
-    ![Figure 1.29: Capitalized string characters](./images/C14197_01_29.jpg)
+    ![](./images/C14197_01_29.jpg)
 
 
     Figure 1.29: Capitalized string characters
 
-    Note that even after the operations are applied on the string, the
+    **Note** that even after the operations are applied on the string, the
     original string object remains the same:
 
 
@@ -1275,7 +1218,7 @@ class\' built-in methods. Lastly, we will discuss the bang
     The output should be as follows:
 
     
-    ![Figure 1.30: Original string object ](./images/C14197_01_30.jpg)
+    ![](./images/C14197_01_30.jpg)
 
 
     Figure 1.30: Original string object
@@ -1296,13 +1239,10 @@ class\' built-in methods. Lastly, we will discuss the bang
 
     The output should be as follows:
 
-<div>
+
+![](./images/C14197_01_31.jpg)
 
 
-![Figure 1.31: Bang operation on a string ](./images/C14197_01_31.jpg)
-
-
-</div>
 
 Figure 1.31: Bang operation on a string
 
@@ -1350,7 +1290,7 @@ The following steps will help you to perform the exercise:
     The output should be as follows:
 
     
-    ![Figure 1.32: Output using whitespace ](./images/C14197_01_32.jpg)
+    ![](./images/C14197_01_32.jpg)
 
 
     Figure 1.32: Output using whitespace
@@ -1372,7 +1312,7 @@ The following steps will help you to perform the exercise:
     The output should be as follows:
 
     
-    ![Figure 1.33: Output using the .concat method](./images/C14197_01_33.jpg)
+    ![](./images/C14197_01_33.jpg)
 
 
     Figure 1.33: Output using the .concat method
@@ -1394,14 +1334,11 @@ The following steps will help you to perform the exercise:
 
     The output should be as follows:
 
-<div>
-
 
 ![Figure 1.34: Concatenation using the \<\< operator
 ](./images/C14197_01_34.jpg)
 
 
-</div>
 
 Figure 1.34: Concatenation using the \<\< operator
 
@@ -1436,7 +1373,7 @@ for Ruby Fundamentals and interpolate it in a sentence:
     The output should be as follows:
 
     
-    ![Figure 1.35: String interpolation ](./images/C14197_01_35.jpg)
+    ![](./images/C14197_01_35.jpg)
 
 
     Figure 1.35: String interpolation
@@ -1453,14 +1390,11 @@ for Ruby Fundamentals and interpolate it in a sentence:
 
     The output should be as follows:
 
-<div>
-
 
 ![Figure 1.36: Addition operation in string interpolation
 ](./images/C14197_01_36.jpg)
 
 
-</div>
 
 Figure 1.36: Addition operation in string interpolation
 
@@ -1491,7 +1425,7 @@ To extract certain characters from a string, follow these steps:
     The output should be as follows:
 
     
-    ![Figure 1.37: Extracting characters from a string](./images/C14197_01_37.jpg)
+    ![](./images/C14197_01_37.jpg)
 
 
     Figure 1.37: Extracting characters from a string
@@ -1514,13 +1448,10 @@ To extract certain characters from a string, follow these steps:
 
     The output should be as follows:
 
-<div>
-
 
 ![](./images/C14197_01_38.jpg)
 
 
-</div>
 
 Figure 1.38: Searching a substring from a string
 
@@ -1568,13 +1499,10 @@ sentence \"My favorite book is Java Fundamentals\" with the word
 
     The output should be as follows:
 
-<div>
+
+![](./images/C14197_01_39.jpg)
 
 
-![Figure 1.39: Replacing string characters ](./images/C14197_01_39.jpg)
-
-
-</div>
 
 Figure 1.39: Replacing string characters
 
@@ -1614,14 +1542,11 @@ the instances of Java with Ruby in a sentence:
 
     The output should be as follows:
 
-<div>
-
 
 ![Figure 1.40: Using the gsub method to replace characters in a string
 ](./images/C14197_01_40.jpg)
 
 
-</div>
 
 Figure 1.40: Using the gsub method to replace characters in a string
 
@@ -1657,7 +1582,7 @@ going to split a string of words into an array of words.
     The output should be as follows:
 
     
-    ![Figure 1.41: Splitting a string ](./images/C14197_01_41.jpg)
+    ![](./images/C14197_01_41.jpg)
 
 
     Figure 1.41: Splitting a string
@@ -1675,7 +1600,7 @@ going to split a string of words into an array of words.
     The output should be as follows:
 
     
-    ![Figure 1.42: Splitting a string using a unique character](./images/C14197_01_42.jpg)
+    ![](./images/C14197_01_42.jpg)
 
 
     Figure 1.42: Splitting a string using a unique character
@@ -1692,13 +1617,10 @@ going to split a string of words into an array of words.
 
     The output should be as follows:
 
-<div>
+
+![](./images/C14197_01_43.jpg)
 
 
-![Figure 1.43: Joining arrays to form a string](./images/C14197_01_43.jpg)
-
-
-</div>
 
 Figure 1.43: Joining arrays to form a string
 
@@ -1716,13 +1638,10 @@ following code to check the methods available in the string class:
 It lists all the methods that are present in the
 string class:
 
-<div>
+
+![](./images/C14197_01_44.jpg)
 
 
-![Figure 1.44: String methods ](./images/C14197_01_44.jpg)
-
-
-</div>
 
 
 
@@ -1748,20 +1667,14 @@ Observe the following steps to complete the activity:
 
     The expected output is as follows:
 
-<div>
+
+![](./images/C14197_01_45.jpg)
 
 
-![Figure 1.45: Output for email address generation
-](./images/C14197_01_45.jpg)
-
-
-</div>
 
 Figure 1.45: Output for email address generation
 
-Note
-
-The solution to the activity can be found on page 458.
+**Note** The solution to the activity can be found on page 458.
 
 
 
@@ -1786,13 +1699,10 @@ a.nil?
 
 The output should be as follows:
 
-<div>
+
+![](./images/C14197_01_46.jpg)
 
 
-![Figure 1.46: True and false classes ](./images/C14197_01_46.jpg)
-
-
-</div>
 
 Figure 1.46: True and false classes
 
@@ -1823,19 +1733,14 @@ Follow these steps to complete the activity:
 
     The expected output is as follows:
 
-<div>
+
+![](./images/C14197_01_47.jpg)
 
 
-![Figure 1.47: Output for area and perimeter ](./images/C14197_01_47.jpg)
-
-
-</div>
 
 Figure 1.47: Output for area and perimeter
 
-Note
-
-The solution to the activity can be found on page 459.
+**Note** The solution to the activity can be found on page 459.
 
 
 Summary

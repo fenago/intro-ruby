@@ -108,13 +108,10 @@ end
 
 The output would be as follows:
 
-<div>
+
+![](./images/C14197_09_01.jpg)
 
 
-![Figure 9.1: Output using do/end ](./images/C14197_09_01.jpg)
-
-
-</div>
 
 Figure 9.1: Output using do/end
 
@@ -131,13 +128,10 @@ Consider the following example:
 
 The output would be as follows:
 
-<div>
+
+![](./images/C14197_09_02.jpg)
 
 
-![Figure 9.2: Output using curly brackets ](./images/C14197_09_02.jpg)
-
-
-</div>
 
 Figure 9.2: Output using curly brackets
 
@@ -171,13 +165,10 @@ $ ruby block-iterator.rb
 
 The output would be as follows:
 
-<div>
+
+![](./images/C14197_09_03.jpg)
 
 
-![Figure 9.3: Using a block as an iterator ](./images/C14197_09_03.jpg)
-
-
-</div>
 
 Figure 9.3: Using a block as an iterator
 
@@ -229,13 +220,10 @@ when the control reaches the `yield` line.
 
 The output would be like the following:
 
-<div>
+
+![](./images/C14197_09_04.jpg)
 
 
-![Figure 9.4: Output for yield with blocks ](./images/C14197_09_04.jpg)
-
-
-</div>
 
 Figure 9.4: Output for yield with blocks
 
@@ -269,14 +257,11 @@ my_method {puts "What happens with two yields?"}
 The output of the first `yield` call with one statement will
 be as follows:
 
-<div>
-
 
 ![Figure 9.5: Output for yield with one statement
 ](./images/C14197_09_05.jpg)
 
 
-</div>
 
 Figure 9.5: Output for yield with one statement
 
@@ -292,14 +277,11 @@ end
 
 The output should be as follows:
 
-<div>
-
 
 ![Figure 9.6: Output for yield with multiple statements
 ](./images/C14197_09_06.jpg)
 
 
-</div>
 
 Figure 9.6: Output for yield with multiple statements
 
@@ -393,14 +375,11 @@ my_method {puts "Yield code from the &block if it was passed as argument"}
 If you execute this code from the Terminal, you will get the following
 output:
 
-<div>
-
 
 ![Figure 9.8: Output for the block\_given? method
 ](./images/C14197_09_08.jpg)
 
 
-</div>
 
 Figure 9.8: Output for the block\_given? method
 
@@ -414,19 +393,16 @@ my_method
 
 The output would be as follows:
 
-<div>
+
+![](./images/C14197_09_09.jpg)
 
 
-![Figure 9.9: Output with an empty block ](./images/C14197_09_09.jpg)
-
-
-</div>
 
 Figure 9.9: Output with an empty block
 
 In this example, we have passed a block of code to
 `my_method`, which is a print statement, and have also
-attached `block_given?` to the `yield` keyword. Note
+attached `block_given?` to the `yield` keyword. **Note**
 that if you remove the block of code and call the method, it will still
 work and print only two other statements from the method, as seen in the
 previous example.
@@ -436,14 +412,11 @@ If we remove the block of code and also `block_given?` from
 following figure. This is due to the fact that `&block` is
 still expecting a block as an argument:
 
-<div>
-
 
 ![Figure 9.10: Output for my\_method without the block\_given? method
 and an empty block ](./images/C14197_09_10.jpg)
 
 
-</div>
 
 Figure 9.10: Output for my\_method without the block\_given? method and
 an empty block
@@ -520,7 +493,7 @@ The following steps will help you complete the exercise:
     as follows:
 
     
-    ![Figure 9.11: Output for my\_method with an empty block](./images/C14197_09_11.jpg)
+    ![](./images/C14197_09_11.jpg)
 
 
 Figure 9.11: Output for my\_method with an empty block
@@ -528,14 +501,11 @@ Figure 9.11: Output for my\_method with an empty block
 The output, when we call the method with an argument, would be as
 follows:
 
-<div>
-
 
 ![Figure 9.12: Output for my\_method with an argument
 ](./images/C14197_09_12.jpg)
 
 
-</div>
 
 Figure 9.12: Output for my\_method with an argument
 
@@ -563,13 +533,10 @@ t.call
 
 The output would be as follows:
 
-<div>
+
+![](./images/C14197_09_13.jpg)
 
 
-![Figure 9.13: Output for proc ](./images/C14197_09_13.jpg)
-
-
-</div>
 
 Figure 9.13: Output for proc
 
@@ -607,22 +574,17 @@ p.call
 
 The output would be as follows:
 
-<div>
+
+![](./images/C14197_09_14.jpg)
 
 
-![Figure 9.14: Output for Proc.new ](./images/C14197_09_14.jpg)
-
-
-</div>
 
 Figure 9.14: Output for Proc.new
 
 Until the `.call` method is invoked, the `proc`
 object lies dormant; nothing happens.
 
-Note
-
-Remember that you must always pass a block of code to `procs`,
+**Note** Remember that you must always pass a block of code to `procs`,
 as only then will a `proc` object be instantiated.
 
 In the following exercise, we will discover how to implement
@@ -675,14 +637,11 @@ The following steps will help you with the solution:
     ```
 
 
-<div>
-
 
 ![Figure 9.15: Output for the sum function using proc
 ](./images/C14197_09_15.jpg)
 
 
-</div>
 
 Figure 9.15: Output for the sum function using proc
 
@@ -748,7 +707,7 @@ The following steps will help you to complete the exercise:
     The output should be as follows:
 
     
-    ![Figure 9.16: Output with profit-inclusive prices](./images/C14197_09_16.jpg)
+    ![](./images/C14197_09_16.jpg)
 
 
 Figure 9.16: Output with profit-inclusive prices
@@ -834,22 +793,17 @@ exercise:
 4.  Open the Terminal and traverse to this file. Run the following
     command to see the output:
 
-<div>
-
 
 ![](./images/C14197_09_17.jpg)
 
 
-</div>
 
 Figure 9.17: Output for sum using lambdas
 
 We have successfully used `lambda` to create a `sum`
 function.
 
-Note
-
-We can use the square brackets with `proc` too, that is,
+**Note** We can use the square brackets with `proc` too, that is,
 instead of using .`call` when passing arguments to both
 `proc` and `lambda`.
 
@@ -890,13 +844,10 @@ end
 
 The output would be as follows:
 
-<div>
+
+![](./images/C14197_09_18.jpg)
 
 
-![Figure 9.18: Output for proc versus lambda ](./images/C14197_09_18.jpg)
-
-
-</div>
 
 Figure 9.18: Output for proc versus lambda
 
@@ -951,8 +902,6 @@ Chef.rb
 ```
 
 
-<https://packt.live/35zkd6X>
-
 The entire preceding code should be saved as `Chef.rb` in a
 directory. This is an abstraction, which is what metaprogramming
 is all about; we don\'t know what will be ordered
@@ -999,13 +948,10 @@ This is it. Save all three files in the same folder and you should be
 able to invoke the `ruby Orders.rb` command and see the
 following output:
 
-<div>
+
+![](./images/C14197_09_19.jpg)
 
 
-![Figure 9.19 Output for recipe preparation ](./images/C14197_09_19.jpg)
-
-
-</div>
 
 Figure 9.19 Output for recipe preparation
 
@@ -1046,19 +992,14 @@ The following steps will help you with the solution:
 
 The output would be as follows:
 
-<div>
+
+![](./images/C14197_09_20.jpg)
 
 
-![Figure 9.20: The invoice generator output ](./images/C14197_09_20.jpg)
-
-
-</div>
 
 Figure 9.20: The invoice generator output
 
-Note
-
-The solution for the activity can be found on page 484.
+**Note** The solution for the activity can be found on page 484.
 
 
 Summary
