@@ -6,6 +6,7 @@ Lab 1. Writing and Running Ruby Programs
 
 
 Overview
+============
 
 By the end of this lab, you will be able to use the Interactive Ruby
 Shell (IRB) to write Ruby programs; execute Ruby code with a Ruby
@@ -19,15 +20,11 @@ concatenation and interpolation in Ruby programs.
 Introduction
 ============
 
-
 Ruby is a dynamic, interpreted, object-oriented programming language
 developed by Yukihiro (\"Matz\") Matsumoto at some point in the
 mid-1990s, with its first stable release in 1995. According to the
 creator of Ruby, it is highly influenced by Perl, Smalltalk, Ada, and
-Lisp. The influence of these languages on Ruby allows it to embrace
-various programming paradigms, such as functional, object-oriented, and
-imperative, with dynamic typing (referred to as **duck typing** in
-popular culture) and automatic memory management.
+Lisp. 
 
 Being an interpreted scripting language, Ruby has the ability to make
 system calls directly, and has a long list of useful string operations
@@ -35,16 +32,6 @@ where variable declaration and variable type are not required. Ruby
 wholly embraces object-oriented programming because everything in Ruby
 is an object. Ruby has a long list of keywords that make many operations
 a piece of cake. This means you can do more with less code.
-
-Whether you are a newbie to the world of programming, or an experienced
-developer in other languages who is tired of the compilation processes,
-extra declarations, and the keywords of other languages, Ruby will be a
-revelation from the point of view of your productivity.
-
-With all these characteristics, Ruby gives developers an enriching
-experience, making programming productive and fun. In addition to Ruby
-being a fantastic programming language, the Ruby community is also very
-friendly and supportive.
 
 
 #### Pre-reqs:
@@ -62,7 +49,7 @@ To copy and paste: use **Control-C** and to paste inside of a terminal, use **Co
 - To open new terminal, click `File` > `New` > `Terminal`.
 - Open file browser to open lab exercise(s) as shown below:
 
-    ![](./images/filebrowser.png)
+![](./images/filebrowser.png)
 
 
 Key Features of Ruby
