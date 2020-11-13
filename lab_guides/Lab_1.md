@@ -71,7 +71,7 @@ that make it a delight to program with:
 ![](./images/C14197_01_01.jpg)
 
 
-Figure 1.1: Key features of Ruby
+
 
 
 
@@ -285,7 +285,7 @@ IRB comes out of the box with Ruby, and you can access it using the
 
 
 
-Figure 1.2: Output for \"Hello World\"
+
 
 **Note** `puts` or `p` is used to print any string or value
 of a variable that follows `puts` or `p`.
@@ -310,7 +310,7 @@ Let\'s do some addition with the Interactive Ruby Shell:
 
 
 
-Figure 1.3: Addition output on irb
+
 
 **Note** You can use IRB or any IDE to complete the exercises/activities in this book.
 
@@ -353,7 +353,7 @@ variable, such as the number of students, and print it in IRB:
 
 
 
-Figure 1.4: Output for assigning variables
+
 
 **Note** The Ruby variable stores the value assigned to a variable in one IRB
 session, as seen here with `number_of_students`.
@@ -408,7 +408,7 @@ integer and another variable that has a string value:
 
 
 
-Figure 1.5: The output for variables assigned to a different data type
+
 
 We can simply change the data type of a variable with the inbuilt Ruby
 methods. For example, to convert an integer to a string, we can use
@@ -447,7 +447,7 @@ operator on the variable itself.
 ![](./images/C14197_01_06.jpg)
 
 
-    Figure 1.6: Output of the data type of a variable
+    
 
     `.class` tells us about the class that the variable
     belongs to.
@@ -491,7 +491,7 @@ The output should be as follows:
 
 
 
-Figure 1.7: Output for public methods
+
 
 You can use all of the preceding public methods on this object to
 execute various operations and manipulate the value set in the object.
@@ -549,7 +549,7 @@ Terminal.
 
 
 
-Figure 1.8: Output of the hello world program
+
 
 So far, we have learned how to print any value from a variable. Now that
 we know how to write and execute a code from a Ruby file, let\'s up the
@@ -603,7 +603,7 @@ perform a simple addition. To do so, follow these steps:
 
 
 
-Figure 1.9: Output for user input in Ruby
+
 
 By using the `gets` method, we were able to capture input from
 the user. When you executed the Ruby file, the cursor stopped for the
@@ -642,7 +642,7 @@ Let\'s look at the class hierarchy for various number types:
 
 
 
-Figure 1.10: Number class hierarchy
+
 
 Of all of these, two of the most commonly used number types are
 **integer** and **float**, and there are a number of methods associated
@@ -657,7 +657,7 @@ In Ruby, integers are represented by two classes: **Fixnum** and
 
 
 
-Figure 1.11: Integer types
+
 
 Both of them are inherited by the **Integer** class. As the name
 suggests, the **Bignum** class represents big numbers, and **Fixnum** is
@@ -695,7 +695,7 @@ addition (`+`), subtraction (`-`), multiplication
 ![](./images/C14197_01_12.jpg)
 
 
-    Figure 1.12: Output for the addition operator
+    
 
 4.  Perform subtraction using the `-` operator:
 
@@ -711,7 +711,7 @@ addition (`+`), subtraction (`-`), multiplication
 ![](./images/C14197_01_13.jpg)
 
 
-    Figure 1.13: Output for the subtraction operator
+    
 
 5.  Perform multiplication using the `*` operator:
 
@@ -727,7 +727,7 @@ addition (`+`), subtraction (`-`), multiplication
 ![](./images/C14197_01_14.jpg)
 
 
-    Figure 1.14: Output for the multiplication operator
+    
 
 6.  Perform division using the `/` operator:
 
@@ -745,7 +745,7 @@ addition (`+`), subtraction (`-`), multiplication
 
 
 
-Figure 1.15: Output for the division operator
+
 
 You may ask yourself how is the principle of BODMAS (Bracket, Open,
 Division, Multiplication, Addition, and Subtraction) managed by Ruby
@@ -792,7 +792,7 @@ The following steps should help you with the solution:
 ![](./images/C14197_01_16.jpg)
 
 
-    Figure 1.16: Output for the next number
+    
 
 4.  Next, we will calculate the previous number using `.pred`:
 
@@ -808,7 +808,7 @@ The following steps should help you with the solution:
 ![](./images/C14197_01_17.jpg)
 
 
-    Figure 1.17: Output for the previous number
+    
 
 5.  Then we calculate the LCM of 2 and 3 using `.lcm`:
 
@@ -824,7 +824,7 @@ The following steps should help you with the solution:
 ![](./images/C14197_01_18.jpg)
 
 
-    Figure 1.18: Output for the LCM of 2 and 3
+    
 
 6.  We also calculate the GCD of 2 and 3 using `.gcd`:
 
@@ -842,7 +842,7 @@ The following steps should help you with the solution:
 
 
 
-Figure 1.19: Output for the GCD of 2 and 3
+
 
 Most of these methods are self-explanatory, but let\'s go through each
 of them:
@@ -950,7 +950,7 @@ number completely or up to a certain decimal point:
 
 
 
-Figure 1.21: Output for floating-point number operations
+
 
 There are a number of methods available for the `Float` class,
 which you can play around with. Simply check them against
@@ -973,7 +973,7 @@ The output should be as follows:
 
 
 
-Figure 1.22: Methods for the Float class
+
 
 **Note** To find out more about all the methods and the operations they can
 perform, refer to the official documentation at <https://ruby-doc.org/core-2.5.0/Float.html>.
@@ -1060,7 +1060,7 @@ most common ones:
 
 
 
-Figure 1.23: Ways to write strings in Ruby
+
 
 
 
@@ -1092,7 +1092,7 @@ class\' built-in methods. Lastly, we will discuss the bang
 ![](./images/C14197_01_24.jpg)
 
 
-    Figure 1.24: Output for string definition
+    
 
     Here, we are using the `ruby fundamentals` value for the
     title variable on which all the following operations will be
@@ -1113,7 +1113,7 @@ class\' built-in methods. Lastly, we will discuss the bang
 ![](./images/C14197_01_25.jpg)
 
 
-    Figure 1.25: Character count of a string
+    
 
 5.  Then, we also check the number of characters in this string,
     including white spaces, using `.length`:
@@ -1130,7 +1130,7 @@ class\' built-in methods. Lastly, we will discuss the bang
 ![](./images/C14197_01_26.jpg)
 
 
-    Figure 1.26: String length calculation
+    
 
     `.length` is the same as size, but it is more meaningful
     in certain situations. Mostly, it is a matter of preference. Some
@@ -1153,7 +1153,7 @@ class\' built-in methods. Lastly, we will discuss the bang
 ![](./images/C14197_01_27.jpg)
 
 
-    Figure 1.27: Uppercase string characters
+    
 
 7.  Similarly, we can change the casing to lowercase using
     `.downcase`:
@@ -1170,7 +1170,7 @@ class\' built-in methods. Lastly, we will discuss the bang
 ![](./images/C14197_01_28.jpg)
 
 
-    Figure 1.28: Lowercase string characters
+    
 
 8.  We can also capitalize the first character of the string using
     `.capitalize`:
@@ -1187,7 +1187,7 @@ class\' built-in methods. Lastly, we will discuss the bang
 ![](./images/C14197_01_29.jpg)
 
 
-    Figure 1.29: Capitalized string characters
+    
 
     **Note** that even after the operations are applied on the string, the
     original string object remains the same:
@@ -1204,7 +1204,7 @@ class\' built-in methods. Lastly, we will discuss the bang
 ![](./images/C14197_01_30.jpg)
 
 
-    Figure 1.30: Original string object
+    
 
 9.  Let\'s now try the **bang** method. **Bang** methods end with an
     exclamation mark (`!`), and we can use them to modify the
@@ -1227,7 +1227,7 @@ class\' built-in methods. Lastly, we will discuss the bang
 
 
 
-Figure 1.31: Bang operation on a string
+
 
 There are other operations as well that we can perform on strings, a
 common one being concatenation.
@@ -1275,7 +1275,7 @@ The following steps will help you to perform the exercise:
 ![](./images/C14197_01_32.jpg)
 
 
-    Figure 1.32: Output using whitespace
+    
 
     To add a space between `var1` and `var2` in the
     final result, you can do this by chain two `+` operators
@@ -1296,7 +1296,7 @@ The following steps will help you to perform the exercise:
 ![](./images/C14197_01_33.jpg)
 
 
-    Figure 1.33: Output using the .concat method
+    
 
 6.  We can also concatenate the strings using the `<<`
     operator:
@@ -1320,7 +1320,7 @@ The following steps will help you to perform the exercise:
 
 
 
-Figure 1.34: Concatenation using the \<\< operator
+
 
 Another way of accomplishing string manipulation is by using a technique
 called string interpolation. This works much more elegantly than the
@@ -1355,7 +1355,7 @@ for Ruby Fundamentals and interpolate it in a sentence:
 ![](./images/C14197_01_35.jpg)
 
 
-    Figure 1.35: String interpolation
+    
 
 4.  We can also perform operations with string interpolation, for
     example, addition within a string:
@@ -1374,7 +1374,7 @@ for Ruby Fundamentals and interpolate it in a sentence:
 
 
 
-Figure 1.36: Addition operation in string interpolation
+
 
 This is how we carry out addition operations with string interpolation.
 
@@ -1405,7 +1405,7 @@ To extract certain characters from a string, follow these steps:
 ![](./images/C14197_01_37.jpg)
 
 
-    Figure 1.37: Extracting characters from a string
+    
 
     Thus, we have extracted characters, starting from the eighth
     position in an index to the second position from it, and hence get
@@ -1430,7 +1430,7 @@ To extract certain characters from a string, follow these steps:
 
 
 
-Figure 1.38: Searching a substring from a string
+
 
 Here, the characters must be together and in exactly the same order.
 
@@ -1481,7 +1481,7 @@ sentence \"My favorite book is Java Fundamentals\" with the word
 
 
 
-Figure 1.39: Replacing string characters
+
 
 We have now easily updated the specific value of the string object in
 the `title` variable.
@@ -1524,7 +1524,7 @@ the instances of Java with Ruby in a sentence:
 
 
 
-Figure 1.40: Using the gsub method to replace characters in a string
+
 
 This way, we can easily replace the same values across the object using
 `gsub`. This is very handy when we have to replace one
@@ -1560,7 +1560,7 @@ going to split a string of words into an array of words.
 ![](./images/C14197_01_41.jpg)
 
 
-    Figure 1.41: Splitting a string
+    
 
 4.  Use the `split` method to separate values in a string:
 
@@ -1577,7 +1577,7 @@ going to split a string of words into an array of words.
 ![](./images/C14197_01_42.jpg)
 
 
-    Figure 1.42: Splitting a string using a unique character
+    
 
 5.  Join the array values in a string:
 
@@ -1596,7 +1596,7 @@ going to split a string of words into an array of words.
 
 
 
-Figure 1.43: Joining arrays to form a string
+
 
 Thus, we have successfully used `data.join` to bring together
 values in a string.
@@ -1646,7 +1646,7 @@ Observe the following steps to complete the activity:
 
 
 
-Figure 1.45: Output for email address generation
+
 
 **Note** The solution to the activity can be found on page 458.
 
@@ -1678,7 +1678,7 @@ The output should be as follows:
 
 
 
-Figure 1.46: True and false classes
+
 
 You get Boolean values when you check whether the `a` variable
 is `nil`.
@@ -1712,7 +1712,7 @@ Follow these steps to complete the activity:
 
 
 
-Figure 1.47: Output for area and perimeter
+
 
 **Note** The solution to the activity can be found on page 459.
 
