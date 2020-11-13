@@ -403,8 +403,7 @@ integer and another variable that has a string value:
     The output should be as follows:
 
 
-![Figure 1.5: The output for variables assigned to a different data type
-](./images/C14197_01_05.jpg)
+![](./images/C14197_01_05.jpg)
 
 
 
@@ -546,8 +545,7 @@ Terminal.
     The output should be as follows:
 
 
-![Figure 1.8: Output of the hello world program
-](./images/C14197_01_08.jpg)
+![](./images/C14197_01_08.jpg)
 
 
 
@@ -746,8 +744,7 @@ addition (`+`), subtraction (`-`), multiplication
     The output should be as follows:
 
 
-![Figure 1.15: Output for the division operator
-](./images/C14197_01_15.jpg)
+![](./images/C14197_01_15.jpg)
 
 
 
@@ -955,8 +952,7 @@ number completely or up to a certain decimal point:
     The output should be as follows:
 
 
-![Figure 1.21: Output for floating-point number operations
-](./images/C14197_01_21.jpg)
+![](./images/C14197_01_21.jpg)
 
 
 
@@ -1335,8 +1331,7 @@ The following steps will help you to perform the exercise:
     The output should be as follows:
 
 
-![Figure 1.34: Concatenation using the \<\< operator
-](./images/C14197_01_34.jpg)
+![](./images/C14197_01_34.jpg)
 
 
 
@@ -1391,8 +1386,7 @@ for Ruby Fundamentals and interpolate it in a sentence:
     The output should be as follows:
 
 
-![Figure 1.36: Addition operation in string interpolation
-](./images/C14197_01_36.jpg)
+![](./images/C14197_01_36.jpg)
 
 
 
@@ -1543,8 +1537,7 @@ the instances of Java with Ruby in a sentence:
     The output should be as follows:
 
 
-![Figure 1.40: Using the gsub method to replace characters in a string
-](./images/C14197_01_40.jpg)
+![](./images/C14197_01_40.jpg)
 
 
 

@@ -258,8 +258,7 @@ The output of the first `yield` call with one statement will
 be as follows:
 
 
-![Figure 9.5: Output for yield with one statement
-](./images/C14197_09_05.jpg)
+![](./images/C14197_09_05.jpg)
 
 
 
@@ -278,8 +277,7 @@ end
 The output should be as follows:
 
 
-![Figure 9.6: Output for yield with multiple statements
-](./images/C14197_09_06.jpg)
+![](./images/C14197_09_06.jpg)
 
 
 
@@ -342,8 +340,7 @@ you complete the exercise:
     The output should be as follows:
 
     
-    ![Figure 9.7: Output for the arithmetic operation using yield with a
-    block ](./images/C14197_09_07.jpg)
+    ![](./images/C14197_09_07.jpg)
 
 
 Figure 9.7: Output for the arithmetic operation using yield with a block
@@ -376,8 +373,7 @@ If you execute this code from the Terminal, you will get the following
 output:
 
 
-![Figure 9.8: Output for the block\_given? method
-](./images/C14197_09_08.jpg)
+![](./images/C14197_09_08.jpg)
 
 
 
@@ -413,13 +409,10 @@ following figure. This is due to the fact that `&block` is
 still expecting a block as an argument:
 
 
-![Figure 9.10: Output for my\_method without the block\_given? method
-and an empty block ](./images/C14197_09_10.jpg)
+![](./images/C14197_09_10.jpg)
 
 
-
-Figure 9.10: Output for my\_method without the block\_given? method and
-an empty block
+Figure 9.10: Output for my\_method without the block\_given? method and an empty block
 
 
 
@@ -502,8 +495,7 @@ The output, when we call the method with an argument, would be as
 follows:
 
 
-![Figure 9.12: Output for my\_method with an argument
-](./images/C14197_09_12.jpg)
+![](./images/C14197_09_12.jpg)
 
 
 
@@ -638,8 +630,7 @@ The following steps will help you with the solution:
 
 
 
-![Figure 9.15: Output for the sum function using proc
-](./images/C14197_09_15.jpg)
+![](./images/C14197_09_15.jpg)
 
 
 
