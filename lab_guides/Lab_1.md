@@ -40,7 +40,9 @@ a piece of cake. This means you can do more with less code.
 #### Lab Environment
 Exercises are ready to run. All packages have been installed. There is no requirement for any setup.
 
-All examples are present in `work/intro-ruby/Lab01` folder. You can access lab at `http://<host-ip>/lab/workspaces/lab1_Programs`
+All examples are present in `work/intro-ruby/Lab01` folder. 
+
+You can access lab at `http://<host-ip>/lab/workspaces/lab1_Programs`
 
 To copy and paste: use **Control-C** and to paste inside of a terminal, use **Control-V**
 
@@ -66,8 +68,7 @@ that make it a delight to program with:
 -   Multi-paradigm language
 -   Reflection
 -   Metaprogramming
-    
-    ![](./images/C14197_01_01.jpg)
+![](./images/C14197_01_01.jpg)
 
 
 Figure 1.1: Key features of Ruby
@@ -443,8 +444,7 @@ operator on the variable itself.
 
     The output should be as follows:
 
-    
-    ![](./images/C14197_01_06.jpg)
+![](./images/C14197_01_06.jpg)
 
 
     Figure 1.6: Output of the data type of a variable
@@ -692,8 +692,7 @@ addition (`+`), subtraction (`-`), multiplication
 
     The output should be as follows:
 
-    
-    ![](./images/C14197_01_12.jpg)
+![](./images/C14197_01_12.jpg)
 
 
     Figure 1.12: Output for the addition operator
@@ -709,8 +708,7 @@ addition (`+`), subtraction (`-`), multiplication
 
     The output should be as follows:
 
-    
-    ![](./images/C14197_01_13.jpg)
+![](./images/C14197_01_13.jpg)
 
 
     Figure 1.13: Output for the subtraction operator
@@ -726,8 +724,7 @@ addition (`+`), subtraction (`-`), multiplication
 
     The output should be as follows:
 
-    
-    ![](./images/C14197_01_14.jpg)
+![](./images/C14197_01_14.jpg)
 
 
     Figure 1.14: Output for the multiplication operator
@@ -792,8 +789,7 @@ The following steps should help you with the solution:
 
     The output should be as follows:
 
-    
-    ![](./images/C14197_01_16.jpg)
+![](./images/C14197_01_16.jpg)
 
 
     Figure 1.16: Output for the next number
@@ -809,8 +805,7 @@ The following steps should help you with the solution:
 
     The output should be as follows:
 
-    
-    ![](./images/C14197_01_17.jpg)
+![](./images/C14197_01_17.jpg)
 
 
     Figure 1.17: Output for the previous number
@@ -826,8 +821,7 @@ The following steps should help you with the solution:
 
     The output should be as follows:
 
-    
-    ![](./images/C14197_01_18.jpg)
+![](./images/C14197_01_18.jpg)
 
 
     Figure 1.18: Output for the LCM of 2 and 3
@@ -1095,8 +1089,7 @@ class\' built-in methods. Lastly, we will discuss the bang
 
     The output should be as follows:
 
-    
-    ![](./images/C14197_01_24.jpg)
+![](./images/C14197_01_24.jpg)
 
 
     Figure 1.24: Output for string definition
@@ -1117,8 +1110,7 @@ class\' built-in methods. Lastly, we will discuss the bang
 
     The output should be as follows:
 
-    
-    ![](./images/C14197_01_25.jpg)
+![](./images/C14197_01_25.jpg)
 
 
     Figure 1.25: Character count of a string
@@ -1135,8 +1127,7 @@ class\' built-in methods. Lastly, we will discuss the bang
 
     The output should be as follows:
 
-    
-    ![](./images/C14197_01_26.jpg)
+![](./images/C14197_01_26.jpg)
 
 
     Figure 1.26: String length calculation
@@ -1159,8 +1150,7 @@ class\' built-in methods. Lastly, we will discuss the bang
 
     The output should be as follows:
 
-    
-    ![](./images/C14197_01_27.jpg)
+![](./images/C14197_01_27.jpg)
 
 
     Figure 1.27: Uppercase string characters
@@ -1177,8 +1167,7 @@ class\' built-in methods. Lastly, we will discuss the bang
 
     The output should be as follows:
 
-    
-    ![](./images/C14197_01_28.jpg)
+![](./images/C14197_01_28.jpg)
 
 
     Figure 1.28: Lowercase string characters
@@ -1195,8 +1184,7 @@ class\' built-in methods. Lastly, we will discuss the bang
 
     The output should be as follows:
 
-    
-    ![](./images/C14197_01_29.jpg)
+![](./images/C14197_01_29.jpg)
 
 
     Figure 1.29: Capitalized string characters
@@ -1213,8 +1201,7 @@ class\' built-in methods. Lastly, we will discuss the bang
 
     The output should be as follows:
 
-    
-    ![](./images/C14197_01_30.jpg)
+![](./images/C14197_01_30.jpg)
 
 
     Figure 1.30: Original string object
@@ -1285,8 +1272,7 @@ The following steps will help you to perform the exercise:
 
     The output should be as follows:
 
-    
-    ![](./images/C14197_01_32.jpg)
+![](./images/C14197_01_32.jpg)
 
 
     Figure 1.32: Output using whitespace
@@ -1307,8 +1293,7 @@ The following steps will help you to perform the exercise:
 
     The output should be as follows:
 
-    
-    ![](./images/C14197_01_33.jpg)
+![](./images/C14197_01_33.jpg)
 
 
     Figure 1.33: Output using the .concat method
@@ -1367,8 +1352,7 @@ for Ruby Fundamentals and interpolate it in a sentence:
 
     The output should be as follows:
 
-    
-    ![](./images/C14197_01_35.jpg)
+![](./images/C14197_01_35.jpg)
 
 
     Figure 1.35: String interpolation
@@ -1418,8 +1402,7 @@ To extract certain characters from a string, follow these steps:
 
     The output should be as follows:
 
-    
-    ![](./images/C14197_01_37.jpg)
+![](./images/C14197_01_37.jpg)
 
 
     Figure 1.37: Extracting characters from a string
@@ -1574,8 +1557,7 @@ going to split a string of words into an array of words.
 
     The output should be as follows:
 
-    
-    ![](./images/C14197_01_41.jpg)
+![](./images/C14197_01_41.jpg)
 
 
     Figure 1.41: Splitting a string
@@ -1592,8 +1574,7 @@ going to split a string of words into an array of words.
 
     The output should be as follows:
 
-    
-    ![](./images/C14197_01_42.jpg)
+![](./images/C14197_01_42.jpg)
 
 
     Figure 1.42: Splitting a string using a unique character
