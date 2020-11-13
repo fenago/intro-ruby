@@ -99,7 +99,7 @@ them.
 
 Consider the following example:
 
-``` {.language-markup}
+```
 (1..5).each do
   puts "I am inside the block"
 end
@@ -124,7 +124,7 @@ Figure 9.1: Output using do/end
 
 Consider the following example:
 
-``` {.language-markup}
+```
 5.times {puts "I am inside the block"}
 ```
 
@@ -152,7 +152,7 @@ The preceding examples are pretty basic for understanding block syntax.
 Let\'s try and understand this with another example of using a block as
 an iterator variable in order to print something:
 
-``` {.language-markup}
+```
 def star_tree number 
   1.upto(number).each do |i|
     puts "*" * i 
@@ -164,7 +164,7 @@ star_tree 30
 
 Fire up your Terminal and run this Ruby file:
 
-``` {.language-markup}
+```
 $ ruby block-iterator.rb
 ```
 
@@ -214,7 +214,7 @@ however, nothing will happen as there is nothing to execute.
 
 Let\'s understand this with an example:
 
-``` {.language-markup}
+```
 def my_method(&block)
   puts "Part one of my_method code"
   yield
@@ -255,7 +255,7 @@ code.
 
 Consider the following example:
 
-``` {.language-markup}
+```
 def my_method(&block)
   puts " Before first yield"
   yield
@@ -282,7 +282,7 @@ Figure 9.5: Output for yield with one statement
 
 Now let\'s take a look at the output for multiple statements:
 
-``` {.language-markup}
+```
 my_method do
 puts "First statement"
 puts "Second statement"
@@ -322,7 +322,7 @@ you complete the exercise:
     used in the arithmetic operations:
 
 
-    ``` {.language-markup}
+    ```
     def calculator(a, b)
       yield(a, b)
     end
@@ -334,7 +334,7 @@ you complete the exercise:
 
 
 
-    ``` {.language-markup}
+    ```
     #Addition
     puts calculator(8, 2) { |a, b| a + b }
     #Multiplication 
@@ -352,7 +352,7 @@ you complete the exercise:
 
 
 
-    ``` {.language-markup}
+    ```
     ruby block-yield.rb
     ```
 
@@ -379,7 +379,7 @@ blocks and the `yield` keyword. As the name suggests, it
 checks whether or not a block for triggering a method or operation has
 been provided. Let\'s take a look at its syntax:
 
-``` {.language-markup}
+```
 def my_method(&block)
   puts "Part one of my_method code"
   yield if block_given?
@@ -407,7 +407,7 @@ Figure 9.8: Output for the block\_given? method
 If we don\'t pass anything to the `&block` method, we get the
 following output:
 
-``` {.language-markup}
+```
 my_method
 ```
 
@@ -469,7 +469,7 @@ The following steps will help you complete the exercise:
     seconds:
 
 
-    ``` {.language-markup}
+    ```
     def basic_logger
       sleep 3
       puts "****"
@@ -492,7 +492,7 @@ The following steps will help you complete the exercise:
     is passed; otherwise, the code in this method will continue:
 
 
-    ``` {.language-markup}
+    ```
     def my_method(&block)
       puts "Flight Status changer starting"
       yield basic_logger if block_given? 
@@ -506,7 +506,7 @@ The following steps will help you complete the exercise:
 
 
 
-    ``` {.language-markup}
+    ```
     my_method
     my_method {puts " Changed Flight status to Departure "}
     ```
@@ -520,8 +520,7 @@ The following steps will help you complete the exercise:
     as follows:
 
     
-    ![Figure 9.11: Output for my\_method with an empty block
-    ](./images/C14197_09_11.jpg)
+    ![Figure 9.11: Output for my\_method with an empty block](./images/C14197_09_11.jpg)
 
 
 Figure 9.11: Output for my\_method with an empty block
@@ -556,7 +555,7 @@ code can be called in different contexts and can access those variables.
 
 Let\'s take a simple example:
 
-``` {.language-markup}
+```
 t = Proc.new { |x,y| puts "A very simple proc example" }
 t.call
 ```
@@ -587,7 +586,7 @@ objects are referred to as closures; many languages have their own
 paradigm for the function of `proc` objects in Ruby. Let\'s
 take a look at the syntax of `proc`:
 
-``` {.language-markup}
+```
 def proc_method
     Proc.new
 end
@@ -600,7 +599,7 @@ Here, we first initiate a `proc` object with
 `Proc.new` inside our `proc` method. This is then
 called by using `.call` and passing a block of code to it:
 
-``` {.language-markup}
+```
 p = Proc.new { puts "Hello World" }
 p.call
 ```
@@ -648,7 +647,7 @@ The following steps will help you with the solution:
     between the start and end of a range:
 
 
-    ``` {.language-markup}
+    ```
     sum_of_range = Proc.new do |first, last| 
         result = 0
         (first..last).each do |i|
@@ -663,7 +662,7 @@ The following steps will help you with the solution:
     `proc`:
 
 
-    ``` {.language-markup}
+    ```
     puts sum_of_range.call(1,6)
     ```
 
@@ -671,7 +670,7 @@ The following steps will help you with the solution:
     command to see the output:
 
 
-    ``` {.language-markup}
+    ```
     ruby proc-sum-range.rb
     ```
 
@@ -713,7 +712,7 @@ The following steps will help you to complete the exercise:
 2.  Create the original price list:
 
 
-    ``` {.language-markup}
+    ```
     original_price = [100,200,300,400,999]
     puts "The original price for the stocks: #{original_price}"
     ```
@@ -722,7 +721,7 @@ The following steps will help you to complete the exercise:
 3.  Define the dormant `proc` object:
 
 
-    ``` {.language-markup}
+    ```
     price_profit = Proc.new do |price_list| 
         result = Array.new
         price_list.each do |i|        
@@ -737,7 +736,7 @@ The following steps will help you to complete the exercise:
     output the list:
 
 
-    ``` {.language-markup}
+    ```
     new_price_with_profit = price_profit.call(original_price)
     puts "The new price for the stocks #{new_price_with_profit}"
     ```
@@ -749,8 +748,7 @@ The following steps will help you to complete the exercise:
     The output should be as follows:
 
     
-    ![Figure 9.16: Output with profit-inclusive prices
-    ](./images/C14197_09_16.jpg)
+    ![Figure 9.16: Output with profit-inclusive prices](./images/C14197_09_16.jpg)
 
 
 Figure 9.16: Output with profit-inclusive prices
@@ -768,7 +766,7 @@ and lambdas later on in the lab.
 
 Let\'s now look at the following syntax to learn more about lambdas:
 
-``` {.language-markup}
+```
 hello = lambda {puts "Hello World"}
 hello.call
 ```
@@ -785,7 +783,7 @@ was first introduced in *version 1.9*.
 The preceding code snippet will change to the following when stabby
 lambda is used:
 
-``` {.language-markup}
+```
 hello = -> {puts "Hello World"}
 hello.call
 ```
@@ -815,7 +813,7 @@ exercise:
     otherwise:
 
 
-    ``` {.language-markup}
+    ```
     sum_of_range = ->(first, last) do
         result = 0
         (first..last).each do |i|
@@ -829,7 +827,7 @@ exercise:
     to pass the argument:
 
 
-    ``` {.language-markup}
+    ```
     puts sum_of_range[1,6]
     ```
 
@@ -874,7 +872,7 @@ returns from both the blocks of code and the method.
 
 Let\'s understand this with an example:
 
-``` {.language-markup}
+```
 def my_lambda_method
     lambda { return "Statement from the block" }.call
     return "Statement from the method"
@@ -936,7 +934,7 @@ put together the parts:
 
 Chef.rb
 
-``` {.language-markup}
+```
 1  module Chef
 2      def self.included(klass)
 3          puts "The Chef is ready for service!"
@@ -964,7 +962,7 @@ customer requirements.
 Now it is time to create `Recipes.rb`; we will define what
 happens before, after, and during a chicken soup order:
 
-``` {.language-markup}
+```
 require './Chef.rb'
 cook "chickensoup" do
   puts "Adding spices"
@@ -991,7 +989,7 @@ application.
 Finally, we can define our `Orders.rb` file, which will be an
 interface to call the chef to fulfill the orders based on the recipes:
 
-``` {.language-markup}
+```
 require './Recipes.rb'
 run('chickensoup')
 ```

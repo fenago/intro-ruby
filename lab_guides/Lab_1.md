@@ -92,7 +92,7 @@ This means that every object is part of a class that gives access to a
 wide range of methods to do incredible things. Each class is also an
 object in Ruby. Here\'s an example:
 
-``` {.language-markup}
+```
 class Fruit
  #code
 end
@@ -103,7 +103,7 @@ The preceding code defines the `Fruit` class. The following
 code shows that two new objects, `fruit1` and
 `fruit2`, are derived from the `Fruit` class:
 
-``` {.language-markup}
+```
 fruit1 = Fruit.new
 fruit2 = Fruit.new
 ```
@@ -119,14 +119,14 @@ as **C++**, **Java**, and **Objective-C**, which require code to be
 compiled before running, this is not the case with Ruby. Look at this
 example:
 
-``` {.language-markup}
+```
 print "Hello World"
 ```
 
 
 This code will immediately print `Hello World`, as follows:
 
-``` {.language-markup}
+```
 Hello World
 ```
 
@@ -142,7 +142,7 @@ assigned to it rather than the type of variable. The underlying rule
 here is: \"If it walks like a duck and quacks like a duck, then it must
 be a duck.\" Here\'s an example:
 
-``` {.language-markup}
+```
 x= [:a, :b, :c]
 x.map(&:to_s) # => ['a', 'b', 'c']
 ```
@@ -163,7 +163,7 @@ procedure calls are interpreted as function calls. However, functions do
 not exist in Ruby, and, therefore, methods can be created outside
 classes. Look at this example:
 
-``` {.language-markup}
+```
 self # => main
 def method1
   "John is developing a program."
@@ -184,7 +184,7 @@ Additionally, Ruby also features the functional style of programming,
 meaning it largely revolves around functions. Consider the following
 example:
 
-``` {.language-markup}
+```
 def ruby_method(obj)
   obj - 1
 end
@@ -205,7 +205,7 @@ runtime because you can get a lot of information, such as class methods,
 inheritance hierarchies, and all the living objects in your running
 program. Here\'s an example:
 
-``` {.language-markup}
+```
 class Box
   def hello
     "hello"
@@ -235,7 +235,7 @@ methods and classes at runtime, which helps us to maintain a **Don\'t**
 **Repeat** **Yourself** (**DRY**) and maintainable code base. Here\'s an
 example:
 
-``` {.language-markup}
+```
 ['one', 'two', 'three'].each do |num|
   define_method(num) do
     num.upcase
@@ -270,7 +270,7 @@ IRB comes out of the box with Ruby, and you can access it using the
     command:
 
 
-    ``` {.language-markup}
+    ```
     $ irb 
     >_ 
     ```
@@ -281,7 +281,7 @@ IRB comes out of the box with Ruby, and you can access it using the
 
 
 
-    ``` {.language-markup}
+    ```
     puts "Hello World"
     ```
 
@@ -311,7 +311,7 @@ Let\'s do some addition with the Interactive Ruby Shell:
 
 
 
-    ``` {.language-markup}
+    ```
     17 + 13
     ```
 
@@ -347,7 +347,7 @@ variable, such as the number of students, and print it in IRB:
 
 
 
-    ``` {.language-markup}
+    ```
     number_of_students = 17 + 13
     ```
 
@@ -359,7 +359,7 @@ variable, such as the number of students, and print it in IRB:
 
 
 
-    ``` {.language-markup}
+    ```
     puts number_of_students
     ```
 
@@ -405,7 +405,7 @@ integer and another variable that has a string value:
 
 
 
-    ``` {.language-markup}
+    ```
     number_of_students
     ```
 
@@ -418,7 +418,7 @@ integer and another variable that has a string value:
 
 
 
-    ``` {.language-markup}
+    ```
     number_of_students = "not enough for a session"
     => "not enough for a session"
     ```
@@ -464,7 +464,7 @@ operator on the variable itself.
 
 
 
-    ``` {.language-markup}
+    ```
     number_of_students.class
     ```
 
@@ -472,8 +472,7 @@ operator on the variable itself.
     The output should be as follows:
 
     
-    ![Figure 1.6: Output of the data type of a variable
-    ](./images/C14197_01_06.jpg)
+    ![Figure 1.6: Output of the data type of a variable](./images/C14197_01_06.jpg)
 
 
     Figure 1.6: Output of the data type of a variable
@@ -484,7 +483,7 @@ operator on the variable itself.
 3.  The same can be achieved using the `::` operator:
 
 
-    ``` {.language-markup}
+    ```
     number_of_students::class
     ```
 
@@ -508,7 +507,7 @@ itself is an object of **Class**. We can then check what interfaces are
 available for an object. Let\'s now see what public methods are
 associated with this object:
 
-``` {.language-markup}
+```
 number_of_students.public_methods
 ```
 
@@ -549,7 +548,7 @@ Terminal.
 1.  Create a new file and add the following code to it:
 
 
-    ``` {.language-markup}
+    ```
     puts "***"
     puts  "*****"
     puts  "*******"
@@ -569,7 +568,7 @@ Terminal.
 
 
 
-    ``` {.language-markup}
+    ```
     $ ruby hello_world.rb
     ```
 
@@ -609,7 +608,7 @@ perform a simple addition. To do so, follow these steps:
 
 
 
-    ``` {.language-markup}
+    ```
     puts  "Please enter a number to added to 5"
     num = gets
     sum = 5 + num.to_i
@@ -627,7 +626,7 @@ perform a simple addition. To do so, follow these steps:
 
 
 
-    ``` {.language-markup}
+    ```
     $ ruby sum.rb
     ```
 
@@ -730,7 +729,7 @@ addition (`+`), subtraction (`-`), multiplication
 
 
 
-    ``` {.language-markup}
+    ```
     1 + 2
     ```
 
@@ -738,8 +737,7 @@ addition (`+`), subtraction (`-`), multiplication
     The output should be as follows:
 
     
-    ![Figure 1.12: Output for the addition operator
-    ](./images/C14197_01_12.jpg)
+    ![Figure 1.12: Output for the addition operator](./images/C14197_01_12.jpg)
 
 
     Figure 1.12: Output for the addition operator
@@ -748,7 +746,7 @@ addition (`+`), subtraction (`-`), multiplication
 
 
 
-    ``` {.language-markup}
+    ```
     3 - 1
     ```
 
@@ -756,8 +754,7 @@ addition (`+`), subtraction (`-`), multiplication
     The output should be as follows:
 
     
-    ![Figure 1.13: Output for the subtraction operator
-    ](./images/C14197_01_13.jpg)
+    ![Figure 1.13: Output for the subtraction operator](./images/C14197_01_13.jpg)
 
 
     Figure 1.13: Output for the subtraction operator
@@ -766,7 +763,7 @@ addition (`+`), subtraction (`-`), multiplication
 
 
 
-    ``` {.language-markup}
+    ```
     3 * 3
     ```
 
@@ -774,8 +771,7 @@ addition (`+`), subtraction (`-`), multiplication
     The output should be as follows:
 
     
-    ![Figure 1.14: Output for the multiplication operator
-    ](./images/C14197_01_14.jpg)
+    ![Figure 1.14: Output for the multiplication operator](./images/C14197_01_14.jpg)
 
 
     Figure 1.14: Output for the multiplication operator
@@ -784,7 +780,7 @@ addition (`+`), subtraction (`-`), multiplication
 
 
 
-    ``` {.language-markup}
+    ```
     10 / 2
     ```
 
@@ -839,7 +835,7 @@ The following steps should help you with the solution:
 
 
 
-    ``` {.language-markup}
+    ```
     2.next
     ```
 
@@ -847,8 +843,7 @@ The following steps should help you with the solution:
     The output should be as follows:
 
     
-    ![Figure 1.16: Output for the next number
-    ](./images/C14197_01_16.jpg)
+    ![Figure 1.16: Output for the next number](./images/C14197_01_16.jpg)
 
 
     Figure 1.16: Output for the next number
@@ -857,7 +852,7 @@ The following steps should help you with the solution:
 
 
 
-    ``` {.language-markup}
+    ```
     2.pred
     ```
 
@@ -874,7 +869,7 @@ The following steps should help you with the solution:
 
 
 
-    ``` {.language-markup}
+    ```
     2.lcm(3)
     ```
 
@@ -891,7 +886,7 @@ The following steps should help you with the solution:
 
 
 
-    ``` {.language-markup}
+    ```
     2.gcd(3)
     ```
 
@@ -925,7 +920,7 @@ the integer.
 Go to the Terminal. Type `irb` to enter the IRB and type the
 following code:
 
-``` {.language-markup}
+```
 2.methods
 ```
 
@@ -982,7 +977,7 @@ number completely or up to a certain decimal point:
 
 
 
-    ``` {.language-markup}
+    ```
     num = 2.339
     num.ceil
     num.floor
@@ -998,7 +993,7 @@ number completely or up to a certain decimal point:
     returns the previous floating point value to 15 decimal places:
 
 
-    ``` {.language-markup}
+    ```
     num.next_float
     num.prev_float
     ```
@@ -1012,7 +1007,7 @@ number completely or up to a certain decimal point:
 
 
 
-    ``` {.language-markup}
+    ```
     num.round
     num.round(2)
     ```
@@ -1040,7 +1035,7 @@ which you can play around with. Simply check them against
 3.  Type the following Ruby code:
 
 
-    ``` {.language-markup}
+    ```
     2.15.methods
     ```
 
@@ -1076,7 +1071,7 @@ the headache by managing a lot out of the box.
 By default, Ruby comes with UTF-8 encoding, but this can be changed by
 placing a special comment at the top of a file:
 
-``` {.language-markup}
+```
 # encoding: us-ascii
 puts "Hello".encoding
 output:
@@ -1096,7 +1091,7 @@ most common ones:
     and it becomes a string:
 
 
-    ``` {.language-markup}
+    ```
     'Ruby Fundamentals'
      => "Ruby Fundamentals"
     ```
@@ -1106,7 +1101,7 @@ most common ones:
     using the backslash character (`\`):
 
 
-    ``` {.language-markup}
+    ```
     '\'Ruby Fundamentals\''
      => "'Ruby Fundamentals'"
     ```
@@ -1117,7 +1112,7 @@ most common ones:
     bracket, curly brackets, or something else:
 
 
-    ``` {.language-markup}
+    ```
     %q('Ruby' Fundamentals)
      => "'Ruby' Fundamentals"
     %q['Ruby' Fundamentals]
@@ -1134,7 +1129,7 @@ most common ones:
 
 
 
-    ``` {.language-markup}
+    ```
     "'Ruby' Fundamentals"
      => "'Ruby' Fundamentals"
     ```
@@ -1172,7 +1167,7 @@ class\' built-in methods. Lastly, we will discuss the bang
 
 
 
-    ``` {.language-markup}
+    ```
     title = "ruby fundamentals"
     ```
 
@@ -1180,8 +1175,7 @@ class\' built-in methods. Lastly, we will discuss the bang
     The output should be as follows:
 
     
-    ![Figure 1.24: Output for string definition
-    ](./images/C14197_01_24.jpg)
+    ![Figure 1.24: Output for string definition](./images/C14197_01_24.jpg)
 
 
     Figure 1.24: Output for string definition
@@ -1195,7 +1189,7 @@ class\' built-in methods. Lastly, we will discuss the bang
 
 
 
-    ``` {.language-markup}
+    ```
     title.size
     ```
 
@@ -1203,8 +1197,7 @@ class\' built-in methods. Lastly, we will discuss the bang
     The output should be as follows:
 
     
-    ![Figure 1.25: Character count of a string
-    ](./images/C14197_01_25.jpg)
+    ![Figure 1.25: Character count of a string](./images/C14197_01_25.jpg)
 
 
     Figure 1.25: Character count of a string
@@ -1214,7 +1207,7 @@ class\' built-in methods. Lastly, we will discuss the bang
 
 
 
-    ``` {.language-markup}
+    ```
     title.length
     ```
 
@@ -1238,7 +1231,7 @@ class\' built-in methods. Lastly, we will discuss the bang
 
 
 
-    ``` {.language-markup}
+    ```
     title.upcase
     ```
 
@@ -1246,8 +1239,7 @@ class\' built-in methods. Lastly, we will discuss the bang
     The output should be as follows:
 
     
-    ![Figure 1.27: Uppercase string characters
-    ](./images/C14197_01_27.jpg)
+    ![Figure 1.27: Uppercase string characters](./images/C14197_01_27.jpg)
 
 
     Figure 1.27: Uppercase string characters
@@ -1257,7 +1249,7 @@ class\' built-in methods. Lastly, we will discuss the bang
 
 
 
-    ``` {.language-markup}
+    ```
     title.downcase
     ```
 
@@ -1265,8 +1257,7 @@ class\' built-in methods. Lastly, we will discuss the bang
     The output should be as follows:
 
     
-    ![Figure 1.28: Lowercase string characters
-    ](./images/C14197_01_28.jpg)
+    ![Figure 1.28: Lowercase string characters](./images/C14197_01_28.jpg)
 
 
     Figure 1.28: Lowercase string characters
@@ -1276,7 +1267,7 @@ class\' built-in methods. Lastly, we will discuss the bang
 
 
 
-    ``` {.language-markup}
+    ```
     title.capitalize
     ```
 
@@ -1284,8 +1275,7 @@ class\' built-in methods. Lastly, we will discuss the bang
     The output should be as follows:
 
     
-    ![Figure 1.29: Capitalized string characters
-    ](./images/C14197_01_29.jpg)
+    ![Figure 1.29: Capitalized string characters](./images/C14197_01_29.jpg)
 
 
     Figure 1.29: Capitalized string characters
@@ -1295,7 +1285,7 @@ class\' built-in methods. Lastly, we will discuss the bang
 
 
 
-    ``` {.language-markup}
+    ```
     title
     ```
 
@@ -1316,7 +1306,7 @@ class\' built-in methods. Lastly, we will discuss the bang
 
 
 
-    ``` {.language-markup}
+    ```
     title.capitalize!
     title
     ```
@@ -1360,7 +1350,7 @@ The following steps will help you to perform the exercise:
     `var1` and `var2`:
 
 
-    ``` {.language-markup}
+    ```
     var1 = "Ruby"
     var2 = "Fundamentals"
     ```
@@ -1370,7 +1360,7 @@ The following steps will help you to perform the exercise:
 
 
 
-    ``` {.language-markup}
+    ```
     title = var1 + ' ' + var2
     ```
 
@@ -1392,7 +1382,7 @@ The following steps will help you to perform the exercise:
 
 
 
-    ``` {.language-markup}
+    ```
     title = var1.concat(var2)
     ```
 
@@ -1400,8 +1390,7 @@ The following steps will help you to perform the exercise:
     The output should be as follows:
 
     
-    ![Figure 1.33: Output using the .concat method
-    ](./images/C14197_01_33.jpg)
+    ![Figure 1.33: Output using the .concat method](./images/C14197_01_33.jpg)
 
 
     Figure 1.33: Output using the .concat method
@@ -1411,7 +1400,7 @@ The following steps will help you to perform the exercise:
 
 
 
-    ``` {.language-markup}
+    ```
     title = ""
     var1 = "Ruby"
     title << var1
@@ -1456,7 +1445,7 @@ for Ruby Fundamentals and interpolate it in a sentence:
 
 
 
-    ``` {.language-markup}
+    ```
     title = "Ruby Fundamentals"
     puts "My Favorite Ruby book is #{title}"
     ```
@@ -1475,7 +1464,7 @@ for Ruby Fundamentals and interpolate it in a sentence:
 
 
 
-    ``` {.language-markup}
+    ```
     puts "My Favorite Ruby book is #{title} and I am using it for last #{10+30} days"
     ```
 
@@ -1511,7 +1500,7 @@ To extract certain characters from a string, follow these steps:
 
 
 
-    ``` {.language-markup}
+    ```
     quote = "Just Do IT"
     quote[8,2]
     ```
@@ -1520,8 +1509,7 @@ To extract certain characters from a string, follow these steps:
     The output should be as follows:
 
     
-    ![Figure 1.37: Extracting characters from a string
-    ](./images/C14197_01_37.jpg)
+    ![Figure 1.37: Extracting characters from a string](./images/C14197_01_37.jpg)
 
 
     Figure 1.37: Extracting characters from a string
@@ -1535,7 +1523,7 @@ To extract certain characters from a string, follow these steps:
 
 
 
-    ``` {.language-markup}
+    ```
     quote = "Just Do IT"
     quote.include?("Just")
     quote.include?("just")
@@ -1573,7 +1561,7 @@ sentence \"My favorite book is Java Fundamentals\" with the word
     in `title`:
 
 
-    ``` {.language-markup}
+    ```
     title = "My favorite book is Java Fundamentals"
     ```
 
@@ -1582,7 +1570,7 @@ sentence \"My favorite book is Java Fundamentals\" with the word
     with `Ruby` in `title`:
 
 
-    ``` {.language-markup}
+    ```
     title["Java"] = "Ruby"
     ```
 
@@ -1591,7 +1579,7 @@ sentence \"My favorite book is Java Fundamentals\" with the word
 
 
 
-    ``` {.language-markup}
+    ```
     title
     ```
 
@@ -1636,7 +1624,7 @@ the instances of Java with Ruby in a sentence:
 
 
 
-    ``` {.language-markup}
+    ```
     title = "My Favorite Java book is Java Fundamentals"
     title.gsub("Java", "Ruby")
     ```
@@ -1678,7 +1666,7 @@ going to split a string of words into an array of words.
 
 
 
-    ``` {.language-markup}
+    ```
     title = "My Favorite book is Ruby Fundamentals"
     title.split
     ```
@@ -1696,7 +1684,7 @@ going to split a string of words into an array of words.
 
 
 
-    ``` {.language-markup}
+    ```
     months = "Jan; Feb; Mar"
     months.split(';')
     ```
@@ -1705,8 +1693,7 @@ going to split a string of words into an array of words.
     The output should be as follows:
 
     
-    ![Figure 1.42: Splitting a string using a unique character
-    ](./images/C14197_01_42.jpg)
+    ![Figure 1.42: Splitting a string using a unique character](./images/C14197_01_42.jpg)
 
 
     Figure 1.42: Splitting a string using a unique character
@@ -1715,7 +1702,7 @@ going to split a string of words into an array of words.
 
 
 
-    ``` {.language-markup}
+    ```
     data = ["My", "Favorite", "book", "is", "Ruby", "Fundamentals"]
     data.join
     ```
@@ -1739,7 +1726,7 @@ values in a string.
 The `string` class has several methods. You can use the
 following code to check the methods available in the string class:
 
-``` {.language-markup}
+```
 "abc".methods
 ```
 
@@ -1815,7 +1802,7 @@ classes.
 
 Let\'s test this with an example:
 
-``` {.language-markup}
+```
 a = nil
  => nil
 a.nil?
