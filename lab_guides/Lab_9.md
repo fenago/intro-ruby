@@ -113,7 +113,7 @@ The output would be as follows:
 
 
 
-Figure 9.1: Output using do/end
+
 
 
 
@@ -133,7 +133,7 @@ The output would be as follows:
 
 
 
-Figure 9.2: Output using curly brackets
+
 
 Besides this, we can also use the `yield` keyword to write
 blocks, which we will discuss shortly.
@@ -170,7 +170,7 @@ The output would be as follows:
 
 
 
-Figure 9.3: Using a block as an iterator
+
 
 Let\'s understand what we have done here. We are calling a
 `star_tree` method and passing a value of `30` to
@@ -225,7 +225,7 @@ The output would be like the following:
 
 
 
-Figure 9.4: Output for yield with blocks
+
 
 Let\'s understand this program. We pass a block of code to the
 `my_method` function which executes the block when the control
@@ -262,7 +262,7 @@ be as follows:
 
 
 
-Figure 9.5: Output for yield with one statement
+
 
 Now let\'s take a look at the output for multiple statements:
 
@@ -281,7 +281,7 @@ The output should be as follows:
 
 
 
-Figure 9.6: Output for yield with multiple statements
+
 
 
 
@@ -343,7 +343,7 @@ you complete the exercise:
     ![](./images/C14197_09_07.jpg)
 
 
-Figure 9.7: Output for the arithmetic operation using yield with a block
+
 
 The beauty of this program is that we can add n number of operations
 using the combination of a block and `yield` in our code.
@@ -377,7 +377,7 @@ output:
 
 
 
-Figure 9.8: Output for the block\_given? method
+
 
 If we don\'t pass anything to the `&block` method, we get the
 following output:
@@ -394,7 +394,7 @@ The output would be as follows:
 
 
 
-Figure 9.9: Output with an empty block
+
 
 In this example, we have passed a block of code to
 `my_method`, which is a print statement, and have also
@@ -412,7 +412,7 @@ still expecting a block as an argument:
 ![](./images/C14197_09_10.jpg)
 
 
-Figure 9.10: Output for my\_method without the block\_given? method and an empty block
+
 
 
 
@@ -489,7 +489,7 @@ The following steps will help you complete the exercise:
     ![](./images/C14197_09_11.jpg)
 
 
-Figure 9.11: Output for my\_method with an empty block
+
 
 The output, when we call the method with an argument, would be as
 follows:
@@ -499,7 +499,7 @@ follows:
 
 
 
-Figure 9.12: Output for my\_method with an argument
+
 
 If we remove `block_given?` from `my_method`, the
 `basic_logger` method will be called to check whether we
@@ -530,7 +530,7 @@ The output would be as follows:
 
 
 
-Figure 9.13: Output for proc
+
 
 Another key feature of `proc` is that it can accept arguments.
 Ruby supports the functional programming paradigm and the
@@ -571,7 +571,7 @@ The output would be as follows:
 
 
 
-Figure 9.14: Output for Proc.new
+
 
 Until the `.call` method is invoked, the `proc`
 object lies dormant; nothing happens.
@@ -634,7 +634,7 @@ The following steps will help you with the solution:
 
 
 
-Figure 9.15: Output for the sum function using proc
+
 
 If you have ever wondered how the `inject` method works, then
 this is a very simple implementation of the same thing, and we achieved
@@ -701,7 +701,7 @@ The following steps will help you to complete the exercise:
     ![](./images/C14197_09_16.jpg)
 
 
-Figure 9.16: Output with profit-inclusive prices
+
 
 
 
@@ -789,7 +789,7 @@ exercise:
 
 
 
-Figure 9.17: Output for sum using lambdas
+
 
 We have successfully used `lambda` to create a `sum`
 function.
@@ -840,7 +840,7 @@ The output would be as follows:
 
 
 
-Figure 9.18: Output for proc versus lambda
+
 
 If you take a look at the first method of this file,
 `my_lambda_method`, you will see that it works in a very
@@ -944,7 +944,7 @@ following output:
 
 
 
-Figure 9.19 Output for recipe preparation
+
 
 Let\'s now solve an activity, where we will be implementing every topic
 we have learned about in this lab.
@@ -988,9 +988,9 @@ The output would be as follows:
 
 
 
-Figure 9.20: The invoice generator output
 
-**Note** The solution for the activity can be found on page 484.
+
+**Note** The solution for the activity can be found in the current directory.
 
 
 Summary

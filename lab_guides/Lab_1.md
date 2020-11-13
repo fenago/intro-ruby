@@ -1645,11 +1645,7 @@ Observe the following steps to complete the activity:
 ![](./images/C14197_01_45.jpg)
 
 
-
-
-
-**Note** The solution to the activity can be found on page 458.
-
+**Note** The solution to the activity can be found in the current directory.
 
 
 Boolean
@@ -1711,10 +1707,7 @@ Follow these steps to complete the activity:
 ![](./images/C14197_01_47.jpg)
 
 
-
-
-
-**Note** The solution to the activity can be found on page 459.
+**Note** The solution to the activity can be found in the current directory.
 
 
 Summary
