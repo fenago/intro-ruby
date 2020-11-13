@@ -4,8 +4,6 @@
 
 
 
-
-
 Overview
 
 By the end of this lab, you will be able to use blocks to improve
@@ -65,8 +63,6 @@ Metaprogramming makes use of multiple elements available within the Ruby
 language. Let\'s take a look at the first building block, which is
 called `blocks` in Ruby.
 
-
-
 Blocks
 ------
 
@@ -83,8 +79,6 @@ arrive at a company, where we just have to pass a template to a block
 and it automatically generates and sends the email. The only variable
 here is the detailed information of the new colleague in the template.
 
-
-
 Syntax for Blocks
 -----------------
 
@@ -92,8 +86,6 @@ There are two ways to write blocks: they can be either enclosed in
 `do`/`end` or within curly brackets
 (`{}`). Let\'s examine a simple example showing how to write
 them.
-
-
 
 ### With do/end
 
@@ -113,10 +105,6 @@ The output would be as follows:
 
 
 
-
-
-
-
 ### With curly brackets ({})
 
 Consider the following example:
@@ -130,8 +118,6 @@ The output would be as follows:
 
 
 ![](./images/C14197_09_02.jpg)
-
-
 
 
 
@@ -170,8 +156,6 @@ The output would be as follows:
 
 
 
-
-
 Let\'s understand what we have done here. We are calling a
 `star_tree` method and passing a value of `30` to
 it, which is then used by the block as an iterator variable number,
@@ -189,8 +173,6 @@ implemented in that `.each` method.
 The ability of blocks to be passed as parameters makes them a great
 candidate for applying abstraction, which is a very important concept of
 object-oriented programming (OOP).
-
-
 
 yield with Blocks
 -----------------
@@ -222,8 +204,6 @@ The output would be like the following:
 
 
 ![](./images/C14197_09_04.jpg)
-
-
 
 
 
@@ -262,8 +242,6 @@ be as follows:
 
 
 
-
-
 Now let\'s take a look at the output for multiple statements:
 
 ```
@@ -278,10 +256,6 @@ The output should be as follows:
 
 
 ![](./images/C14197_09_06.jpg)
-
-
-
-
 
 
 
@@ -312,8 +286,6 @@ you complete the exercise:
 3.  Next, we add the calls for addition, subtraction, multiplication,
     and division:
 
-
-
     ```
     #Addition
     puts calculator(8, 2) { |a, b| a + b }
@@ -330,8 +302,6 @@ you complete the exercise:
 
 4.  Open up the Terminal and execute the following code:
 
-
-
     ```
     ruby block-yield.rb
     ```
@@ -343,12 +313,8 @@ you complete the exercise:
     ![](./images/C14197_09_07.jpg)
 
 
-
-
 The beauty of this program is that we can add n number of operations
 using the combination of a block and `yield` in our code.
-
-
 
 block\_given? with Blocks
 -------------------------
@@ -377,8 +343,6 @@ output:
 
 
 
-
-
 If we don\'t pass anything to the `&block` method, we get the
 following output:
 
@@ -391,8 +355,6 @@ The output would be as follows:
 
 
 ![](./images/C14197_09_09.jpg)
-
-
 
 
 
@@ -410,8 +372,6 @@ still expecting a block as an argument:
 
 
 ![](./images/C14197_09_10.jpg)
-
-
 
 
 
@@ -470,8 +430,6 @@ The following steps will help you complete the exercise:
 
 4.  Finally, let\'s take a look at how these methods are called:
 
-
-
     ```
     my_method
     my_method {puts " Changed Flight status to Departure "}
@@ -489,8 +447,6 @@ The following steps will help you complete the exercise:
     ![](./images/C14197_09_11.jpg)
 
 
-
-
 The output, when we call the method with an argument, would be as
 follows:
 
@@ -499,13 +455,9 @@ follows:
 
 
 
-
-
 If we remove `block_given?` from `my_method`, the
 `basic_logger` method will be called to check whether we
 passed a block or not.
-
-
 
 The proc Object
 ---------------
@@ -527,8 +479,6 @@ The output would be as follows:
 
 
 ![](./images/C14197_09_13.jpg)
-
-
 
 
 
@@ -571,8 +521,6 @@ The output would be as follows:
 
 
 
-
-
 Until the `.call` method is invoked, the `proc`
 object lies dormant; nothing happens.
 
@@ -581,8 +529,6 @@ as only then will a `proc` object be instantiated.
 
 In the following exercise, we will discover how to implement
 `proc` objects in a program.
-
-
 
 Exercise 9.03: Performing the sum Function on a Range of Numbers
 ----------------------------------------------------------------
@@ -628,11 +574,7 @@ The following steps will help you with the solution:
     ruby proc-sum-range.rb
     ```
 
-
-
 ![](./images/C14197_09_15.jpg)
-
-
 
 
 
@@ -646,8 +588,6 @@ blocks of code, methods are bound to objects while `proc` is
 bound to the variable it is assigned to. Methods represent the
 object-oriented part of Ruby, while `proc` represents the
 functional programming side of Ruby.
-
-
 
 Exercise 9.04: Calculating Profit Using proc on an Input Price List
 -------------------------------------------------------------------
@@ -703,8 +643,6 @@ The following steps will help you to complete the exercise:
 
 
 
-
-
 Lambdas
 -------
 
@@ -743,8 +681,6 @@ Let\'s implement lambdas in an exercise. Since `proc` and
 lambdas are quite close in terms of implementation, to understand them
 well, let\'s implement the same problem using lambdas instead of
 `proc`.
-
-
 
 Exercise 9.05: Creating a Program to Sum a Range of Numbers Using Lambdas
 -------------------------------------------------------------------------
@@ -789,16 +725,12 @@ exercise:
 
 
 
-
-
 We have successfully used `lambda` to create a `sum`
 function.
 
 **Note** We can use the square brackets with `proc` too, that is,
 instead of using .`call` when passing arguments to both
 `proc` and `lambda`.
-
-
 
 proc versus lambda
 ------------------
@@ -840,8 +772,6 @@ The output would be as follows:
 
 
 
-
-
 If you take a look at the first method of this file,
 `my_lambda_method`, you will see that it works in a very
 similar way to any Ruby method, returning the final statement of the
@@ -856,8 +786,6 @@ This is a very subtle difference between the two methods, but the
 difference is usually encountered when you are stuck in a bug.
 Therefore, we need to understand the internal workings of procs and
 lambdas and how they react to a `return` statement.
-
-
 
 The Story of the Chef and the Restaurant
 ----------------------------------------
@@ -944,12 +872,8 @@ following output:
 
 
 
-
-
 Let\'s now solve an activity, where we will be implementing every topic
 we have learned about in this lab.
-
-
 
 Activity 9.01: Invoice Generator
 --------------------------------
@@ -985,8 +909,6 @@ The output would be as follows:
 
 
 ![](./images/C14197_09_20.jpg)
-
-
 
 
 

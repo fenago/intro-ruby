@@ -73,8 +73,6 @@ that make it a delight to program with:
 
 
 
-
-
 ### Object-Oriented
 
 Ruby is thoroughly object-oriented, and objects are the basic building
@@ -101,8 +99,6 @@ fruit2 = Fruit.new
 ```
 
 
-
-
 ### Interpreted Language
 
 Ruby is an interpreted language, meaning that it\'s ready to run the
@@ -123,8 +119,6 @@ Hello World
 ```
 
 
-
-
 ### Duck Typing and Dynamic Typing
 
 Dynamic typing means a variable can refer to objects of various types
@@ -143,8 +137,6 @@ x.map(&:to_s) # => ['a', 'b', 'c']
 The preceding example illustrates how the `x` variable
 responds to `map` and returns the expected object. This means
 that the `x` variable here is considered an **array**.
-
-
 
 ### Multi-paradigm Language
 
@@ -188,8 +180,6 @@ print ruby_method(5)
 Here, the `ruby_method` always stores the result of the object
 passed as an argument, subtracting 1.
 
-
-
 ### Reflection
 
 Reflection in Ruby makes it very easy to understand what\'s happening at
@@ -215,8 +205,6 @@ obj.send method_name
 
 
 This shows that we can inspect every element of the code.
-
-
 
 ### Metaprogramming
 
@@ -271,8 +259,6 @@ IRB comes out of the box with Ruby, and you can access it using the
 2.  Once the shell is open, you can type commands and get instant
     results. Try a simple `puts` command in Ruby using IRB:
 
-
-
     ```
     puts "Hello World"
     ```
@@ -285,8 +271,6 @@ IRB comes out of the box with Ruby, and you can access it using the
 
 
 
-
-
 **Note** `puts` or `p` is used to print any string or value
 of a variable that follows `puts` or `p`.
 
@@ -295,8 +279,6 @@ Let\'s do some addition with the Interactive Ruby Shell:
 1.  Go to the IRB shell.
 
 2.  Type the following command:
-
-
 
     ```
     17 + 13
@@ -310,11 +292,7 @@ Let\'s do some addition with the Interactive Ruby Shell:
 
 
 
-
-
 **Note** You can use IRB or any IDE to complete the exercises/activities in this book.
-
-
 
 Exercise 1.01: Creating and Assigning Variables
 -----------------------------------------------
@@ -327,8 +305,6 @@ variable, such as the number of students, and print it in IRB:
 
 2.  Type the following code:
 
-
-
     ```
     number_of_students = 17 + 13
     ```
@@ -338,8 +314,6 @@ variable, such as the number of students, and print it in IRB:
 
 3.  Next, we print the value carried by the
     `number_of_students` variable:
-
-
 
     ```
     puts number_of_students
@@ -353,8 +327,6 @@ variable, such as the number of students, and print it in IRB:
 
 
 
-
-
 **Note** The Ruby variable stores the value assigned to a variable in one IRB
 session, as seen here with `number_of_students`.
 
@@ -364,8 +336,6 @@ numbers, and text. All of these data types are based on classes; for
 example, `string` is an object of the `String`
 class, since Ruby is an object-oriented language. We will discuss a
 variety of data types in Ruby later in this lab.
-
-
 
 Exercise 1.02: Assigning a Variable of One Data Type to a Different Type
 ------------------------------------------------------------------------
@@ -380,8 +350,6 @@ integer and another variable that has a string value:
 
 2.  Type the following code:
 
-
-
     ```
     number_of_students
     ```
@@ -392,8 +360,6 @@ integer and another variable that has a string value:
 
     Next, we assign a different value to the
     `number_of_students` variable:
-
-
 
     ```
     number_of_students = "not enough for a session"
@@ -408,16 +374,12 @@ integer and another variable that has a string value:
 
 
 
-
-
 We can simply change the data type of a variable with the inbuilt Ruby
 methods. For example, to convert an integer to a string, we can use
 **.to\_s**, and we can convert a string to an integer with **.to\_i**.
 
 We will study Ruby methods in detail in the later sections of this
 lab.
-
-
 
 Exercise 1.03: Getting the Type of a Variable
 ---------------------------------------------
@@ -434,8 +396,6 @@ operator on the variable itself.
 
 2.  Now, we will try to identify the data type of our
     `number_of_students` variable using `.class`:
-
-
 
     ```
     number_of_students.class
@@ -468,8 +428,6 @@ things, where using the dot (`.`) operator is not possible.
 Aesthetically, `.` operator is preferable to `::`
 operator.
 
-
-
 Getting the Details of the Public Methods of an Object
 ------------------------------------------------------
 
@@ -491,15 +449,11 @@ The output should be as follows:
 
 
 
-
-
 You can use all of the preceding public methods on this object to
 execute various operations and manipulate the value set in the object.
 If you look closely, some of the methods are self-explanatory, such as
 `upcase`, and `downcase` (we will discuss individual
 data types and their **class** later in this lab).
-
-
 
 Running Ruby Code from Ruby Files
 ---------------------------------
@@ -535,8 +489,6 @@ Terminal.
 
 4.  Run the following command from root where your Ruby file is saved:
 
-
-
     ```
     $ ruby hello_world.rb
     ```
@@ -549,13 +501,9 @@ Terminal.
 
 
 
-
-
 So far, we have learned how to print any value from a variable. Now that
 we know how to write and execute a code from a Ruby file, let\'s up the
 ante a bit by getting user input.
-
-
 
 Exercise 1.04: Getting User Input in a Ruby Program
 ---------------------------------------------------
@@ -570,8 +518,6 @@ perform a simple addition. To do so, follow these steps:
 3.  Add the following code to it. We use `puts` to print a
     string. The `gets` function is used to allow the input
     data to be stored in the `num` variable:
-
-
 
     ```
     puts  "Please enter a number to added to 5"
@@ -589,8 +535,6 @@ perform a simple addition. To do so, follow these steps:
 
 5.  Open the Terminal and execute the following code:
 
-
-
     ```
     $ ruby sum.rb
     ```
@@ -600,8 +544,6 @@ perform a simple addition. To do so, follow these steps:
 
 
 ![](./images/C14197_01_09.jpg)
-
-
 
 
 
@@ -629,8 +571,6 @@ The three major data types used in Ruby are as follows:
 
 We shall look at each of these data types in detail in this section.
 
-
-
 Number
 ------
 
@@ -639,8 +579,6 @@ Let\'s look at the class hierarchy for various number types:
 
 
 ![](./images/C14197_01_10.jpg)
-
-
 
 
 
@@ -657,8 +595,6 @@ In Ruby, integers are represented by two classes: **Fixnum** and
 
 
 
-
-
 Both of them are inherited by the **Integer** class. As the name
 suggests, the **Bignum** class represents big numbers, and **Fixnum** is
 used to represent small numbers. Ruby manages the conversion between the
@@ -667,8 +603,6 @@ two automatically. For example, if the result of an operation of two
 **Bignum**. From Ruby 2.4 onward, Ruby has unified these classes and
 automatically uses the **Fixnum** class for small numbers and **Bignum**
 for large numbers.
-
-
 
 Exercise 1.05: Performing Common Integer Operations
 ---------------------------------------------------
@@ -682,8 +616,6 @@ addition (`+`), subtraction (`-`), multiplication
 2.  Type `irb` to enter the IRB.
 
 3.  Type the following code:
-
-
 
     ```
     1 + 2
@@ -699,8 +631,6 @@ addition (`+`), subtraction (`-`), multiplication
 
 4.  Perform subtraction using the `-` operator:
 
-
-
     ```
     3 - 1
     ```
@@ -714,8 +644,6 @@ addition (`+`), subtraction (`-`), multiplication
     
 
 5.  Perform multiplication using the `*` operator:
-
-
 
     ```
     3 * 3
@@ -731,8 +659,6 @@ addition (`+`), subtraction (`-`), multiplication
 
 6.  Perform division using the `/` operator:
 
-
-
     ```
     10 / 2
     ```
@@ -745,8 +671,6 @@ addition (`+`), subtraction (`-`), multiplication
 
 
 
-
-
 You may ask yourself how is the principle of BODMAS (Bracket, Open,
 Division, Multiplication, Addition, and Subtraction) managed by Ruby
 automatically. Ruby follows an order of precedence for operators, which
@@ -756,8 +680,6 @@ Workflow.*
 
 **Note** You can also divide up long integers by separating them with an
 underscore. For example, 121\_334 will be read in Ruby as 121334
-
-
 
 Exercise 1.06: Using Common Integer Methods to Perform Complex Arithmetic
 -------------------------------------------------------------------------
@@ -780,8 +702,6 @@ The following steps should help you with the solution:
 3.  Type the following code. `.next` will provide the next
     number:
 
-
-
     ```
     2.next
     ```
@@ -795,8 +715,6 @@ The following steps should help you with the solution:
     
 
 4.  Next, we will calculate the previous number using `.pred`:
-
-
 
     ```
     2.pred
@@ -812,8 +730,6 @@ The following steps should help you with the solution:
 
 5.  Then we calculate the LCM of 2 and 3 using `.lcm`:
 
-
-
     ```
     2.lcm(3)
     ```
@@ -828,8 +744,6 @@ The following steps should help you with the solution:
 
 6.  We also calculate the GCD of 2 and 3 using `.gcd`:
 
-
-
     ```
     2.gcd(3)
     ```
@@ -839,8 +753,6 @@ The following steps should help you with the solution:
 
 
 ![](./images/C14197_01_19.jpg)
-
-
 
 
 
@@ -872,8 +784,6 @@ The output should be as follows:
 ![](./images/C14197_01_20.jpg)
 
 
-
-
 Floating-Point Numbers
 ----------------------
 
@@ -886,8 +796,6 @@ There are two ways to write floating-point numbers:
 -   1.121 -- with a decimal point
 -   1.0e3 -- adding an exponent provided there is one number before and
     after the decimal point
-
-
 
 Exercise 1.07: Performing Common Operations for Floating-Point Numbers
 ----------------------------------------------------------------------
@@ -904,8 +812,6 @@ number completely or up to a certain decimal point:
 3.  Type the following code. Firstly, we have assigned our
     floating-point value to a `num` variable and applied
     various methods to it:
-
-
 
     ```
     num = 2.339
@@ -935,8 +841,6 @@ number completely or up to a certain decimal point:
     integer. When we pass a number to `.round(2)`, we get a
     floating-point value to two decimal places:
 
-
-
     ```
     num.round
     num.round(2)
@@ -947,8 +851,6 @@ number completely or up to a certain decimal point:
 
 
 ![](./images/C14197_01_21.jpg)
-
-
 
 
 
@@ -973,12 +875,8 @@ The output should be as follows:
 
 
 
-
-
 **Note** To find out more about all the methods and the operations they can
 perform, refer to the official documentation at <https://ruby-doc.org/core-2.5.0/Float.html>.
-
-
 
 String
 ------
@@ -1045,8 +943,6 @@ most common ones:
 -   We can also use double quotes (`""`), which is the
     cleanest way to define a string.
 
-
-
     ```
     "'Ruby' Fundamentals"
      => "'Ruby' Fundamentals"
@@ -1057,10 +953,6 @@ most common ones:
 
 
 ![](./images/C14197_01_23.jpg)
-
-
-
-
 
 
 
@@ -1079,8 +971,6 @@ class\' built-in methods. Lastly, we will discuss the bang
 2.  Type `irb` to enter the IRB.
 
 3.  Enter the following code to define the string:
-
-
 
     ```
     title = "ruby fundamentals"
@@ -1101,8 +991,6 @@ class\' built-in methods. Lastly, we will discuss the bang
 4.  Next, we check the number of characters in this string, including
     white spaces, using `.size`:
 
-
-
     ```
     title.size
     ```
@@ -1117,8 +1005,6 @@ class\' built-in methods. Lastly, we will discuss the bang
 
 5.  Then, we also check the number of characters in this string,
     including white spaces, using `.length`:
-
-
 
     ```
     title.length
@@ -1141,8 +1027,6 @@ class\' built-in methods. Lastly, we will discuss the bang
 6.  Next, we change the case of the string characters to uppercase using
     `.upcase`:
 
-
-
     ```
     title.upcase
     ```
@@ -1157,8 +1041,6 @@ class\' built-in methods. Lastly, we will discuss the bang
 
 7.  Similarly, we can change the casing to lowercase using
     `.downcase`:
-
-
 
     ```
     title.downcase
@@ -1175,8 +1057,6 @@ class\' built-in methods. Lastly, we will discuss the bang
 8.  We can also capitalize the first character of the string using
     `.capitalize`:
 
-
-
     ```
     title.capitalize
     ```
@@ -1191,8 +1071,6 @@ class\' built-in methods. Lastly, we will discuss the bang
 
     **Note** that even after the operations are applied on the string, the
     original string object remains the same:
-
-
 
     ```
     title
@@ -1212,8 +1090,6 @@ class\' built-in methods. Lastly, we will discuss the bang
     method can permanently modify the receiver (the original value), it
     should be used carefully:
 
-
-
     ```
     title.capitalize!
     title
@@ -1227,12 +1103,8 @@ class\' built-in methods. Lastly, we will discuss the bang
 
 
 
-
-
 There are other operations as well that we can perform on strings, a
 common one being concatenation.
-
-
 
 Exercise 1.09: Performing String Concatenation
 ----------------------------------------------
@@ -1263,8 +1135,6 @@ The following steps will help you to perform the exercise:
 
 4.  Next, we concatenate the two strings using whitespace:
 
-
-
     ```
     title = var1 + ' ' + var2
     ```
@@ -1284,8 +1154,6 @@ The following steps will help you to perform the exercise:
 5.  We can also do the same with the `.concat` method and
     modify the Ruby code:
 
-
-
     ```
     title = var1.concat(var2)
     ```
@@ -1300,8 +1168,6 @@ The following steps will help you to perform the exercise:
 
 6.  We can also concatenate the strings using the `<<`
     operator:
-
-
 
     ```
     title = ""
@@ -1320,15 +1186,11 @@ The following steps will help you to perform the exercise:
 
 
 
-
-
 Another way of accomplishing string manipulation is by using a technique
 called string interpolation. This works much more elegantly than the
 previous methods and allows you to combine the elements of different
 types together in a string. With string interpolation, we can combine
 strings and embed Ruby expressions in a string.
-
-
 
 Exercise 1.10: Performing String Interpolation
 ----------------------------------------------
@@ -1341,8 +1203,6 @@ for Ruby Fundamentals and interpolate it in a sentence:
 2.  Type `irb` to enter the IRB.
 
 3.  Define the string:
-
-
 
     ```
     title = "Ruby Fundamentals"
@@ -1360,8 +1220,6 @@ for Ruby Fundamentals and interpolate it in a sentence:
 4.  We can also perform operations with string interpolation, for
     example, addition within a string:
 
-
-
     ```
     puts "My Favorite Ruby book is #{title} and I am using it for last #{10+30} days"
     ```
@@ -1374,11 +1232,7 @@ for Ruby Fundamentals and interpolate it in a sentence:
 
 
 
-
-
 This is how we carry out addition operations with string interpolation.
-
-
 
 Exercise 1.11: Extracting and Searching a Substring from a String
 -----------------------------------------------------------------
@@ -1391,8 +1245,6 @@ To extract certain characters from a string, follow these steps:
 
 3.  Define the string and then extract the characters, starting from the
     eighth position in an index to the second position from it:
-
-
 
     ```
     quote = "Just Do IT"
@@ -1414,8 +1266,6 @@ To extract certain characters from a string, follow these steps:
 4.  Now, we will use string methods that can check whether a certain
     character, or group of characters, exists in a string object:
 
-
-
     ```
     quote = "Just Do IT"
     quote.include?("Just")
@@ -1430,11 +1280,7 @@ To extract certain characters from a string, follow these steps:
 
 
 
-
-
 Here, the characters must be together and in exactly the same order.
-
-
 
 Exercise 1.12: Replacing Part of a String with Another String
 -------------------------------------------------------------
@@ -1467,8 +1313,6 @@ sentence \"My favorite book is Java Fundamentals\" with the word
 
 5.  Print `title` to confirm the change:
 
-
-
     ```
     title
     ```
@@ -1478,8 +1322,6 @@ sentence \"My favorite book is Java Fundamentals\" with the word
 
 
 ![](./images/C14197_01_39.jpg)
-
-
 
 
 
@@ -1494,8 +1336,6 @@ replaced. The output would be
 the `gsub` method comes into play. It is used to globally
 substitute a character, or set of characters, with another.
 
-
-
 Exercise 1.13: Replacing All the Values inside a String Using gsub
 ------------------------------------------------------------------
 
@@ -1508,8 +1348,6 @@ the instances of Java with Ruby in a sentence:
 
 3.  Define the string value and apply the `gsub` method as
     follows:
-
-
 
     ```
     title = "My Favorite Java book is Java Fundamentals"
@@ -1524,14 +1362,10 @@ the instances of Java with Ruby in a sentence:
 
 
 
-
-
 This way, we can easily replace the same values across the object using
 `gsub`. This is very handy when we have to replace one
 character that is repeated and acts as noise in data with something
 meaningful.
-
-
 
 Exercise 1.14: Splitting a String and Joining a String
 ------------------------------------------------------
@@ -1546,8 +1380,6 @@ going to split a string of words into an array of words.
 
 3.  Define the string and use the `.split` method to divide
     the string into an array of words:
-
-
 
     ```
     title = "My Favorite book is Ruby Fundamentals"
@@ -1564,8 +1396,6 @@ going to split a string of words into an array of words.
 
 4.  Use the `split` method to separate values in a string:
 
-
-
     ```
     months = "Jan; Feb; Mar"
     months.split(';')
@@ -1581,8 +1411,6 @@ going to split a string of words into an array of words.
 
 5.  Join the array values in a string:
 
-
-
     ```
     data = ["My", "Favorite", "book", "is", "Ruby", "Fundamentals"]
     data.join
@@ -1593,8 +1421,6 @@ going to split a string of words into an array of words.
 
 
 ![](./images/C14197_01_43.jpg)
-
-
 
 
 
@@ -1614,8 +1440,6 @@ string class:
 
 
 ![](./images/C14197_01_44.jpg)
-
-
 
 
 
@@ -1674,15 +1498,11 @@ The output should be as follows:
 
 
 
-
-
 You get Boolean values when you check whether the `a` variable
 is `nil`.
 
 We will learn more about the Boolean data type in *Lab* *3*,
 *Controlling* *Program* *Flow.*
-
-
 
 Activity 1.02: Calculating the Area and Perimeter of a Candy Manufacturing Plant
 --------------------------------------------------------------------------------

@@ -4,8 +4,6 @@
 
 
 
-
-
 Overview
 
 By the end of this lab, you will be able to open classes to
@@ -60,8 +58,6 @@ topics such as opening classes in Ruby, monkey patching, and some
 in-built Ruby methods that allow you to create methods dynamically at
 runtime.
 
-
-
 Opening Classes
 ---------------
 
@@ -111,8 +107,6 @@ Ruby program, if we call this method on an integer, it will add
 called the method on an integer object with the value of `9`,
 and the result is 17.
 
-
-
 Exercise 10.01: Opening the Ruby String Class to Add a New Method to it
 -----------------------------------------------------------------------
 
@@ -150,12 +144,8 @@ exercise:
 
 
 
-
-
 Thus, we have successfully managed to add a method to an in-built Ruby
 class.
-
-
 
 Monkey Patching
 ---------------
@@ -197,8 +187,6 @@ Executing this file from the Terminal will provide the following result:
 
 
 
-
-
 This was the expected result, since the size of this array object,
 `my_array`, is clearly `2`. However, imagine we have
 a requirement where we must always increment the size of an array by
@@ -221,8 +209,6 @@ The output should be as shown in the following screenshot:
 
 
 ![](./images/C14197_10_03.jpg)
-
-
 
 
 
@@ -259,12 +245,8 @@ The output would appear as follows:
 
 
 
-
-
 Here, you can see the implementation of incorrect logic using monkey
 patching and how this would spoil this class for this Ruby program.
-
-
 
 Exercise 10.02: Using Monkey Patching to Add/Subtract Values
 ------------------------------------------------------------
@@ -304,8 +286,6 @@ The following steps will help you to complete this exercise:
 3.  Next, we monkey patch the `sum` method of the
     `calculation` class by opening the class:
 
-
-
     ```
     class Calculation
       def sum
@@ -325,8 +305,6 @@ The following steps will help you to complete this exercise:
 
 4.  Next, we initialize the object of the class:
 
-
-
     ```
     calc_obj2 = Calculation.new
     calc_obj2.first_number = 10
@@ -340,16 +318,12 @@ The following steps will help you to complete this exercise:
     ![](./images/C14197_10_05.jpg)
 
 
-
-
 It is amazing when you first discover that you can modify methods right
 in the core classes, but monkey patching executed incorrectly can render
 the program a train wreck. Always think through the edge cases in the
 case of monkey patching. It is advisable to avoid using monkey patching
 for core classes and libraries. Its application is preferred in relation
 to classes created on your own.
-
-
 
 method\_missing
 ---------------
@@ -398,8 +372,6 @@ The output should be as follows:
 
 
 
-
-
 It is quite clear that we have no method as `xyz` in
 `MyClass`, which we can use with the object, `obj1`.
 
@@ -426,8 +398,6 @@ The output should be as follows:
 
 
 ![](./images/C14197_10_07.jpg)
-
-
 
 
 
@@ -505,8 +475,6 @@ The output should be as follows:
 
 
 
-
-
 Please note that even though we have `method_missing` defined
 for the method, `xyz`, we still get a `false` value
 for `respond_to?`.
@@ -547,12 +515,8 @@ The output should be as follows:
 
 
 
-
-
 Now, we get an appropriate response to the `respond_to?`
 method.
-
-
 
 Exercise 10.03: Managing Ghost Methods for the Company Class
 ------------------------------------------------------------
@@ -607,8 +571,6 @@ that start with `employee_`:
 5.  Let\'s run this program to see the result. Type the following
     command from the Terminal:
 
-
-
     ```
     $ruby exercise3.rb
     ```
@@ -643,8 +605,6 @@ that start with `employee_`:
 
     Exercise10.03.rb
 
-
-
     ```
     14   def method_missing(method_name, *args, &block)
     15     if method_name.to_s =~ /employee_(.*)/
@@ -673,8 +633,6 @@ that start with `employee_`:
 7.  Let\'s run this program to see the result. Type the following
     command from the Terminal:
 
-
-
     ```
      $ ruby exercise3.rb
     ```
@@ -686,16 +644,12 @@ that start with `employee_`:
     ![](./images/C14197_10_11.jpg)
 
 
-
-
 We have now achieved the desired result. We sent
 `employee_location`, hence, we got the location as
 `Tokyo` in our result. Had we called a `ghost`
 method, `employee_age`, we would have not obtained any result.
 Play around by creating more ghost methods to see whether there are any
 changes in the results.
-
-
 
 The Define Method
 -----------------
@@ -755,13 +709,9 @@ The output should be as follows:
 
 
 
-
-
 `define_method` is best used with lists where we can loop
 around a list and place `define_method` in it to keep creating
 methods when called. We will learn about this in the next exercise.
-
-
 
 Exercise 10.04: Creating a Welcome Message Program Using define\_method
 -----------------------------------------------------------------------
@@ -809,8 +759,6 @@ England, Germany, and Brazil:
 4.  Run the preceding code using the following command from the
     Terminal:
 
-
-
     ```
     $ ruby exercise.rb
     ```
@@ -820,8 +768,6 @@ England, Germany, and Brazil:
 
     
     ![](./images/C14197_10_13.jpg)
-
-
 
 
 
@@ -870,8 +816,6 @@ resources when making a request in REST:
     instructions.
 -   **DELETE**: The HTTP DELETE verb is used to remove a resource by ID.
 
-
-
 HTTP Requests with Ruby
 -----------------------
 
@@ -900,8 +844,6 @@ are trying to get a complete `index.html` page from
 response and copy the relevant data from it. This technique is used in
 web scraping to harvest huge amounts of data from other internet
 websites.
-
-
 
 Exercise 10.05: Creating a Ruby Program to Make a Successful GET Request
 ------------------------------------------------------------------------
@@ -946,8 +888,6 @@ URL to get the data:
 
 5.  Let\'s now run this Ruby program from the Terminal:
 
-
-
     ```
     $ 
     ruby http_get.rb
@@ -961,14 +901,10 @@ URL to get the data:
 
 
 
-
-
 As we can see, with `response.code`, we received the status
 code `200` for our request from the server, and with
 `response.body`, we received the data from the GET request we
 made.
-
-
 
 Status Codes
 ------------
@@ -1010,8 +946,6 @@ completing the requests.
 
 **Note** Read more on status codes here: <https://packt.live/2OP9Rtr>.
 
-
-
 Exercise 10.06: Creating a POST Request Using Ruby
 --------------------------------------------------
 
@@ -1038,8 +972,6 @@ The following steps will help you to complete the exercise:
 
 2.  Install the `httparty` gem using the following command
     from the Terminal:
-
-
 
     ```
     $ gem install httparty
@@ -1082,8 +1014,6 @@ The following steps will help you to complete the exercise:
 
 6.  Let\'s now run this Ruby program from the Terminal:
 
-
-
     ```
     $ ruby http_post.rb
     ```
@@ -1093,8 +1023,6 @@ The following steps will help you to complete the exercise:
 
 
 ![](data:application/octet-stream;base64,/9j/4AAQSkZJRgABAgEAlwCXAAD/7QAsUGhvdG9zaG9wIDMuMAA4QklNA+0AAAAAABAAlwAAAAEAAQCXAAAAAQAB/+4AE0Fkb2JlAGSAAAAAAQUAAklE/9sAhAACAgICAgICAgICAwICAgMEAwMDAwQFBAQEBAQFBQUFBQUFBQUFBwgICAcFCQoKCgoJDAwMDAwMDAwMDAwMDAwMAQMDAwcFBw0HBw0PDQ0NDw8ODg4ODw8MDAwMDA8PDA4ODg4MDwwREREREQwRERERERERERERERERERERERERERH/wAARCACeA5ADAREAAhEBAxEB/8QBogAAAAcBAQEBAQAAAAAAAAAABAUDAgYBAAcICQoLAQACAgMBAQEBAQAAAAAAAAABAAIDBAUGBwgJCgsQAAIBAwMCBAIGBwMEAgYCcwECAxEEAAUhEjFBUQYTYSJxgRQykaEHFbFCI8FS0eEzFmLwJHKC8SVDNFOSorJjc8I1RCeTo7M2F1RkdMPS4ggmgwkKGBmElEVGpLRW01UoGvLj88TU5PRldYWVpbXF1eX1ZnaGlqa2xtbm9jdHV2d3h5ent8fX5/c4SFhoeIiYqLjI2Oj4KTlJWWl5iZmpucnZ6fkqOkpaanqKmqq6ytrq+hEAAgIBAgMFBQQFBgQIAwNtAQACEQMEIRIxQQVRE2EiBnGBkTKhsfAUwdHhI0IVUmJy8TMkNEOCFpJTJaJjssIHc9I14kSDF1STCAkKGBkmNkUaJ2R0VTfyo7PDKCnT4/OElKS0xNTk9GV1hZWltcXV5fVGVmZ2hpamtsbW5vZHV2d3h5ent8fX5/c4SFhoeIiYqLjI2Oj4OUlZaXmJmam5ydnp+So6SlpqeoqaqrrK2ur6/9oADAMBAAIRAxEAPwD7+Yq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq+a/zG/Kv84PzF82ai9n+depflj5Gsbe3Gj2vlWKOO/muSp+sPfTzB+S8tlVQNveuVwiRcid72H8PDQ5/FsnMbRA2r1HrxWeXwp5H+Vv/ADkN5t0X/nG/84/Pv5hTReatb/JTXtf8uwanEnpRa5+i2ijtJ/hFP3kswRiPAnrh1ee9PizQFSyxjQ6cU5mA+HVdPp/8InhJsQJN9eER4iD57fa8j/MzV/zl/JfyDo/5y+bP+cjNRuPzR1eCHVIfy6FtFLo15yAmnsoLOJPVVY4QwaWvFSC3gMnmlHS5PDHro1K+dXUpA9B1DXpwdVj4/osemu8/SPMnYe99g63qH5o/m35M/LTX/wAp/NWn+Q/LnnTR4dY1nUp7b63qUMF5BbzQw2SufTDkSOC7D4SBh7RwHBknEnaAlVc5EX9nIsNJn48YlXqJFg8h/O+0UxD/AJwe84ea/PX/ADj5oHmDzp5gvfNGvy6trNvLqF/J6k8kdvfTRRhm/wAlVAGWzA8PHLvjZ9/FL9SckPDz5sd2IZDEe4Ri+uspZOxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2Kvzx/5yV/5ys8s6f55m/5x90zz/a/lrcNEv+MPOF4krNplpNGkhtdOSOOQtdSxyijkcUBrucoxCOoJ4jUBse+ZBoxHcO8/BulI4ACBcjuO6PcT+gJpqGmfk9+cH/OJ/wCZn5Nf84067Z+ZYPLuiJFDDbCYO9+sn16H15J44y0txLbMSxrVjU5Z2nLIYxzxH0yiY1yrGYkgDyiWPZk448hgTvKMrJ78kZQ4j8Xztov5gflYn5X+aJF1LWPzQ/5y5/MXy7N5dfStT0+4/Sml3uowtam1ggeIRW1rA0lSQd1UFsnrcAzA4dPuMhHFLvBI4jM9Nunew0U/AlHJn28L6Y9PRyEe++993Wnnz8tP+cX/AMqvym8l/mp51svLFxZ+XLTR7aS5WZ1up9LtbeO6KelFJsGcdadcl2vnjmnkEOvFQ8twGnQ4JxxCUh19XlKdyr73zd/z7w/OD8tZvyn8t/lRF5stX/MN9T1++GiBJfXNu15PcCTl6fp09I8vtZeIGWKFfwQ9Xl6yP98Pmz1eWP5rLK9smUmH9L0g/wC9PyfpNmMydirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVSS68s+W764ku77y/pt5dTEGSae0hkkYgADkzISdhTABS2itP0jSdJEq6VpdppizkGQWkEcIcrWnLgq1pXvkr6Irqtj0XR4r1tSi0mzj1FyS10sEYmNetZAvL8cA25JO/NdqGj6RqwiGq6XZ6mIK+n9bgjm4cqcuPNWpWgrTBSb6Iey8ueXtOnW60/QdOsLpAQs1vaxRSAMKEBkQHcZIFiQnOBLsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirCvzC/MLyp+VvlPU/OvnTUhpeg6VwEkgVpJJJJXEcUUUaglnd2AUD9WVzyCJA5kmgBzJ7h8mcMfFfQAWSeQCG/LX8xNL/NHytB5t0fR9b0OxuLia3S18wWL6de1hbiXMEhJCt1U9xl88ZiAT1F+7cjf5NMcgkSB0Ne/YHb5s+yDN2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2Kvh3/nI3z35M8++ePyr/Ijy/qkOu/mHpP5l+Wdc1rQwjj6tpWnt9fuZZ3kVYyvoMCFUsTWlMdCPEzwyDcY/EJPcfDlAfHikGepPh4JxlzyREYjvucf+JL7iAAAAFAMWDsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdir44/5y50zTrK2/JLzZa2UFp5isPzd8pQx6nEipcLDc3JhmjaUAMUdKKwJoRjpDw6vEB/F4kT5g45mvmGWffTZr/hgJDykJxoj5vsfFi7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq89/NH8s/K/wCbvkzU/I/m6CWXStRaKZZbeQxXFvc27rLBcQSLQq6OoIP0dMrnj4iJA0YniiRzB5fpbIZOGwdwRRB5EL/yz8kXv5e+Vbfyzf8AnXXfP89tPNKNW8xTLPfMkjVWIuiIOKDZdumZE58QHkOffuTZ+bjwhwk+Z5d2wFD5M/ytsdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVfOX/OSn5weZvyZ8u+QtX8r6PYazdebPPGkeVbiPUBMUig1ITgyp6MkZ5howBU036Y4Dx6jHiPKZonrzHL7U5RWDLlHPHDiHcdwP0u/Lz84fM3m78/vz0/KfUtH0+00D8rINDl06+t/V+tXJ1a29dhcc5Cm1DTio98dLeTDLJLYiZgO7Yy/QI/NGpBx5IRHKUDL5GI+8lln5o+ZvzZ8v6x+XFt+WvkSy846TrmuJaearq6ufQbS9NJStzEvNORoWP7VKAcTWocO+URltGjZ8+n4694XLtilKO8gRQ7xvf6HsOKvCfz/APzW1j8o/LvkzWdF06z1OfzJ520LyxOl76nCO31WcxSyp6boeagVWtR4jIQlefFi6TnwnyFE7fJOT04cuXrCBkPM2B+lKPzb/ODzN5A/Nr/nH7yBo2j2GoaT+bmq6nYandXQmM9qmnwwThrfhIiVKyNXkD0yelPiZjiPLglId9xEj+gLqBwYDlHMTxw+GQ1+h3/OPv5w+ZvzZvPzmt/Mej6fpKflt5+1PyjYNYer/pFvYceMs3qyP8ZDivEAe2Onuenx5ZbGd7dNgP038kZwceeWLoBEg/1uL9AD6NxV2KuxV81eYPzl816X/wA5MaF+SlnounTeXNV8hXfm19QkE31tbm3uJ4FhBEgj4EolfhJ365QMpMM5644cUfP6efzLbkgIjEemTJKEvIRjxbLf+cdfzx1n81fyFt/zh866RZ6NcqdYlubXSRI0Qt9KnnjJjE0rsWIgPVuvhl+unHT4hlldcBmfdudvgA16fHPJmlh2sTEB76j+ksE0b/nOPyB5gh0670f8q/zav9P1b02tb2DynLJayRykBZFmS4ZSm9eQJFMtx4jKQhysgb7Df9DVPKBEy51fLfk9E/5yT/OHzN+TXlzyFrHlfRrDWbnzb530jytcR6gJisUGpicGVPRkjPMNGAKmm/TKsPq1GPEeUzRPXmOX2tk9tPlyjnCHGB37gb/Nv8vPzh8zebvz+/PT8p9S0fT7TQPysg0OXTr639X61cnVrb12FxzkKbUNOKj3x0t5MMsktiJmA7tjL9Aj811IOPJCI5SgZfIxH3kvo3FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FWP8AmLyp5b8221jZ+Z9DstetdNvrfU7SK9iWZIby1blBcIGBo6HdT1GACpCXWJsHuKneJieUhRHeO4tWHlPyzpev695q07QrKy8yeaEtk1fUoYVS5vVs0MduJ5AKuI0NFr0GSieGPCOV3XmeqZHiIJ6Ch5C7r5vz/wD+cn/ye8l+TfzK/I381fL6apZ+cfOv51+V7TVpm1O8ktpYZ5XeRFtXmMKgmBfsqPxw9kx8LURxx5GOeR678Jl98iz1f7zBknLnGMa+FR+59I/85V+ePMvkb8pLiTyfqH6G8y+bdb0fyrY6nTewbWbyO2e5XpRkjZip7NQ5jTHHlxYSSBkyCBI5gVKRr/S0vH4ePJmq/DgZAHkTYA+98ff85Ef84zfl3+VWlflN5z0W81/U/N9x+aHlK0v9R1bV7u8+utNeVllkgllaIOSlaqop22y/Bk4NVhjAAA5Bt3AAlx9TjMtLmMzZGIm/O4j9L9MdV8qeW9c1Ty/resaHZanq/lSeW50e8uIlkmsZp4/Sle3cglCyfCSO2CIqXGOdEX1o8w2S3jwnlYNeceR+DWg+U/LPleTW5fLmhWWiSeZNSm1jVWs4ViN5f3FPVuZuIHKR+Iqx3OSBqIiOQ5DuTI8UuI86AvyjsPk8k8x/kzq+u/n/AOQvzog8+ahpukeTtCvNIn8sxV+rXr3Pq0lY8wAP3oLAqSSiUIoajTfupZCd+OIA8qN/jzJXUHxIQgNuGRlffYA/R8iXvmKHYqx+byp5auPMtr5yn0Oyl81WVhJpdvqzQqbuOylcSSW6y05BGYAlelciIAX/AEhUvMDeisjxAA/wkkeRIon5Mdn/AC/0PRvy58weQvImiaf5a0690vUrWxsbSNba0jnv45uTcY1oA0kpZiB3JzG7SxSz4J4hzMDCN8hcSA5WkzCGcZZfzxKR6ncWffs+HtB84/8AOT3/ADin+U3lxPzF/LvyZ5m/K78tdOstNv7ry1qd22sRWUZWH606XMaRNx5AkKB9HUZ2bVQMgcmwPDGxyHKAv8c3BwaWQiRj3I4pUeu5mf0vva/0Tyl+Yei6Fc63otp5g0n1rLXtOjv4VlEVxGBNa3Cq4PGROVVPUHHLhOLJv9UCaPdIbbLiyjLjsfTOIsd8TRooyw8p+WdL1/XvNWnaFZWXmTzQlsmr6lDCqXN6tmhjtxPIBVxGhotegyMTwx4Ryu68z1bZHiIJ6Ch5C7r5shwIdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVfC35vf844/85C/mp5j0+/k/wCcg9H03y75U83xebvKumN5Vgkk064spJGsVluFuI2n9JZKHmKN1IyOn4schO7kBIX5TFHb3NuaYlGUIioyABHuq/t3euax+Snmf8xvyU1b8r/zl8/L5s8x6lP9Zj8y6Rp8WkvbTW86XFjLDbxs6hoXjFTX4t64c0b4JQ9MoESB5+oE7/I01YTXFGfqjIEEf0SAK+e7yHWv+cTvzH8/J5W1D81/z0uPOvmDyPr2k6roXpaalhptvFYXcM85ltIJV9W4mjjMfqux4g145ZjIjlhmreMgT/VF+mPdZon3NWWBninhv0yiQO+ztcj1oX833XkG12KvA/Mf5M6rrv5/+Qvzoh8+ahp2leTtDvNIn8sxV+rXr3Pq0lZuYAH70FgVJJSOhFN3TfupZCd+OIA8qN/jztOoPiQhAbcMjK++wB+j5EvfMUOxV2Kpdq8Go3Ok6nbaPfJpmrXFpNHZXkkQmS3uHRhFK0TEBwjEEqetKZXmjIxIiaPQ86LPEQJAyFi9xysPj67/AOccfzj/ADFth5d/Pn8/287+Q3nhnu9B0DQ7bQV1D0ZFkEF5NC0jvESoqoI7b5bGMLEpCzE2AfpvzHWmsylRETViiRzo86L7Mt7eC0t4LS2iWC2to1iijQUVEQBVUDsABTDOZkSTzO5Y44CAERyAofBWyLN+b3/OW2pXn5l/mp+TP5fflB5j1uT81Py+842t1rVnpsNymn6Zp91DFcPeahccEiBSNV4Dkah2XqQMPZu+qjl5wiCJ3y2IuI8zuK6r2gK0s8fKUwDDvveIPuF3fk/SHArsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdiqgltbRzS3EdvGlxNQSSqgDvTYcmAqaU74qr4q7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXyl/wA5bN+ZSeVPy1b8sb7XrHUZPzG0GDV28vm4Ex0iczx3Xr/VgW9EFlL1+EAVODTmtVi4vpMql/N6Hf5FOYD8tmr6hjJj38Vjl57qP5Z3P5iwf85L/wDOS/8AijUdff8ALjTrPy5N5ai1AXB0qMy2RkvTp5YekaOn7wJUgnffI6eYx6ac8h3E5c+YhHiPy3HyZajEZZsYhylA2By4uKMR8dvteOXP/Of35Rf8r003SoPzN04fkwPJs1zdaj+jr3m3mE3oSOAk2nrAC3HIUXjvua0yzAARPj6cPB5/zkZqEIcPMylxeUeEcP2vr/TPzx/KvWPy0vfzh03zdBdflvp6TyXGti3uljRbaX0ZSYmgEx4vtsnyyGeQxREp7A1X+dLgH+y2Y4f3pMY7kXflUeM/Zu8Y/wCcbvPHl78wvPf51eZfKf8AzkBc/m95e1C9sbmz0GSyurWDy1DP9Z9OGJrmOMMH9MgcFGyVarGpuw4pQwDi3uUvV8jX2jy7q3Y5piWUEbDhA4e8igZfjvYh/wA5L/8AOZHkr8qtZ8u+S/LvnextfOdh510Sy84WU9jczPYaBcL697MGa3MRPpNH9gs1G2FelOlyRyZI2fR6hI+cbFf6YN2SHDjn/O4LgO+RIr7Db6K/K7/nID8oPzpudYs/yw86Qea7nQIoZr9Iba7g9FJy6xkm5t4QeRjbpXplogSOLoCB87/U0HIBIR6kE/AVf3h8s6j5a87flR/zlZ/zj/o8X52effOXlv8ANC483XGpaL5g1P17CIWGmyT28UMMccQ4I81QGrTitOmDsuNeJil6uDDEiR3lfHGN+/8AW360cWPxRteSIocgJG6feOv+YND8q6Pf+YPMmrWuh6JpcRmu769lWGCJBQVZ2IG5IAHUnYb5VkyCAuTGEDI0Hmf5bf8AOQn5Mfm9f32lflz+YGneZtT01TJPZxCaCcIpozpHcxQs6gkVZQQKip3y4YyY8Q5NcpgHhPN5d5mH5nP/AM5eeWbXT9Q8wQ/ldP8Alnfy3MMDXA0f9MpdzRxmTiPQE/CVCtTyoPbMKJJhqI734YMD3EmI9PnsW/MQBgI/1SXH5xELHF5WmH/OGs/5i3P5B+Wrn81LzXr3znNf6t9afzILgaiIkvp44BILkCSnpoCtRShFNs2WcARhVXwgmu8kn7Lr4OPwGGXJG7AmRH3ARGz2+y/MfyNqPnnWPy0sfMtncee9AsYdS1DRlLfWILWfj6cjVUKa81qASQGUkAMK4+P1gyjuImj5Es8g4CBLbiBI8wNmbYq7FXwF5sb87B+ZX/OZqadqvm2Py/Z/l1aXHkRLZrv6vFqj6YzSHSuI4euJ4TUR1areJzDEpfl8nPiGWFd/BZka8qIBcvgjLUYR/DLHMS7hIz4QT51uLZbqn5p/mD+Tv/OFOg/mhqdu+u/mNoXlbQZ76LzOtz6st7fXFnbzi9BeKfmv1hq1YHkN/DNprYfv4YsdeqUIX0sgC9vNxOy8RyA8d7DLLz9PHKP3D4Ja356f85C/lh5k/L+H8/vInktPJv5i69aeWLXV/Jd7eySWGo39fqxuor4fEjFTXj0oTXahjgjGeTwTYkRIxPQ8I5e89GqUj4RzR3jEAkdRE1v8LfWf+PPKR89f8q0/TMf+OBov+Iv0V6cvP9GeuLb6x6np+lT1Txpz5e1MqgOMSI5RIEvIyFj7m6Y4QCf4rA865rB548s3/mLzP5H0/V1l83eV9Nt9R1GwVJVe2t71ZPq0hkKCM8zE1ArEim9Mw9TkvDklA/RYJ7pGPGPs3bIDhnCMv4tx5xEuE/a+Kv8AnHT/AJym/L7yp+Q35XN+eX5twx+evMrapIX1aee+vpYjq17HbPcNGk7Rr6SqFMhUcR7ZtdTwmcYQq+DGT75Qidzyve2rIKnkl/CJyA90TWw94L7P1X8yfI+i6l5I0rUfMVvDd/mRK8Hloosk0GoyJEJ+MVxEjwjlGQy8nHL9muY4ieM4v4gCa61H6vl1Y8Y4PE/huIvzn9PzRXmvz35T8kP5cj80aumly+btYt9B0eMxSzPd6jdBzFAiwxyEVCEliAoA+IjBAccxAcyCa8oiyfgyl6YmZ5CrPvND4nuZdgVK9cvpNL0TWNThRZJtOsbi6RXrxZoY2cBqEGhK75jazMcWKWQc4xJ+Qtv02IZMkYHqQPmafCv5c/mj/wA5v/md5J8sef8Ay/5O/J2LQfNdml/aJeXmtxXKwuSB6iKZFDbdAxzY+CITAycvSTXPhkBL50XDxZRkFx7yPjEmP6H2dq3nzypoHmfyh5K1rWI7LzX57F5+g7Axys14dOhE93wdY2RfTjNfjYV7VOUQHGZRjvwjiPlEnhv5tgBEBOXeB/nHor3PnbyvaecdN8gXGrJF5v1jTLjWLPTjHKXlsrWRIpphIEMYCvIooWB32GQhISlKI5xAkfKMiYg/MJn6REnlImI8yBxEfJ5V5j/5yk/IDyjbXd15j/M7TNLSx1i80GeN0uGnTULBxHcxfV0geUhGIBcLw8GOCMxIRI/iHEPdZHw3B5sjAgyB/hIB95Al8dpDk9e0rzZ5Z1vy3becNK16xvfKt3aG/j1WOdPqhtlBZpTKSFVVCnlUjjQ1pTLMw8L69qa8Uhk+je9vjyfBH5/f85b/AJba9F5C8p/k9+bon85P+ZHlu01CDRmu4Wm057v07uI3HpJFJEwYBgrkHIaeJyajDX0mY4vcQeYPmnVSGPT5r2kMZ4fKQI5EeVvsj8yvzo/K38n7WzvPzJ866f5Uj1Dl9VS5LyTzBKcmjghSWVgKipC0GA5BfD1bBAkX0U/LH52flV508laz+YflbztYa35P8u2095ql9beoTZw20TTStNAYxMpEaFgClSBsDk837uPFLYd/497HAPFn4cN5WBXv5MYX/nKD8gWm1q3/AOVoaQs3l3RIfMWoq5mX0dOnWFo5SWiAZiJ0HprWSrAFa7Yz9PFf8MuE+UrqvPfbbZGP18NfxDij5ir+G2+/Rnemfmn+XeseQovzQsPN+nSfl/NbNdrrkkvo2oiRzGxYyhGVg4K8SA3L4aV2x1H7n69uXxvcLhPibR35/Z+P0sa/Lb/nIT8mPzev77Svy5/MDTvM2p6apkns4hNBOEU0Z0juYoWdQSKsoIFRU75MYyY8Q5MZTAPCean5t/5yI/JXyJN5ntvN/wCYWnaDdeTri0tNWt7kTetDNewC5gRI1iZpS0R5fuw1B9qmUjICBLoSYj3xri+Vjfk28BuvIS/zZEgf7k7c9leb8/vydg/LV/zgbz3YSflxFJFDJrUCTzRxyzSpCkckUUTzK/ORQVKAioJAGTzfujES24vp89if96fk14pDJfDvw8/Ll+sPkr8qv+c/vyi1C/8AzR/5WZ+ZunaXZWfnK+tvJ4j069pP5eiSIWs5MNo7Eu3MnnRvYCmHGB4UCfqN8Xlvt9jPPQykQ+nhhX9avX9r7X86/mn+Xv5deXLbzb5482WPlry/ecPq11eMy+uZE5qsUSq0jsV3oqk0yOY+HLglsd9vdz5McP72PHHcGjfv3HNKfyy/O/8AKj85Ib6f8tPO9h5q/RtPrUUHqw3EQJoGaC4jhlCk7BuNK98sOM1xdGHiC+Hq+S/+ch/LXnb8uPzK/KDz9oX52efXsfzC/N3y7od95Vl1Omhw2F7KzTQQ28caNwIhpxZiKE4Oy48OcYpeoSjmlvvyiZD5Xt7g36oceHJkGxjGNV8I3+n3v0AvLy00+0ub+/uobGxsonnuLi4dY4ooowWeSR2IVVUAkkmgGVzmIizsGEYkmg8Q8nf85O/kJ+YHms+R/J/5maVrfmks6x2MYnjMzRglhBLLDHHKQATRGOwrk8QMxcff5/JhkkIGpe5hX54N+ZS/nf8A84vJ5PvtetvJ1zresR+botMNx9RkgjtYJbb9ICEcOHJHCmQ0qad8jpD/AIQRL6Tjnz5cQEq+O4pnqQPyxI+rxMXLnwkni+G27X/OL8n5kyX/APzkAv5h33mC8htfzP1m18uDXvrFE0eP0zb/AFIzgA255ngU+HbbDpo1pcfFvIg8X87pHf5E/FdVGtRLh+nhgR3XLika+YHwfV2KHYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXEAggioPUYkK+G9WsdFtP+c+fK1vc2VlbW2pfkzdQ2sckcaRz3Ka00jJGpADOIwSQN6e2T0BsZ49f3Z+G4ts1v91h/4Zk/6ZxfbS2NklubNLSBbRq1gEaiM1NTVKU/DIHdrGz41/IqCC2/5yw/5zKht4UghT/AvFI1CqK6XdE0AAGWaQ/4J/yWzf71s1397j/4V/vkL/zm3a6ZbaB+R2rXVtbQQW35z+Upb+8lRFVLcNdB2nkIACDYEsaZHREDV4h38Y95MdgnJ/iuf/hf+/g+0rSx0+1BksbS3thMBVoI0TkOo3UCvXA0893x5+df/rXP/OGv/g9f90Zcl2d/e5v+Ex/6aht1X+Lf8lYfpY9/znVN5m/RX5G2WjQ6Hc6VqH5iWaX8PmiWaHQ5rhLed7GLU3h+IQGVSTXbkFrtmNh4jq8dV9OUi/54A4a/pUZcPmuWvy0zvzgDX8wy9V+V8N+TH/8AlXX/ADkr5j/Nf8k/OHnnR/ye8nW/krX/AKwL3yreahHql7YT28sV3YRLcxFJUeNi3AU3UGopmXpTGGYyle8JxIH8Vj0kj+jIA+W7i6kSni4IVQnCV9wEhfzG3ns/RDKm52KvAtB0/wDIeP8A5yD87ahocunN+fkugWaeYI0eU3a6X+6ELFG/dAkLFy4/FQR89uOOm2hPw/p4hxf1qP7eW1+adRZMOP8Amng91m/0+dXWz33FDsVdir5C/wCc8gT/AM4ofmwFPFjFpND1of0xp+RhGRz4RE0fFhR50e9zuz/ql/wvJ/0zk8B17y9+Ynln88PyHsv+covzDb8zvIGpaqknlC+06wttE02y82QqWs01O0hRjISD+4f1PtcqrSuZGjkPHkK/ecEjA9CP46H86v2b8tTkv8tGQ+gmImOoB+mz1j/O+3z7TJJHb/8APwK39d1hN9+R8kVtzIX1XTXldlSvUhVJIHYVyGgP7vUDrx4j8OAi/mXM1v8Ad4T/AEpj48IQP5ZeZ/L/AJp/5y1/5ycuvLmrW2s2umeUfLOmXM1q/qRpd2318TRcx8JKE0NCaHbqDmrxj/BdTPpKYMT3gYTG/nE/fyTqD/hGCPUY5g+R8US+4h59/wA4deUvyq0r/nDiTzT5q0jR4rTzFb+YZfNOoagsb+rDb319bIkryVoqwxqFUeOwq2+x7cIhg4Ry8KJFczOUAfnfL4AcmenBOsmRzGQj3DY/LmT8Ur0TyJ5t8y/84CflhrFpFMv5h/lfaW/nryq0wb1wdHvJ7m0jpUk+rYfAB3quX9q5/wAtmx6g/wCTGPjHK4mEY5QfvPucTs3DHPHJgFiOSWQQ7weMmB3/AKX2F6v5R8y6R/zkj+fHkTzro8ovfIn5O+T7bXogDyjPmXzZADFG3UF7WyQ1HVWkGOPB4WTLk50fBge8bTySHvBhH5tcspy4sWM7E/vZju4SYQj/AKYSPwfb2UN7HfN//KJ+aP8AtkXv/JiTMDtX/F8n9SX+5Ll9n/30P60fvD87/wDnGH/nHLXPMP5KflJ5tg/5yL/NXy/bX+k2t8ug6XrEUOlQKHJ+rxQm2YiI8aU5d83uY+FliT6qEDUtwfTE0fLp7nTYR4uKQHpszFx2I9UhY8+vvewfnjJHbf8AOWX/ADhpc3DrBbtL52txJIQqmWXSI1jSp25MxAA7nMTs8/vso78IrzrICfsdlqv8Vvuyw+21PU/M/l/Wv+c7vJei6Tq1tqOqeWPyx1yDVbeB+bWks99ZSRxykbByorxrUClaVGY3Z44sueY5eFjjf9KOQkj4cQ+7oWvXmoYInn4kzXkcdD/cljP/ADh/5F8o3+v/APOUfmvUPL9nf6/efm/5n0WS8uYllf6hE1vMIF5ghVLzsWp12r0GXYMY/JYY9JwJl5+qUfuH397brj/hcj3RhXlcf2PAkkGmf84JvpPrS2HlD/las+i62YWZBb+X382SR3EfIEcY+NFPscxtHkOaOgOT1cfh8fFyNDId784hjqbxz1vh2DEz4K5g1Dl8CXuP/OYlz+W/l3y1+Qnk7RRo2m6vefmV5Sn0bTrFIll/R1tdAPLGsY2iAZQG6GtBXMiEpT1uG+YncvIVW/xP4poyxjHQ5iORxkR8zYO3wB/BZ/8Am/8Amd5rn/OrS/yi/KT8vPKfmb8zbXys3mC51nzlK8NlZ6ZLc+j6EQgRp3Z3QMeJoO/tDAJZDOUaAgYxkepJHEB8OL7fnfmMYRgJWTLiMR0HS/jw/Y+UfJd35qm8w/8AOfsfnCDyhY6+/wCWET6lbeRZ5ZtHFymmanHyBl+L1gopJXcNtmNIg6TII3Qywq+Q4h6uHyNfNytLxfn9PdfSfftkjXF593lSYflh+Xfk6Xzf/wA+9bKTRLd7ab8v/MHmG4RlqLjUDaWF6Jpq/bKzyl1DVANKdBm9lEDV6j+hhxgfGZgfmJH4m3QyleHEP52bID/mxJH+4Hw2ed37eY4v+ce/yS0zQrbQZdFuvz38wwXlt5mklg0GSWLUdTfT4dRaDcW5lXcdOQWu2aPsqUpR0Z2P+DyI4v5/Sv6VGXD5u11wAlq+Y/fxBr+YeG/hfDfk+m/+Vdf85K+Y/wA1/wAk/OHnnR/ye8nW/krX/rAvfKt5qEeqXthPbyxXdhEtzEUlR42LcBTdQaimbHSmMMxlK94TiQP4rHpJH9GQB8t3F1IlPFwQqhOEr7gJC/mNvPZOvym8m+WNd/5zR/5yv8yazottqeseWofKEGmT3KCX6st/pT/WDGrVUM4t1BalaVHQnIaAcOlMhzllyAnyiQa+347dwcrtAXkxA/6nfx4v2st/5xf0nTLLzd/zlbodtYwRaNbfmrcyQ2QRfQjabT7GVysZHEVc16Zj9nSMtJG/4cueI8oxnQHwYazbVS88WE/ExNlJP+cSLHRZPMv/ADlZptzZWT39n+c2vTfVZI4zLFbTLB6L+mRUI3E8TShoaZk6Y3pMRHTjB94lyZ6//Gpf8Lw/7hm3/OQv5nX3lrzd+VH5beTfIehedPzN8+zajP5efzLJ6Gl6amnwKbieR1RpCzJJxCx0b9WU4xLJllGFXGHFIn+bI1Q95j9nyE+GGMSndGQAA6kDn8OL7Xzr+Vt1+Y3/AEPFpsH5lWHkHR/M5/LPUobu28gT3EsTRJfWzxDUVuKOsoJqoI+zQ5PQEXmEb+mBP83iEgLHnRo/Bp13EBhuvrlX86uAn5Xy87e0/wDOY/2/+cYv/N6eUf8Aidxk9B/jkP8Aheb/AHDfl/xXN/VH+6D6J/NzyjpHn/8ALTzp5I17Wj5d0rzXpkulzaisiRG3NzSONgzkL9tgKH7VePfMPVYPFjw3RuJHvjISH2hnp8vhy4qvY37iCD9hfJmm+aPzD/IbV/ym8nfnJ5N8neb/ACprevad5S8s+b/LMX1PUYL2WJorWe602RHUcgtCYXooqT4HZQy/mc1EcMyJyFbjYer3WD7nClh8HCTH1Qjw2DzqxXvrbzffOYzc7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXkP5rfkR+Vv512+mQ/mL5ZTWZdGLmxu4Z5rO8txLT1EjubaSKUK3EclDUNMr8McXF15e8ebMZDXD05/FBW3/OPn5XWf5T3f5JwaRer+Xl65klsjqd61wWa6W8NLwzm4H71Adn6bdNssy/vBES/h5fMn9LHAfCkZR5yu/jHg+55RpP8Azgh/zjTomr2euab5Q1SDU7G5gvI5jr+rtWW2cPEXDXpDAFRs1Rk8WQ45CUeYNj3teXGMkTGXIgj4F9L+dvI/lT8xvLWo+UPOui2/mDy9qqqLizuVqpKMHR1IoVZWAKsCCDuMpnjEqvobHeC3QyGPLrt8Hnn5Tf8AOPH5Wfklda5efl3o17pc/mKKGC+N1qd9fh0gZ2jCrd3EwShkP2aVyyRuBgeR5/Ij9LSYAyE+oBHzo/oeQT/84Bf84w3NyLufydqslyrO6yHzDrHJTJ9rifru1fbIxHCKHub8uU5JGUuZJJ95fQa/lD+Xh/Liz/Ka88uQ6t5CsLSOzh0zUme9AjhbnGWknaSQsrbhi3IHeuHUfvqMulV0qhwjl5NeD91tHrd+fEbP3vP/AMu/+cU/yN/K3zHD5s8oeUHt9ftTIba6vr+81A2xkVkYwC7nmEZKuVqoGxIycMhiCB1286YTgJc/2PorIM3Yq860/wDKfyBpX5ka7+blh5ehg/MDzLp0OlahqoZy8trBw4rwLFFJESBmABYKoJPEY4v3cZRjykeI+8f2rlPiGJlvwggeV7/pei4q7FXYqwz8wvy/8rfmj5Q1fyJ51sH1TyzrohF7bRzS27SC3njuI6SwvG4pJEp2Pt0wxPDKMxziRIe8cmzHlMLI6gj4SBifsKF/MP8ALPyb+aflk+UfOulHU9FFzbXkaxzS200NxaSLJDLDcQPHKjqV6qwNKjoTg/jjk/iieKJ7jv8AraoARgcf8JjwkHcGPxYr+an/ADj9+VP50Joo/MPy22sXPl4MlheQ3VzaXkSPTnH9ZtpYpSjFQSpahO+R4Bx+J1+/ryZRkRDg6fPy5pp5H/JX8s/y31O/1byT5Xt/L9zqelWmi3KWzOIXtLKSeWIGEsU5c7mRmenJifiJyUvUJRPKZBI6bR4B7hW1NYxgGMusQQD/AFjxH37jm8kh/wCcJP8AnGiHWxriflzGZPVMxsGvbxtMLMxYg6eZzbEVPThTDhPh8unK96+bPKfENnrzrb7mb/m9+bM/5V2ujaB5d/KrzR+Ymt+YbS5h0ez8v2Ak0yGS3ESRw6hdl1S2RvVHEkEUDeGUZjLMZQAskc5fSeKx8eW4/WzxxjjAJ2F16eYqunxSb/nFf8lX/I78qLLy9qUNrD5q1+9uNf8AMC2Y/wBHjvr0qfq8P/FcEapEv+rXvmblIjGGKJJEIiIJ5yPWR95+ynHgZTnPNMUZyJr+aOkfx1JfSGUNqGvbSDULO7sLpDJa30MlvMoJXlHKpVhUEEVB7ZXmxDJEwlyIIPuOzPHkMJCQ5g2PgkHkryb5f/L3ypoXkrypZtp/lzy3arZafbPLJO0cKVIUySs7t16kk5kZMpmbPcB8IgAfYGjHiEBQ7yfjIkn7Sxv80vyg/L385tCt/Lv5iaAmuadZXIu7Vllltri3nAK84LiB45UJUkHiwqNjmPLEDIS6i9/e3xyEAx6H9CQ+Rv8AnHn8ovy21XQtb8l+Uo9E1Xy9p95pttcxzTNJJDftA9w1yXkb1pGNtH+8k5MAKA0y/wAQ2T3xET3cIPFy95toOIGr6EyHvI4fuZj5I/Lnyl+XY81Dynpz6ePOnmC88z6tznln9bU78Ri4mHqu/AN6S/CtFHYZGJqEcY5QFR8hZP6W3IeOZmeZAB/zdglekfk7+XWi+RdX/LW28uRXHkrXZ7+5v9MvXku45pNSne5uSxnaRqNJIWAr8PalMo8CPhRw/wAMAIx8hE2N/I9WQyEZJZf4pkyl5kij9g5PN/L/APziL+QPljTpNN0fyOIkl1Kw1U3Mt7dz3gn024ju7VVupZ3lESSxK3phuB7rmSJkGJH8MhIf1gCAT3/UebTPGJCQPKUTE/1TRNd3LoyX81v+cc/yh/Om/wBL1b8wfK36T1bR4jb21/a3VzYXQgLF/Rea0lhd4wxJCsSASfHKY4wJcQ5nn503HITHh6fc1oH/ADjh+Tfla083WPlzydDotn578vr5Y1uGzmmiS609VuE4kLIKSMLqTlKKOxNS2wyWQccZRPKREiPOIoV3e4McUvDnHJH6oXR95EvjuOqfaR+TH5eaHf8A5banpujSwXn5SaNcaB5Yc3dw4tLC6higljZWlIlJSBRyk5MKbHLjmkZzydZxEZecYniH2tPgxqMekZSkP60gQfvU7P8AJD8r7PyFqP5ZHyrb3/knVb271G50zUGkvEe6vblruWXlO0jA+s5ZaH4T9mlMxBgiMcMQ5QAjHviBfXn15uQMhE5ZOsyTLzJAHL4MM/Lv/nFP8jfyt8xw+bPKHlB7fX7UyG2ur6/vNQNsZFZGMAu55hGSrlaqBsSMyYZDEEDrt500zgJc/wBj1HQfy58peWvOPnjz7o+nPbeZ/wAxf0f+nrpp5ZFuP0XC8Frxid2SPijkHgor3rkYHhh4Y5cUpf50qv7mzIeMiR5gcI912r+VvIPlfyZqXnHV/L1g9nf+fdWOua1I00sonvjFHAZFWR2CDhEo4qAPbIYojHDw48uKUv8AOmeKX2oyeufiHnUY/CAqLyD8xP8AnEr8h/zS8yXXm7zb5OkfzFfhReXmm6he6a9yUUIrzizngEjBVADMCaCmRhjELrqb8rPNnPIZVfTb4My/Mz8iPyu/N7RNE0Hz95aGsWnlw/7jJkuJ7a7tfgVGEV1BJHMoZUHIBvioK5PKOOfiH6je/Lnuww/u4eHH6dtufLlzS3yH/wA44fk5+WWuaT5k8k+T4tE13RtOutLivY553llt714Xm+ss8jGZyYEo8nJlAoCBlgyEEkdQInuoHi5e/r1a5Ywav+EmQ95HD9zzzzX/AM4Q/wDOOnnXzFrPmrzH5T1K+1rXtRm1W7lXXdViQ3dxI0ryJFHeKifExoFAA7ZTjxiAAj0cjLlOQ3LuA+EQAPuer+XfyL/LLyx+W17+UmneX2n8haiZ2uNO1C6uL4yG4cSOTNcyyyfaUFfi+EjamTz/AL2IjLlHl5UTL7y14f3UjKPM8/iOH7gw/wAgf84nfkP+WnmKHzX5W8l8detHMtpc6je3eom1kII52y3k0yxNRiKoAabZZjyGAoddr6172E8Ylz+XTbd9G5WzdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVdirsVY9P5u8p2vmC38p3PmfSbfzTdwi4g0aW9gTUJYWLASJatIJWUlDuFpsfDGHqut651067rL01e18vNkOKuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2Kvin/AJzc/Lvyld/k750/NWLy9awfmX5FtdP1DR/M1tCqapafUb6KVVW5VefpKJHJUnjuT75DFkGDNiyDb97j4u4iUowPF8D9zkYsYzCWOe4MJ/Coylt3bvsnTb231HT7HULS5jvLW+t454Z4WDxypIoZXRlqCCDUEZflgYSMTtRcDTT48cZd4H3I3K292KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2KuxV2Kvnz/nKzzNqfk/8A5x3/ADY1/R2iTUbbRHgiaaNJUX63JHbOxRwymizEgEEVyjNiGUwxHlPJjgf6s5xifsLl6IesnujOQ98YmQ+0Mh/JX8kvIX5G+Vn8u+QrK6tLTUpIr2+ku7ue7kuLoQxxNL++kcJUIPhQKvgozOzZL9I2AJIHddd+/R1emjcRkPMxjZ+Z/wB8XsWUOS7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXyr+f/wCWX5zfnLdJ+XGnax5X8u/kdrkdg/mO8ZLuXzLOba69ee0t12tlikWKMB68geXUbF022WOTJyhMTiB/Fw0RxX/S7vJlPJKMSMW0pRMST/DxWCR37Hq+qEUIqouyoAo+Qwk3u1wgIgAdNl2Bk7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq7FXYq//Z)
-
-
 
 
 
@@ -1127,8 +1055,6 @@ for naming conventions and it is advised to use this for improved
 programming experiences.
 
 **Note** You can refer to this naming convention at <https://packt.live/2Bcz1dN>.
-
-
 
 Exercise 10.07: Creating Your Own Ruby Gem
 ------------------------------------------
@@ -1191,8 +1117,6 @@ installing it and then publishing it in a Ruby program:
     and install this generated gem locally. Run the following command
     from the Terminal:
 
-
-
     ```
     $ gem build ruby-fundamental-gem.gemspec
     ```
@@ -1210,8 +1134,6 @@ installing it and then publishing it in a Ruby program:
     program locally without a machine. Run the following command from
     the same folder on the Terminal:
 
-
-
     ```
     $ gem install ruby-fundamental-gem-0.0.1.gem
     ```
@@ -1227,8 +1149,6 @@ installing it and then publishing it in a Ruby program:
 
     Our gem is successfully installed. Now, let\'s try using this gem by
     requiring it. Open IRB and use the following code to test it:
-
-
 
     ```
     $ irb
@@ -1265,8 +1185,6 @@ installing it and then publishing it in a Ruby program:
 
     Run the following command to publish your gem:
 
-
-
     ```
     $ gem push gem_name.gem
     ```
@@ -1274,8 +1192,6 @@ installing it and then publishing it in a Ruby program:
 
 Thus, we have successfully created our own Ruby gem and published it for
 the world to use.
-
-
 
 Activity 10.01: Implementing GET and POST Data to an External Server
 --------------------------------------------------------------------
