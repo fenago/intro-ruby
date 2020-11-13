@@ -61,6 +61,7 @@ To copy and paste: use **Control-C** and to paste inside of a terminal, use **Co
 
 - To open new terminal, click `File` > `New` > `Terminal`.
 - Open file browser to open lab exercise(s) as shown below:
+
     ![](./images/filebrowser.png)
 
 
