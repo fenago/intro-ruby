@@ -1,9 +1,9 @@
-
-4. Ruby Methods
-===============
+<img align="right" src="../logo.png">
 
 
 
+Lab 4. Ruby Methods
+===================
 
 
 Overview

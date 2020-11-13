@@ -1,8 +1,9 @@
 
-3. Program Flow
-===============
+<img align="right" src="../logo.png">
 
 
+Lab 3. Program Flow
+==================
 
 
 

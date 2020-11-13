@@ -1,8 +1,8 @@
-
-1. Writing and Running Ruby Programs
-====================================
+<img align="right" src="../logo.png">
 
 
+Lab 1. Writing and Running Ruby Programs
+========================================
 
 
 Overview
@@ -49,6 +49,19 @@ With all these characteristics, Ruby gives developers an enriching
 experience, making programming productive and fun. In addition to Ruby
 being a fantastic programming language, the Ruby community is also very
 friendly and supportive.
+
+
+#### Pre-reqs:
+- Google Chrome (Recommended)
+
+#### Lab Environment
+Exercises are ready to run. All packages have been installed. There is no requirement for any setup.
+
+All examples are present in `work/intro-ruby/Lab01` folder. You can access lab at `http://<host-ip>/lab/workspaces/lab1_Programs`
+
+To copy and paste: use **Control-C** and to paste inside of a terminal, use **Control-V**
+
+**Note:** To open new terminal, click `File` > `New` > `Terminal`.
 
 
 

@@ -39,7 +39,7 @@ Labs for this course are available at endpoints shared below. Update `<host-ip>`
 6. ##### Modules and Mixins
 		* http://<host-ip>/lab/workspaces/lab6_Modules
 7. ##### Introduction to Ruby Gems
-		* http://<host-ip>/lab/workspaces/lab7_Ruby Gems
+		* http://<host-ip>/lab/workspaces/lab7_Ruby_Gems
 8. ##### Debugging with Ruby
 		* http://<host-ip>/lab/workspaces/lab8_Debugging
 9. ##### Ruby Beyond the Basics l

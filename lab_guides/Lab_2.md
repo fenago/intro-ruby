@@ -1,9 +1,8 @@
+<img align="right" src="../logo.png">
+
 
 2. Ruby Data Types and Operations
 =================================
-
-
-
 
 
 Overview
@@ -11,6 +10,19 @@ Overview
 By the end of this chapter, you will be able to perform operations on
 arrays and hashes; use Ruby methods on arrays and hashes; create your
 own Ruby method and write a Ruby program for rolling dice.
+
+
+#### Pre-reqs:
+- Google Chrome (Recommended)
+
+#### Lab Environment
+Exercises are ready to run. All packages have been installed. There is no requirement for any setup.
+
+All examples are present in `work/intro-ruby/Lab01` folder. You can access lab at `http://<host-ip>/lab/workspaces/lab2_DataTypes`
+
+To copy and paste: use **Control-C** and to paste inside of a terminal, use **Control-V**
+
+**Note:** To open new terminal, click `File` > `New` > `Terminal`.
 
 
 Introduction
