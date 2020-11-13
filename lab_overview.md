@@ -11,7 +11,6 @@ Cut through the noise and get real results with a step-by-step approach to learn
 - Ideal for the Ruby beginner who is getting started with Ruby for the first time
 - A complete Ruby tutorial with exercises and activities that help build key skills
 - Structured to let you progress at your own pace, on your own terms
-- Use your physical print copy to redeem free access to the online interactive edition.
 
 **What You Will Learn**
 
