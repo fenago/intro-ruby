@@ -79,7 +79,7 @@ The output will appear as follows:
 <div>
 
 ::: {#_idContainer061 .IMG---Figure}
-![Figure 2.1: Output for an empty array ](./images/C14197_02_01.jpg)
+![Figure 2.1: Output for an empty array ](3_files/C14197_02_01.jpg)
 :::
 
 </div>
@@ -106,7 +106,7 @@ The output will appear as follows:
 
 ::: {#_idContainer062 .IMG---Figure}
 ![Figure 2.2: Output for an array with predefined values
-](./images/C14197_02_02.jpg)
+](3_files/C14197_02_02.jpg)
 :::
 
 </div>
@@ -133,7 +133,7 @@ The output on IRB would appear as follows:
 <div>
 
 ::: {#_idContainer063 .IMG---Figure}
-![Figure 2.3: Output with Array.new ](./images/C14197_02_03.jpg)
+![Figure 2.3: Output with Array.new ](3_files/C14197_02_03.jpg)
 :::
 
 </div>
@@ -166,7 +166,7 @@ The output will be as shown in the following code block:
 
 ::: {#_idContainer064 .IMG---Figure}
 ![Figure 2.4: Output for an array with the first four values empty
-](./images/C14197_02_04.jpg)
+](3_files/C14197_02_04.jpg)
 :::
 
 </div>
@@ -192,7 +192,7 @@ The output will appear as follows :
 
 ::: {#_idContainer065 .IMG---Figure}
 ![Figure 2.5: Output for arrays with different types of elements
-](./images/C14197_02_05.jpg)
+](3_files/C14197_02_05.jpg)
 :::
 
 </div>
@@ -225,7 +225,7 @@ The code for both scenarios is presented as follows:
     The output will be as follows:
 
     ::: {#_idContainer066 .IMG---Figure}
-    ![Figure 2.6: Iterating without an index ](./images/C14197_02_06.jpg)
+    ![Figure 2.6: Iterating without an index ](3_files/C14197_02_06.jpg)
     :::
 
 Figure 2.6: Iterating without an index
@@ -248,7 +248,7 @@ Figure 2.6: Iterating without an index
     The output will be as follows:
 
     ::: {#_idContainer067 .IMG---Figure}
-    ![Figure 2.7: Iterating with an index ](./images/C14197_02_07.jpg)
+    ![Figure 2.7: Iterating with an index ](3_files/C14197_02_07.jpg)
     :::
 
 Figure 2.7: Iterating with an index
@@ -287,7 +287,7 @@ The output will appear as follows:
 
 ::: {#_idContainer068 .IMG---Figure}
 ![Figure 2.8: Output for the each\_with\_index function
-](./images/C14197_02_08.jpg)
+](3_files/C14197_02_08.jpg)
 :::
 
 </div>
@@ -326,7 +326,7 @@ The output on IRB would appear as follows:
 <div>
 
 ::: {#_idContainer069 .IMG---Figure}
-![Figure 2.9: Output for the array class ](./images/C14197_02_09.jpg)
+![Figure 2.9: Output for the array class ](3_files/C14197_02_09.jpg)
 :::
 
 </div>
@@ -353,7 +353,7 @@ The output will be as follows:
 <div>
 
 ::: {#_idContainer070 .IMG---Figure}
-![Figure 2.10: Methods for an array ](./images/C14197_02_10.jpg)
+![Figure 2.10: Methods for an array ](3_files/C14197_02_10.jpg)
 :::
 
 </div>
@@ -388,7 +388,7 @@ The output will appear as follows:
 
 ::: {#_idContainer071 .IMG---Figure}
 ![Figure 2.11: Output using the .respond\_to? function on an array
-](./images/C14197_02_11.jpg)
+](3_files/C14197_02_11.jpg)
 :::
 
 </div>
@@ -443,7 +443,7 @@ The output will appear as follows:
 <div>
 
 ::: {#_idContainer072 .IMG---Figure}
-![Figure 2.12: Merging two arrays ](./images/C14197_02_12.jpg)
+![Figure 2.12: Merging two arrays ](3_files/C14197_02_12.jpg)
 :::
 
 </div>
@@ -481,7 +481,7 @@ The output will be as shown in the following code block:
 
 ::: {#_idContainer073 .IMG---Figure}
 ![Figure 2.13: Removing similar elements from the array
-](./images/C14197_02_13.jpg)
+](3_files/C14197_02_13.jpg)
 :::
 
 </div>
@@ -523,7 +523,7 @@ The output will be as shown in the following code block:
 
 ::: {#_idContainer074 .IMG---Figure}
 ![Figure 2.14: Inserting elements into an array using the push method
-](./images/C14197_02_14.jpg)
+](3_files/C14197_02_14.jpg)
 :::
 
 </div>
@@ -555,7 +555,7 @@ The output will be as shown in the following code block:
 
 ::: {#_idContainer075 .IMG---Figure}
 ![Figure 2.15: Inserting elements into an array using the \<\< operator
-](./images/C14197_02_15.jpg)
+](3_files/C14197_02_15.jpg)
 :::
 
 </div>
@@ -590,7 +590,7 @@ The output will be as shown in the following code block:
 
 ::: {#_idContainer076 .IMG---Figure}
 ![Figure 2.16: Finding the last element of the array
-](./images/C14197_02_16.jpg)
+](3_files/C14197_02_16.jpg)
 :::
 
 </div>
@@ -625,7 +625,7 @@ The output will be as shown in the following code block:
 
 ::: {#_idContainer077 .IMG---Figure}
 ![Figure 2.17: Eliminating the last element from an array
-](./images/C14197_02_17.jpg)
+](3_files/C14197_02_17.jpg)
 :::
 
 </div>
@@ -681,7 +681,7 @@ The following steps will help you to complete the exercise:
 
     ::: {#_idContainer078 .IMG---Figure}
     ![Figure 2.18: Output of the colors\_3 array
-    ](./images/C14197_02_18.jpg)
+    ](3_files/C14197_02_18.jpg)
     :::
 
     Figure 2.18: Output of the colors\_3 array
@@ -709,7 +709,7 @@ The following steps will help you to complete the exercise:
 
     ::: {#_idContainer079 .IMG---Figure}
     ![Figure 2.19: Output of the colors\_new array
-    ](./images/C14197_02_19.jpg)
+    ](3_files/C14197_02_19.jpg)
     :::
 
     Figure 2.19: Output of the colors\_new array
@@ -737,7 +737,7 @@ The following steps will help you to complete the exercise:
 
     ::: {#_idContainer080 .IMG---Figure}
     ![Figure 2.20: Output of the colors\_1 and colors\_2 arrays
-    ](./images/C14197_02_20.jpg)
+    ](3_files/C14197_02_20.jpg)
     :::
 
     Figure 2.20: Output of the colors\_1 and colors\_2 arrays
@@ -764,7 +764,7 @@ The following steps will help you to complete the exercise:
     The output will be as follows:
 
     ::: {#_idContainer081 .IMG---Figure}
-    ![Figure 2.21: Last element of the array ](./images/C14197_02_21.jpg)
+    ![Figure 2.21: Last element of the array ](3_files/C14197_02_21.jpg)
     :::
 
     Figure 2.21: Last element of the array
@@ -790,7 +790,7 @@ The following steps will help you to complete the exercise:
 
     ::: {#_idContainer082 .IMG---Figure}
     ![Figure 2.22: Output of the colors\_2 array without the last
-    element ](./images/C14197_02_22.jpg)
+    element ](3_files/C14197_02_22.jpg)
     :::
 
 Figure 2.22: Output of the colors\_2 array without the last element
@@ -831,7 +831,7 @@ The output will be as shown in the following code block:
 <div>
 
 ::: {#_idContainer083 .IMG---Figure}
-![Figure 2.23: FrozenError ](./images/C14197_02_23.jpg)
+![Figure 2.23: FrozenError ](3_files/C14197_02_23.jpg)
 :::
 
 </div>
@@ -868,7 +868,7 @@ The output will be as shown in the following code block:
 <div>
 
 ::: {#_idContainer084 .IMG---Figure}
-![Figure 2.24: Output of the uniq function ](./images/C14197_02_24.jpg)
+![Figure 2.24: Output of the uniq function ](3_files/C14197_02_24.jpg)
 :::
 
 </div>
@@ -896,7 +896,7 @@ The output will be as shown in the following code block:
 <div>
 
 ::: {#_idContainer085 .IMG---Figure}
-![Figure 2.25: Output for the uniq! function ](./images/C14197_02_25.jpg)
+![Figure 2.25: Output for the uniq! function ](3_files/C14197_02_25.jpg)
 :::
 
 </div>
@@ -935,7 +935,7 @@ The output will be as shown in the following code block:
 <div>
 
 ::: {#_idContainer086 .IMG---Figure}
-![Figure 2.26: Sorting elements ](./images/C14197_02_26.jpg)
+![Figure 2.26: Sorting elements ](3_files/C14197_02_26.jpg)
 :::
 
 </div>
@@ -971,7 +971,7 @@ The output will be as shown in the following code block:
 
 ::: {#_idContainer087 .IMG---Figure}
 ![Figure 2.27: Output for the length and size methods
-](./images/C14197_02_27.jpg)
+](3_files/C14197_02_27.jpg)
 :::
 
 </div>
@@ -1015,7 +1015,7 @@ The output will be as shown in the following code block:
 <div>
 
 ::: {#_idContainer088 .IMG---Figure}
-![Figure 2.28: Output of the include? method ](./images/C14197_02_28.jpg)
+![Figure 2.28: Output of the include? method ](3_files/C14197_02_28.jpg)
 :::
 
 </div>
@@ -1055,7 +1055,7 @@ The output will be as shown in the following code block:
 <div>
 
 ::: {#_idContainer089 .IMG---Figure}
-![Figure 2.29: Output of the join method ](./images/C14197_02_29.jpg)
+![Figure 2.29: Output of the join method ](3_files/C14197_02_29.jpg)
 :::
 
 </div>
@@ -1101,7 +1101,7 @@ The following steps will help you to complete the exercise:
 
     ::: {#_idContainer090 .IMG---Figure}
     ![Figure 2.30: Output of the frozen array
-    ](./images/C14197_02_30.jpg)
+    ](3_files/C14197_02_30.jpg)
     :::
 
     Figure 2.30: Output of the frozen array
@@ -1126,7 +1126,7 @@ The following steps will help you to complete the exercise:
     The array should now be as shown in the following code block:
 
     ::: {#_idContainer091 .IMG---Figure}
-    ![Figure 2.31: Output for .uniq ](./images/C14197_02_31.jpg)
+    ![Figure 2.31: Output for .uniq ](3_files/C14197_02_31.jpg)
     :::
 
     Figure 2.31: Output for .uniq
@@ -1151,7 +1151,7 @@ The following steps will help you to complete the exercise:
 
     ::: {#_idContainer092 .IMG---Figure}
     ![Figure 2.32: Output for the .sort method
-    ](./images/C14197_02_32.jpg)
+    ](3_files/C14197_02_32.jpg)
     :::
 
     Figure 2.32: Output for the .sort method
@@ -1177,7 +1177,7 @@ The following steps will help you to complete the exercise:
 
     ::: {#_idContainer093 .IMG---Figure}
     ![Figure 2.33: Output for the size and length of the array
-    ](./images/C14197_02_33.jpg)
+    ](3_files/C14197_02_33.jpg)
     :::
 
     Figure 2.33: Output for the size and length of the array
@@ -1203,7 +1203,7 @@ The following steps will help you to complete the exercise:
 
     ::: {#_idContainer094 .IMG---Figure}
     ![Figure 2.34: Output for the .include method
-    ](./images/C14197_02_34.jpg)
+    ](3_files/C14197_02_34.jpg)
     :::
 
     Figure 2.34: Output for the .include method
@@ -1228,7 +1228,7 @@ The following steps will help you to complete the exercise:
     The output will be as shown in the following code block:
 
     ::: {#_idContainer095 .IMG---Figure}
-    ![Figure 2.35: Output for .inspect ](./images/C14197_02_35.jpg)
+    ![Figure 2.35: Output for .inspect ](3_files/C14197_02_35.jpg)
     :::
 
 Figure 2.35: Output for .inspect

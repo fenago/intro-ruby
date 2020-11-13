@@ -182,7 +182,7 @@ The output would show up as follows:
 <div>
 
 ::: {#_idContainer265 .IMG---Figure}
-![Figure 6.1: Output after including modules ](./images/C14197_06_01.jpg)
+![Figure 6.1: Output after including modules ](3_files/C14197_06_01.jpg)
 :::
 
 </div>
@@ -279,7 +279,7 @@ The following steps will help you complete the exercise:
     follows:
 
     ::: {#_idContainer266 .IMG---Figure}
-    ![Figure 6.2: Service logs output ](./images/C14197_06_02.jpg)
+    ![Figure 6.2: Service logs output ](3_files/C14197_06_02.jpg)
     :::
 
 Figure 6.2: Service logs output
@@ -363,7 +363,7 @@ The output would be as follows:
 
 ::: {#_idContainer267 .IMG---Figure}
 ![Figure 6.3: Output for subclass overriding a method
-](./images/C14197_06_03.jpg)
+](3_files/C14197_06_03.jpg)
 :::
 
 </div>
@@ -419,7 +419,7 @@ The output will be as follows:
 
 ::: {#_idContainer268 .IMG---Figure}
 ![Figure 6.4: Output error for inclusion ordering
-](./images/C14197_06_04.jpg)
+](3_files/C14197_06_04.jpg)
 :::
 
 </div>
@@ -455,7 +455,7 @@ The output would be as follows:
 
 ::: {#_idContainer269 .IMG---Figure}
 ![Figure 6.5: Output after changing the order
-](./images/C14197_06_05.jpg)
+](3_files/C14197_06_05.jpg)
 :::
 
 </div>
