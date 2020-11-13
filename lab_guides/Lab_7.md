@@ -114,8 +114,7 @@ upload files to a remote location; well, we can just add the
 `carrierwave` gem (<https://packt.live/33nzOV2>).
 
 What if you need to paginate the results of your web page? In that case,
-you just add the `will_paginate` gem
-(<https://packt.live/2VuQuYa>).
+you just add the `will_paginate` gem.
 
 You can begin to see how we can create a very functional application in
 no time at all by leveraging this external code in the form of gems.
@@ -867,10 +866,6 @@ There are other CSV gems out there if you have more specific needs.
 that offers parallel import processing for the better handling of larger
 files.
 
-Note
-
-You can refer to the following for more information on **SmarterCSV**:
-<https://packt.live/2B5xSVk>.
 
 Similar to the `File` class we covered previously, the CSV gem
 has a number of different ways in which we can interact with CSV data
@@ -1034,8 +1029,7 @@ CSV.read("users_with_headers.csv", headers: true)
 ```
 
 
-The core Ruby documentation describes the `CSV::Table` class
-(<https://packt.live/2OKCIPT>) as follows:
+The core Ruby documentation describes the `CSV::Table` class as follows:
 
 \"*A CSV::Table is a two-dimensional data structure for representing CSV
 documents. Tables allow you to work with the data by row or column,
@@ -1403,7 +1397,7 @@ Note
 
 There are a number of other pieces of CSV functionality that are
 available with the standard core Ruby CSV library; you can refer to
-<https://packt.live/2pc66DI> for more details.
+<https://ruby-doc.org/stdlib-2.6.3/libdoc/csv/rdoc/index.html> for more details.
 
 
 
@@ -1550,8 +1544,7 @@ It is important for the following reasons:
     Note
 
     The single responsibility principle is the \"S\" portion of the
-    SOLID design principles. For more information, you can refer to
-    <https://packt.live/2MAFQen>.
+    SOLID design principles.
 
 With this in mind, we can begin to see why we would want to use service
 objects in our application.

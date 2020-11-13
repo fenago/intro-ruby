@@ -496,8 +496,6 @@ to complete the exercise:
     ```
 
 
-    <https://packt.live/2IWUf3v>
-
     As you can see in the preceding code, we have initialized the
     classes and specified the variables corresponding to each class. The
     `User` class will be defined by the name, address, and
@@ -1068,10 +1066,7 @@ class variable can be changed in one thread or process and not be
 changed in another thread or process, and so you may get unexpected
 results.
 
-Note
 
-Thread safety is a complex topic. You can read more about it at
-<https://packt.live/2Mutq7S>.
 
 It is very common for applications to provide links to share their own
 web pages on social platforms such as Facebook, Twitter, or LinkedIn.
@@ -1258,7 +1253,7 @@ you to complete the exercise:
 
     ```
     title = "Check out this great coding website!"
-    url = "packt.com"
+    url = "fenago.com"
     ```
 
 
@@ -2123,7 +2118,6 @@ some methods that make working with addresses easier and more useful:
     ```
 
 
-    <https://packt.live/2IVYA79>
 
 6.  Now, let\'s instantiate each type of address,
     `UnitedStatesAddress` and `CanadianAddress`, and

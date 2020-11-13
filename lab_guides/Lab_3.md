@@ -835,7 +835,7 @@ will not memorize the internal algorithms of Ruby, so this is a good
 opportunity to *read the docs*.
 
 When you go to the online Ruby documentation at
-<https://packt.live/35mif9C>, search for the type of object (or class)
+<https://ruby-doc.org/>, search for the type of object (or class)
 that you are looking for. In this case, `string`. There will
 be several results, usually for different versions of Ruby. Find your
 version of Ruby and dive into the `string` class. You will

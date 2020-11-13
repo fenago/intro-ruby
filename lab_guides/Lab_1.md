@@ -935,14 +935,6 @@ The output should be as follows:
 
 </div>
 
-Figure 1.20: Available methods in Ruby
-
-Note
-
-To know more about all the methods and operations they can perform,
-refer to the official documentation at <https://packt.live/2nc962i>.
-
-
 
 Floating-Point Numbers
 ----------------------
@@ -1055,8 +1047,7 @@ Figure 1.22: Methods for the Float class
 Note
 
 To find out more about all the methods and the operations they can
-perform, refer to the official documentation at
-<https://packt.live/2o7rYzS>.
+perform, refer to the official documentation at <https://ruby-doc.org/core-2.5.0/Float.html>.
 
 
 
@@ -1741,14 +1732,6 @@ string class:
 
 
 </div>
-
-Figure 1.44: String methods
-
-Note
-
-To find out more about all the methods and the operations they can
-perform, refer to the official documentation at
-<https://packt.live/2pDVtK5>.
 
 
 

@@ -689,8 +689,6 @@ that start with `employee_`:
     ```
 
 
-    <https://packt.live/2q8hzVh>
-
     Here, we are using regular expressions for matching. Regular
     expressions help us to match a pattern for a string. The pattern
     should be between the forward slashes (`/`).
@@ -1333,8 +1331,8 @@ post new data to the public API.
 
 The public APIs to be used for this activity are as follows:
 
--   To get data: <https://packt.live/33BUM2v>
--   To post data: <https://packt.live/2MfHItS>
+-   To get data: <https://www.akshatpaul.com/ruby-fundamentals/>
+-   To post data: <https://www.akshatpaul.com/ruby-fundamentals/buildings>
 
 Note that the second link will become functional only after the activity
 is completed. To post data using the preceding backend API, only the
