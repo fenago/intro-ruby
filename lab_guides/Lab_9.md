@@ -310,7 +310,7 @@ you complete the exercise:
     The output should be as follows:
 
     
-    ![](./images/C14197_09_07.jpg)
+![](./images/C14197_09_07.jpg)
 
 
 The beauty of this program is that we can add n number of operations
@@ -444,7 +444,7 @@ The following steps will help you complete the exercise:
     as follows:
 
     
-    ![](./images/C14197_09_11.jpg)
+![](./images/C14197_09_11.jpg)
 
 
 The output, when we call the method with an argument, would be as
@@ -638,7 +638,7 @@ The following steps will help you to complete the exercise:
     The output should be as follows:
 
     
-    ![](./images/C14197_09_16.jpg)
+![](./images/C14197_09_16.jpg)
 
 
 
@@ -915,9 +915,7 @@ The output would be as follows:
 **Note** The solution for the activity can be found in the current directory.
 
 
-Summary
-=======
-
+#### Summary
 
 In this lab, we learned about the key concepts of metaprogramming.
 We learned about concepts such as blocks and how to use

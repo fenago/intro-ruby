@@ -1530,9 +1530,7 @@ Follow these steps to complete the activity:
 **Note** The solution to the activity can be found in the current directory.
 
 
-Summary
-=======
-
+#### Summary
 
 In this lab, we learned about the fundamentals of Ruby and its key
 features. We started with the history of Ruby and the key programming
