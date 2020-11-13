@@ -8,7 +8,7 @@
 
 Overview
 
-By the end of this chapter, you will be able to use the
+By the end of this lab, you will be able to use the
 Model-View-Controller (MVC) pattern to create your first Rails
 application; explain how Action Controller and Action View work
 together; implement routes, Rails models, and Active Record in a Rails
@@ -17,7 +17,7 @@ a database schema, create views for web applications quickly with Rails
 helper methods and use the Rails console and perform Create, Read,
 Update, Delete (CRUD) operations for a web application.
 
-This chapter aims to equip you with knowledge about Ruby on Rails and
+This lab aims to equip you with knowledge about Ruby on Rails and
 the underlying fundamentals that power Rails and make it one of the most
 popular web application frameworks.
 
@@ -26,13 +26,13 @@ Introduction
 ============
 
 
-In the previous chapter, we learned about advanced topics in Ruby, such
+In the previous lab, we learned about advanced topics in Ruby, such
 as metaprogramming, how to open existing classes and add new methods to
 them, and how to monkey patch to create dynamic methods on the fly. We
 also learned about how to interact with external servers by making
 RESTful calls to them.
 
-In this chapter, we will learn about Ruby on Rails, also known as Rails
+In this lab, we will learn about Ruby on Rails, also known as Rails
 or ROR. It is a server-side web application framework distributed as a
 Ruby gem, written in Ruby and first released in 2005. With Ruby on
 Rails, we can build real-world web applications quickly. Rails is one of
@@ -160,7 +160,7 @@ Action Controller, which represent the \"V\" and \"C\" in MVC,
 respectively.
 
 Action View, Action Controller, and Active Record are packed with helper
-methods to help speed up development. As we proceed in this chapter, we
+methods to help speed up development. As we proceed in this lab, we
 will use some of them.
 
 
@@ -1705,7 +1705,7 @@ Summary
 =======
 
 
-In this chapter, we learned about the most popular Ruby framework-Ruby
+In this lab, we learned about the most popular Ruby framework-Ruby
 on Rails. We started with the fundamentals of Ruby on Rails and the MVC
 pattern it\'s based on. We then created our first Rails application and
 discussed the folder structure of an application that uses Rails. We
@@ -1724,9 +1724,9 @@ using Active Record and display the fetched data on a view with
 nifty tool provided with Rails called the Rails console, which can be
 used for experimenting with ideas without writing much code. Lastly, we
 secured our application with authentication while working on this
-chapter\'s activity.
+lab\'s activity.
 
-In the next chapter, we will learn how to associate two tables in Rails
+In the next lab, we will learn how to associate two tables in Rails
 with Active Record associations. We will also learn about the various
 types of validations available in Rails, including how we can trigger or
 skip them. We will implement validations at the model level. We will

@@ -8,15 +8,15 @@
 
 Overview
 
-By the end of this chapter, you will be able to describe associations
+By the end of this lab, you will be able to describe associations
 and the various types of Active Record associations; implement
 associations in your application model; evaluate methods that trigger
 and skip validations; implement model-level validations; develop
 programs using Rails scaffolding and deploy your application to the
 World Wide Web using Heroku.
 
-In this final chapter, we\'ll continue to build upon the previous
-chapter\'s application and learn about REST principles and other
+In this final lab, we\'ll continue to build upon the previous
+lab\'s application and learn about REST principles and other
 fundamental features/concepts of Ruby on Rails.
 
 
@@ -24,19 +24,19 @@ Introduction
 ============
 
 
-In the previous chapter, we were introduced to the Ruby on Rails
+In the previous lab, we were introduced to the Ruby on Rails
 framework and how the MVC pattern helps us to create a modular web
 application. We also learned about the fundamentals of the Rails
 framework, the anatomy of a Rails application, how to save data in a
 database, how to interact with data using views, and how to test Ruby on
 Rails code using the Rails console.
 
-In this chapter, we will dive deep into more advanced topics, such as
+In this lab, we will dive deep into more advanced topics, such as
 creating associations between models using Active Record association.
 Like everything else, Rails has built-in helper methods to assist us.
 Associations are very commonly used in real-world applications. If we
 take the example of the `citireview` application from the
-previous chapter, we can easily see a relation between a review and its
+previous lab, we can easily see a relation between a review and its
 comments. These are joints that link one model to another with the use
 of primary and foreign keys. We will learn about six types of such
 associations provided by Rails.
@@ -57,7 +57,7 @@ Associations
 ============
 
 
-In the previous chapter, we created a review web application where only
+In the previous lab, we created a review web application where only
 authenticated users were allowed to write reviews. Ideally, every review
 would always allow other users to comment on it, and in this section, we
 will build that feature.
@@ -350,7 +350,7 @@ to build an association between the `User` and
 Exercise 12.01: Creating a Model to Enable Users to Comment on Reviews on the CitiReview Application
 ----------------------------------------------------------------------------------------------------
 
-In *Chapter 11*, *Introduction to Ruby on Rails I*, we built a review
+In *Lab 11*, *Introduction to Ruby on Rails I*, we built a review
 application model and added an authentication sign-in page to the model.
 In this exercise, we will create a comment model and associate it with
 the `Review` model, and also run the migration. Remember, each
@@ -565,7 +565,7 @@ The following steps will enable you to complete the exercise:
     object and assign it to the `@review` instance variable.
     We then make use of the methods available with Active Record
     associations in order to insert the record into our database. Of
-    course, as implemented in the previous chapter, we allow strong
+    course, as implemented in the previous lab, we allow strong
     parameters by declaring them in the `comment_params`
     method.
 
@@ -1172,7 +1172,7 @@ Summary
 =======
 
 
-In this chapter, we deep-dived into the Rails framework and learned
+In this lab, we deep-dived into the Rails framework and learned
 about features such as Active Record associations, which are essential
 for any real-world application, and with six associations provided by
 Rails, working with models and databases becomes easier and more

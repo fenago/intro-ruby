@@ -7,17 +7,13 @@ Lab 1. Writing and Running Ruby Programs
 
 Overview
 
-By the end of this chapter, you will be able to use the Interactive Ruby
+By the end of this lab, you will be able to use the Interactive Ruby
 Shell (IRB) to write Ruby programs; execute Ruby code with a Ruby
 interpreter using Ruby (.rb) files; implement variables, literals, and
 constants in Ruby programs; use standard data types, such as numbers,
 Booleans, and strings, in Ruby programs; execute basic arithmetic
 operations on integer and floating-point numbers, implement string
 concatenation and interpolation in Ruby programs.
-
-This chapter introduces the basics of Ruby and serves as a firm
-foundation to build the complex code that you will encounter later in
-the book.
 
 
 Introduction
@@ -80,7 +76,7 @@ that make it a delight to program with:
 -   Reflection
 -   Metaprogramming
     
-    ![Figure 1.1: Key features of Ruby ](2_files/C14197_01_01.jpg)
+    ![Figure 1.1: Key features of Ruby ](./images/C14197_01_01.jpg)
 
 
 Figure 1.1: Key features of Ruby
@@ -295,7 +291,7 @@ IRB comes out of the box with Ruby, and you can access it using the
 <div>
 
 
-![Figure 1.2: Output for \"Hello World\" ](3_files/C14197_01_02.jpg)
+![Figure 1.2: Output for \"Hello World\" ](./images/C14197_01_02.jpg)
 
 
 </div>
@@ -325,7 +321,7 @@ Let\'s do some addition with the Interactive Ruby Shell:
 <div>
 
 
-![Figure 1.3: Addition output on irb ](3_files/C14197_01_03.jpg)
+![Figure 1.3: Addition output on irb ](./images/C14197_01_03.jpg)
 
 
 </div>
@@ -334,8 +330,7 @@ Figure 1.3: Addition output on irb
 
 Note
 
-You can use IRB or any IDE to complete the exercises/activities in this
-book.
+You can use IRB or any IDE to complete the exercises/activities in this book.
 
 
 
@@ -374,7 +369,7 @@ variable, such as the number of students, and print it in IRB:
 <div>
 
 
-![Figure 1.4: Output for assigning variables ](3_files/C14197_01_04.jpg)
+![Figure 1.4: Output for assigning variables ](./images/C14197_01_04.jpg)
 
 
 </div>
@@ -391,7 +386,7 @@ symbolize various types of data, such as strings, numbers, decimal
 numbers, and text. All of these data types are based on classes; for
 example, `string` is an object of the `String`
 class, since Ruby is an object-oriented language. We will discuss a
-variety of data types in Ruby later in this chapter.
+variety of data types in Ruby later in this lab.
 
 
 
@@ -435,7 +430,7 @@ integer and another variable that has a string value:
 
 
 ![Figure 1.5: The output for variables assigned to a different data type
-](3_files/C14197_01_05.jpg)
+](./images/C14197_01_05.jpg)
 
 
 </div>
@@ -447,7 +442,7 @@ methods. For example, to convert an integer to a string, we can use
 **.to\_s**, and we can convert a string to an integer with **.to\_i**.
 
 We will study Ruby methods in detail in the later sections of this
-chapter.
+lab.
 
 
 
@@ -478,7 +473,7 @@ operator on the variable itself.
 
     
     ![Figure 1.6: Output of the data type of a variable
-    ](3_files/C14197_01_06.jpg)
+    ](./images/C14197_01_06.jpg)
 
 
     Figure 1.6: Output of the data type of a variable
@@ -523,7 +518,7 @@ The output should be as follows:
 <div>
 
 
-![Figure 1.7: Output for public methods ](3_files/C14197_01_07.jpg)
+![Figure 1.7: Output for public methods ](./images/C14197_01_07.jpg)
 
 
 </div>
@@ -534,7 +529,7 @@ You can use all of the preceding public methods on this object to
 execute various operations and manipulate the value set in the object.
 If you look closely, some of the methods are self-explanatory, such as
 `upcase`, and `downcase` (we will discuss individual
-data types and their **class** later in this chapter).
+data types and their **class** later in this lab).
 
 
 
@@ -585,7 +580,7 @@ Terminal.
 
 
 ![Figure 1.8: Output of the hello world program
-](3_files/C14197_01_08.jpg)
+](./images/C14197_01_08.jpg)
 
 
 </div>
@@ -642,7 +637,7 @@ perform a simple addition. To do so, follow these steps:
 <div>
 
 
-![Figure 1.9: Output for user input in Ruby ](3_files/C14197_01_09.jpg)
+![Figure 1.9: Output for user input in Ruby ](./images/C14197_01_09.jpg)
 
 
 </div>
@@ -684,7 +679,7 @@ Let\'s look at the class hierarchy for various number types:
 <div>
 
 
-![Figure 1.10: Number class hierarchy ](4_files/C14197_01_10.jpg)
+![Figure 1.10: Number class hierarchy ](./images/C14197_01_10.jpg)
 
 
 </div>
@@ -702,7 +697,7 @@ In Ruby, integers are represented by two classes: **Fixnum** and
 <div>
 
 
-![Figure 1.11: Integer types ](4_files/C14197_01_11.jpg)
+![Figure 1.11: Integer types ](./images/C14197_01_11.jpg)
 
 
 </div>
@@ -744,7 +739,7 @@ addition (`+`), subtraction (`-`), multiplication
 
     
     ![Figure 1.12: Output for the addition operator
-    ](4_files/C14197_01_12.jpg)
+    ](./images/C14197_01_12.jpg)
 
 
     Figure 1.12: Output for the addition operator
@@ -762,7 +757,7 @@ addition (`+`), subtraction (`-`), multiplication
 
     
     ![Figure 1.13: Output for the subtraction operator
-    ](4_files/C14197_01_13.jpg)
+    ](./images/C14197_01_13.jpg)
 
 
     Figure 1.13: Output for the subtraction operator
@@ -780,7 +775,7 @@ addition (`+`), subtraction (`-`), multiplication
 
     
     ![Figure 1.14: Output for the multiplication operator
-    ](4_files/C14197_01_14.jpg)
+    ](./images/C14197_01_14.jpg)
 
 
     Figure 1.14: Output for the multiplication operator
@@ -800,7 +795,7 @@ addition (`+`), subtraction (`-`), multiplication
 
 
 ![Figure 1.15: Output for the division operator
-](4_files/C14197_01_15.jpg)
+](./images/C14197_01_15.jpg)
 
 
 </div>
@@ -811,7 +806,7 @@ You may ask yourself how is the principle of BODMAS (Bracket, Open,
 Division, Multiplication, Addition, and Subtraction) managed by Ruby
 automatically. Ruby follows an order of precedence for operators, which
 defines the order in which the operators will take priority in any
-equation. We will learn about precedence in *Chapter 3, Program
+equation. We will learn about precedence in *Lab 3, Program
 Workflow.*
 
 Note
@@ -853,7 +848,7 @@ The following steps should help you with the solution:
 
     
     ![Figure 1.16: Output for the next number
-    ](4_files/C14197_01_16.jpg)
+    ](./images/C14197_01_16.jpg)
 
 
     Figure 1.16: Output for the next number
@@ -870,7 +865,7 @@ The following steps should help you with the solution:
     The output should be as follows:
 
     
-    ![](4_files/C14197_01_17.jpg)
+    ![](./images/C14197_01_17.jpg)
 
 
     Figure 1.17: Output for the previous number
@@ -887,7 +882,7 @@ The following steps should help you with the solution:
     The output should be as follows:
 
     
-    ![](4_files/C14197_01_18.jpg)
+    ![](./images/C14197_01_18.jpg)
 
 
     Figure 1.18: Output for the LCM of 2 and 3
@@ -906,7 +901,7 @@ The following steps should help you with the solution:
 <div>
 
 
-![](4_files/C14197_01_19.jpg)
+![](./images/C14197_01_19.jpg)
 
 
 </div>
@@ -940,7 +935,7 @@ The output should be as follows:
 <div>
 
 
-![](4_files/C14197_01_20.jpg)
+![](./images/C14197_01_20.jpg)
 
 
 </div>
@@ -1029,7 +1024,7 @@ number completely or up to a certain decimal point:
 
 
 ![Figure 1.21: Output for floating-point number operations
-](4_files/C14197_01_21.jpg)
+](./images/C14197_01_21.jpg)
 
 
 </div>
@@ -1055,7 +1050,7 @@ The output should be as follows:
 <div>
 
 
-![Figure 1.22: Methods for the Float class ](4_files/C14197_01_22.jpg)
+![Figure 1.22: Methods for the Float class ](./images/C14197_01_22.jpg)
 
 
 </div>
@@ -1150,7 +1145,7 @@ most common ones:
 <div>
 
 
-![Figure 1.23: Ways to write strings in Ruby ](4_files/C14197_01_23.jpg)
+![Figure 1.23: Ways to write strings in Ruby ](./images/C14197_01_23.jpg)
 
 
 </div>
@@ -1186,7 +1181,7 @@ class\' built-in methods. Lastly, we will discuss the bang
 
     
     ![Figure 1.24: Output for string definition
-    ](4_files/C14197_01_24.jpg)
+    ](./images/C14197_01_24.jpg)
 
 
     Figure 1.24: Output for string definition
@@ -1209,7 +1204,7 @@ class\' built-in methods. Lastly, we will discuss the bang
 
     
     ![Figure 1.25: Character count of a string
-    ](4_files/C14197_01_25.jpg)
+    ](./images/C14197_01_25.jpg)
 
 
     Figure 1.25: Character count of a string
@@ -1227,7 +1222,7 @@ class\' built-in methods. Lastly, we will discuss the bang
     The output should be as follows:
 
     
-    ![Figure 1.26: String length calculation ](4_files/C14197_01_26.jpg)
+    ![Figure 1.26: String length calculation ](./images/C14197_01_26.jpg)
 
 
     Figure 1.26: String length calculation
@@ -1252,7 +1247,7 @@ class\' built-in methods. Lastly, we will discuss the bang
 
     
     ![Figure 1.27: Uppercase string characters
-    ](4_files/C14197_01_27.jpg)
+    ](./images/C14197_01_27.jpg)
 
 
     Figure 1.27: Uppercase string characters
@@ -1271,7 +1266,7 @@ class\' built-in methods. Lastly, we will discuss the bang
 
     
     ![Figure 1.28: Lowercase string characters
-    ](4_files/C14197_01_28.jpg)
+    ](./images/C14197_01_28.jpg)
 
 
     Figure 1.28: Lowercase string characters
@@ -1290,7 +1285,7 @@ class\' built-in methods. Lastly, we will discuss the bang
 
     
     ![Figure 1.29: Capitalized string characters
-    ](4_files/C14197_01_29.jpg)
+    ](./images/C14197_01_29.jpg)
 
 
     Figure 1.29: Capitalized string characters
@@ -1308,7 +1303,7 @@ class\' built-in methods. Lastly, we will discuss the bang
     The output should be as follows:
 
     
-    ![Figure 1.30: Original string object ](4_files/C14197_01_30.jpg)
+    ![Figure 1.30: Original string object ](./images/C14197_01_30.jpg)
 
 
     Figure 1.30: Original string object
@@ -1332,7 +1327,7 @@ class\' built-in methods. Lastly, we will discuss the bang
 <div>
 
 
-![Figure 1.31: Bang operation on a string ](4_files/C14197_01_31.jpg)
+![Figure 1.31: Bang operation on a string ](./images/C14197_01_31.jpg)
 
 
 </div>
@@ -1383,7 +1378,7 @@ The following steps will help you to perform the exercise:
     The output should be as follows:
 
     
-    ![Figure 1.32: Output using whitespace ](4_files/C14197_01_32.jpg)
+    ![Figure 1.32: Output using whitespace ](./images/C14197_01_32.jpg)
 
 
     Figure 1.32: Output using whitespace
@@ -1406,7 +1401,7 @@ The following steps will help you to perform the exercise:
 
     
     ![Figure 1.33: Output using the .concat method
-    ](4_files/C14197_01_33.jpg)
+    ](./images/C14197_01_33.jpg)
 
 
     Figure 1.33: Output using the .concat method
@@ -1432,7 +1427,7 @@ The following steps will help you to perform the exercise:
 
 
 ![Figure 1.34: Concatenation using the \<\< operator
-](4_files/C14197_01_34.jpg)
+](./images/C14197_01_34.jpg)
 
 
 </div>
@@ -1470,7 +1465,7 @@ for Ruby Fundamentals and interpolate it in a sentence:
     The output should be as follows:
 
     
-    ![Figure 1.35: String interpolation ](4_files/C14197_01_35.jpg)
+    ![Figure 1.35: String interpolation ](./images/C14197_01_35.jpg)
 
 
     Figure 1.35: String interpolation
@@ -1491,7 +1486,7 @@ for Ruby Fundamentals and interpolate it in a sentence:
 
 
 ![Figure 1.36: Addition operation in string interpolation
-](4_files/C14197_01_36.jpg)
+](./images/C14197_01_36.jpg)
 
 
 </div>
@@ -1526,7 +1521,7 @@ To extract certain characters from a string, follow these steps:
 
     
     ![Figure 1.37: Extracting characters from a string
-    ](4_files/C14197_01_37.jpg)
+    ](./images/C14197_01_37.jpg)
 
 
     Figure 1.37: Extracting characters from a string
@@ -1552,7 +1547,7 @@ To extract certain characters from a string, follow these steps:
 <div>
 
 
-![](4_files/C14197_01_38.jpg)
+![](./images/C14197_01_38.jpg)
 
 
 </div>
@@ -1606,7 +1601,7 @@ sentence \"My favorite book is Java Fundamentals\" with the word
 <div>
 
 
-![Figure 1.39: Replacing string characters ](4_files/C14197_01_39.jpg)
+![Figure 1.39: Replacing string characters ](./images/C14197_01_39.jpg)
 
 
 </div>
@@ -1653,7 +1648,7 @@ the instances of Java with Ruby in a sentence:
 
 
 ![Figure 1.40: Using the gsub method to replace characters in a string
-](4_files/C14197_01_40.jpg)
+](./images/C14197_01_40.jpg)
 
 
 </div>
@@ -1671,7 +1666,7 @@ Exercise 1.14: Splitting a String and Joining a String
 ------------------------------------------------------
 
 In Ruby, we can split a string, which gives the result in an array (we
-will learn about arrays in the next chapter). In this exercise, we are
+will learn about arrays in the next lab). In this exercise, we are
 going to split a string of words into an array of words.
 
 1.  Go to the Terminal.
@@ -1692,7 +1687,7 @@ going to split a string of words into an array of words.
     The output should be as follows:
 
     
-    ![Figure 1.41: Splitting a string ](4_files/C14197_01_41.jpg)
+    ![Figure 1.41: Splitting a string ](./images/C14197_01_41.jpg)
 
 
     Figure 1.41: Splitting a string
@@ -1711,7 +1706,7 @@ going to split a string of words into an array of words.
 
     
     ![Figure 1.42: Splitting a string using a unique character
-    ](4_files/C14197_01_42.jpg)
+    ](./images/C14197_01_42.jpg)
 
 
     Figure 1.42: Splitting a string using a unique character
@@ -1731,7 +1726,7 @@ going to split a string of words into an array of words.
 <div>
 
 
-![Figure 1.43: Joining arrays to form a string](4_files/C14197_01_43.jpg)
+![Figure 1.43: Joining arrays to form a string](./images/C14197_01_43.jpg)
 
 
 </div>
@@ -1755,7 +1750,7 @@ string class:
 <div>
 
 
-![Figure 1.44: String methods ](4_files/C14197_01_44.jpg)
+![Figure 1.44: String methods ](./images/C14197_01_44.jpg)
 
 
 </div>
@@ -1796,7 +1791,7 @@ Observe the following steps to complete the activity:
 
 
 ![Figure 1.45: Output for email address generation
-](4_files/C14197_01_45.jpg)
+](./images/C14197_01_45.jpg)
 
 
 </div>
@@ -1833,7 +1828,7 @@ The output should be as follows:
 <div>
 
 
-![Figure 1.46: True and false classes ](4_files/C14197_01_46.jpg)
+![Figure 1.46: True and false classes ](./images/C14197_01_46.jpg)
 
 
 </div>
@@ -1843,7 +1838,7 @@ Figure 1.46: True and false classes
 You get Boolean values when you check whether the `a` variable
 is `nil`.
 
-We will learn more about the Boolean data type in *Chapter* *3*,
+We will learn more about the Boolean data type in *Lab* *3*,
 *Controlling* *Program* *Flow.*
 
 
@@ -1870,7 +1865,7 @@ Follow these steps to complete the activity:
 <div>
 
 
-![Figure 1.47: Output for area and perimeter ](4_files/C14197_01_47.jpg)
+![Figure 1.47: Output for area and perimeter ](./images/C14197_01_47.jpg)
 
 
 </div>
@@ -1886,7 +1881,7 @@ Summary
 =======
 
 
-In this chapter, we learned about the fundamentals of Ruby and its key
+In this lab, we learned about the fundamentals of Ruby and its key
 features. We started with the history of Ruby and the key programming
 paradigms the language supports that make it unique and powerful at the
 same time. We then learned about using Ruby code with the IRB and also
@@ -1896,7 +1891,7 @@ string. Here, we implemented various operations on variables along with
 commonly used string operations, such as string concatenation and
 interpolation.
 
-In the next chapter, we will learn how to work with data structures such
+In the next lab, we will learn how to work with data structures such
 as arrays and hashes. We will explore the details of the various
 powerful methods associated with them, and we will also learn how to
 create our own Ruby methods and call them, which is the bedrock of

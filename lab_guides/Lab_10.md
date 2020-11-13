@@ -8,7 +8,7 @@
 
 Overview
 
-By the end of this chapter, you will be able to open classes to
+By the end of this lab, you will be able to open classes to
 add/modify methods; implement monkey patching; use methods such as
 method\_missing and define\_method to dynamically create methods at
 runtime; generate HTTP requests using the built-in Ruby HTTP client
@@ -20,21 +20,21 @@ Introduction
 ============
 
 
-In the previous chapter, we learned about a number of advanced topics,
-including blocks, procs, and lambdas, which we will use in this chapter
+In the previous lab, we learned about a number of advanced topics,
+including blocks, procs, and lambdas, which we will use in this lab
 when we dive deep into the world of metaprogramming. We will also learn
 when we should not apply metaprogramming concepts by not always crossing
 the line into monkey patching (which is changing the behavior of classes
 and ultimately making the code confusing and unmaintainable).
 
-In the second part of this chapter, we will learn a key programming
+In the second part of this lab, we will learn a key programming
 skill that is required in order to create any real-world application
 that is communicating with external APIs: how to make `GET`
 data from a backend server and how to submit data to said server.
 
-The final part of this chapter will help you share and distribute your
+The final part of this lab will help you share and distribute your
 Ruby code with others. So far, you have learned how to use Ruby gems,
-but, by the end of this chapter, you will be able to create your own
+but, by the end of this lab, you will be able to create your own
 `RubyGem` package and share it with the world.
 
 
@@ -42,7 +42,7 @@ Metaprogramming -- A Deep Dive
 ==============================
 
 
-We introduced metaprogramming in the previous chapter and defined it as
+We introduced metaprogramming in the previous lab and defined it as
 code that generates code. Ruby has numerous powerful methods that make
 it possible to allow code that writes code. Furthermore, metaprogramming
 is most often used to create flexible interfaces. This is especially
@@ -52,7 +52,7 @@ frameworks, such as Sinatra, Ruby on Rails, or when you create your own
 framework. Ruby on Rails, the most popular Ruby framework, is loaded
 with metaprogramming magic.
 
-In the previous chapter, we stated that metaprogramming makes use of
+In the previous lab, we stated that metaprogramming makes use of
 multiple elements available within the Ruby language. We discussed three
 such elements: blocks, procs, and lambdas. In this section, we will take
 a practical approach in order to understand metaprogramming and discuss
@@ -149,7 +149,7 @@ exercise:
 
 
 ![Figure 10.1: Output for the add.prefix method
-](3_files/C14197_10_01.jpg)
+](./images/C14197_10_01.jpg)
 
 
 </div>
@@ -199,7 +199,7 @@ Executing this file from the Terminal will provide the following result:
 <div>
 
 
-![](3_files/C14197_10_02.jpg)
+![](./images/C14197_10_02.jpg)
 
 
 </div>
@@ -229,7 +229,7 @@ The output should be as shown in the following screenshot:
 <div>
 
 
-![Figure 10.3: Monkey patching ](3_files/C14197_10_03.jpg)
+![Figure 10.3: Monkey patching ](./images/C14197_10_03.jpg)
 
 
 </div>
@@ -267,7 +267,7 @@ The output would appear as follows:
 <div>
 
 
-![Figure 10.4: Monkey patching ](3_files/C14197_10_04.jpg)
+![Figure 10.4: Monkey patching ](./images/C14197_10_04.jpg)
 
 
 </div>
@@ -351,7 +351,7 @@ The following steps will help you to complete this exercise:
 
     
     ![Figure 10.5: Output for monkey patching
-    ](3_files/C14197_10_05.jpg)
+    ](./images/C14197_10_05.jpg)
 
 
 Figure 10.5: Output for monkey patching
@@ -410,7 +410,7 @@ The output should be as follows:
 <div>
 
 
-![Figure 10.6: NoMethodError ](3_files/C14197_10_06.jpg)
+![Figure 10.6: NoMethodError ](./images/C14197_10_06.jpg)
 
 
 </div>
@@ -444,7 +444,7 @@ The output should be as follows:
 <div>
 
 
-![Figure 10.7: Output for method\_missing ](3_files/C14197_10_07.jpg)
+![Figure 10.7: Output for method\_missing ](./images/C14197_10_07.jpg)
 
 
 </div>
@@ -525,7 +525,7 @@ The output should be as follows:
 <div>
 
 
-![Figure 10.8: Ghost method ](3_files/C14197_10_08.jpg)
+![Figure 10.8: Ghost method ](./images/C14197_10_08.jpg)
 
 
 </div>
@@ -571,7 +571,7 @@ The output should be as follows:
 
 
 ![Figure 10.9: Output for respond\_to\_missing
-](3_files/C14197_10_09.jpg)
+](./images/C14197_10_09.jpg)
 
 
 </div>
@@ -646,7 +646,7 @@ that start with `employee_`:
     The output should be as follows:
 
     
-    ![Figure 10.10: Undefined method error ](3_files/C14197_10_10.jpg)
+    ![Figure 10.10: Undefined method error ](./images/C14197_10_10.jpg)
 
 
     Figure 10.10: Undefined method error
@@ -715,7 +715,7 @@ that start with `employee_`:
 
     
     ![Figure 10.11: Output for method\_missing and respond\_to\_missing
-    ](3_files/C14197_10_11.jpg)
+    ](./images/C14197_10_11.jpg)
 
 
 Figure 10.11: Output for method\_missing and respond\_to\_missing
@@ -785,7 +785,7 @@ The output should be as follows:
 <div>
 
 
-![Figure 10.12: Using define\_method ](3_files/C14197_10_12.jpg)
+![Figure 10.12: Using define\_method ](./images/C14197_10_12.jpg)
 
 
 </div>
@@ -855,7 +855,7 @@ England, Germany, and Brazil:
 
     
     ![Figure 10.13: Output for define\_method
-    ](3_files/C14197_10_13.jpg)
+    ](./images/C14197_10_13.jpg)
 
 
 Figure 10.13: Output for define\_method
@@ -1157,7 +1157,7 @@ Creating a Ruby Gem
 ===================
 
 
-As covered in *Chapter 7*, *Introduction to Ruby Gems*, a gem is a way
+As covered in *Lab 7*, *Introduction to Ruby Gems*, a gem is a way
 for Ruby to package and distribute Ruby programs and libraries. So far,
 we have been using many open source Ruby gems, which has a positive
 impact on the speed of development.
@@ -1407,7 +1407,7 @@ Summary
 =======
 
 
-In this chapter, we learned skills that are commonly used in real-world
+In this lab, we learned skills that are commonly used in real-world
 problems, such as metaprogramming, communicating with backend APIs, and
 creating reusable gems. No Ruby framework or open source library is
 complete without making use of a lot of metaprogramming. We learned
@@ -1418,6 +1418,6 @@ including open class, `method_missing`,
 interact with external APIs over a network. Lastly, we learned how to
 package and distribute our reusable code by creating gems ourselves.
 
-In the next chapter, we will learn about the most popular Ruby framework
+In the next lab, we will learn about the most popular Ruby framework
 or, should we say, one of the world\'s most widely used server-side web
 application frameworks -- Ruby on Rails.

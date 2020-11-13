@@ -8,7 +8,7 @@
 
 Overview
 
-By the end of this chapter you will be able to describe the basics of
+By the end of this lab you will be able to describe the basics of
 object-oriented programming using Ruby; model data with classes;
 implement instance and class variables in Ruby programs; write instance
 and class methods in application programs; and evaluate getters and
@@ -19,10 +19,10 @@ Introduction
 ============
 
 
-In the previous chapter, we studied different methods and parameters of
+In the previous lab, we studied different methods and parameters of
 Ruby. We also learned about the built-in libraries of `Math`
 and `Time` in Ruby. It was here that we began to introduce the
-concepts of classes and modules. In this chapter, we will dive deeper
+concepts of classes and modules. In this lab, we will dive deeper
 into Ruby classes using object-oriented programming (OOP) concepts as
 our guide.
 
@@ -58,7 +58,7 @@ In our example, our concepts, users, and votes are classes. Our code
 will generate specific instances of users and votes and these are called
 objects. In English, we might say \"*Mary (object) is a type of User
 (class)*\" or \"*Bob (User) voted (Vote) for Suzie (User)*\". In this
-chapter, we\'ll learn how to model this voting application while
+lab, we\'ll learn how to model this voting application while
 learning the basics of OOP using classes and objects in Ruby.
 
 Note
@@ -139,7 +139,7 @@ Figure 5.1: Output for the initialize method
 Instance Methods
 ----------------
 
-As we learned in the previous chapter with regard to the
+As we learned in the previous lab with regard to the
 `Time` class, instance methods are methods that are available
 on a specific instance or object of a class. Instances have states that
 are held in instance variables. As you would expect, instance methods
@@ -960,7 +960,7 @@ Note
 It is not strictly true that class definitions and class variables do
 not change in Ruby. Ruby is very flexible; however, the ability to
 change class variables is strongly discouraged and is a highly advanced
-topic, which is beyond the scope of this chapter. For now, consider them
+topic, which is beyond the scope of this lab. For now, consider them
 as variables that are set up when loading the class constant.
 
 The syntax for a class variable is the `@@` sign, as depicted
@@ -1383,7 +1383,7 @@ the number of wheels and the speed. Inheritance is a fundamental OOP
 concept and it is worth calling special attention to it.
 
 As mentioned already, you can think about subclasses as being \"types\"
-of the base class. In the following chapter, we will model people in an
+of the base class. In the following lab, we will model people in an
 organization. What are the common characteristics of persons in an
 organization? At a minimum, they likely all have a name, an email
 address, and a role in the organization. Can you think of other common
@@ -2311,7 +2311,7 @@ The output will be as follows:
 
 
 ![Figure 5.34: Output of the public method calling the private method
-](6_files/C14197_05_34.jpg)
+](./images/C14197_05_34.jpg)
 
 
 </div>
@@ -2356,7 +2356,7 @@ The output will be as follows:
 <div>
 
 
-![Figure 5.35: Using the protected method ](6_files/C14197_05_35.jpg)
+![Figure 5.35: Using the protected method ](./images/C14197_05_35.jpg)
 
 
 </div>
@@ -2406,7 +2406,7 @@ to maintain the privacy of methods.
 
     
     ![Figure 5.36: Output for the method behaviors
-    ](6_files/C14197_05_36.jpg)
+    ](./images/C14197_05_36.jpg)
 
 
     Figure 5.36: Output for the method behaviors
@@ -2455,7 +2455,7 @@ to maintain the privacy of methods.
 
     
     ![Figure 5.37: Output after calling each method
-    ](6_files/C14197_05_37.jpg)
+    ](./images/C14197_05_37.jpg)
 
 
     Figure 5.37: Output after calling each method
@@ -2496,7 +2496,7 @@ to maintain the privacy of methods.
 
     
     ![Figure 5.38: Output for calling the call\_each method using self
-    ](6_files/C14197_05_38.jpg)
+    ](./images/C14197_05_38.jpg)
 
 
     Figure 5.38: Output for calling the call\_each method using self
@@ -2559,7 +2559,7 @@ to maintain the privacy of methods.
 
     
     ![Figure 5.39: Output after using the equality operator
-    ](6_files/C14197_05_39.jpg)
+    ](./images/C14197_05_39.jpg)
 
 
     Figure 5.39: Output after using the equality operator
@@ -2609,7 +2609,7 @@ to maintain the privacy of methods.
 
     
     ![Figure 5.40: Calling the protected method on a different class
-    ](6_files/C14197_05_40.jpg)
+    ](./images/C14197_05_40.jpg)
 
 
 Figure 5.40: Calling the protected method on a different class
@@ -2663,7 +2663,7 @@ You should be able to see the following output:
 <div>
 
 
-![Figure 5.41: Using the URI module ](6_files/C14197_05_41.jpg)
+![Figure 5.41: Using the URI module ](./images/C14197_05_41.jpg)
 
 
 </div>
@@ -2680,7 +2680,7 @@ object.
 
 Here, we tried to call the `set_port` method directly and get
 the protected method error. However, we can bypass it by using the
-`send` method, which we learned about in the last chapter, to
+`send` method, which we learned about in the last lab, to
 directly call any method in Ruby. When we call a method using it, it
 bypasses encapsulation and visibility rules so it should be used with
 caution.
@@ -2795,7 +2795,7 @@ The following steps will help you to complete the activity:
 
     
     ![Figure 5.43: Output for the voting application
-    ](6_files/C14197_05_43.jpg)
+    ](./images/C14197_05_43.jpg)
 
 
 Figure 5.43: Output for the voting application
@@ -2809,12 +2809,12 @@ Summary
 =======
 
 
-In this chapter, we learned about the beginnings of OOP using Ruby. Ruby
+In this lab, we learned about the beginnings of OOP using Ruby. Ruby
 helps massively when you need to understand OOP in a far easier way due
 to Ruby\'s easy-to-understand syntax and the ability to introspect into
 methods and data.
 
-By the end of the chapter, you should feel comfortable using objects and
+By the end of the lab, you should feel comfortable using objects and
 classes and calling methods on them. By calling a method on any object
 (or, in Ruby parlance, sending a message to any receiver), you are
 automatically using OOP since you are working with objects. When you
@@ -2823,5 +2823,5 @@ OOP. When you decide to make some methods accessible and some methods
 private, you are mastering encapsulation, which is another core concept
 of OOP.
 
-In the next chapter, we will go further into OOP with Ruby by learning
+In the next lab, we will go further into OOP with Ruby by learning
 about modules and mixins.

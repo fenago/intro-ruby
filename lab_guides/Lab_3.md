@@ -9,11 +9,11 @@ Lab 3. Program Flow
 
 Overview
 
-By the end of the chapter, you will be able to utilize Boolean operators
+By the end of the lab, you will be able to utilize Boolean operators
 in Ruby programs; create and implement conditional expressions in Ruby;
 utilize ternary operators and ranges for programs; implement iterators
 on arrays and hashes and create programmatic loops with while, for, and
-until. The chapter aims to introduce us to different methods and
+until. The lab aims to introduce us to different methods and
 entities involved in the Ruby program workflow.
 
 
@@ -21,9 +21,9 @@ Introduction
 ============
 
 
-In the previous chapter, we studied the concept of arrays and hashes in
+In the previous lab, we studied the concept of arrays and hashes in
 Ruby. We also looked at different methods applied to arrays and hashes.
-In this chapter, we will be looking at how programs in Ruby are designed
+In this lab, we will be looking at how programs in Ruby are designed
 and used in applications.
 
 Useful software programs are not simply a linear set of instructions;
@@ -31,7 +31,7 @@ they make decisions about what code to run at any given time based on a
 set of conditions or criteria. Different programming languages have
 different types of program flow options. Two of the most common types of
 program flow options are **conditionals** and **loops**, which we will
-cover in this chapter.
+cover in this lab.
 
 Conditionals, also known as branches, are like a fork in the road. Do
 you turn left, or do you turn right? In the case of programming, for
@@ -60,7 +60,7 @@ Since program flow is decided by truthiness, which is represented by
 Booleans, we need to learn how Booleans operate. We can do this by first
 learning about Boolean operators; there are three: `AND`,
 `OR`, and `NOT`. This is how we will begin our
-chapter.
+lab.
 
 
 Boolean Operators
@@ -198,7 +198,7 @@ table. Here is a sample truth table for the `AND` and
 
 
 ![Figure 3.4: Truth table for the AND and OR operators
-](3_files/C14197_03_04.jpg)
+](./images/C14197_03_04.jpg)
 
 
 </div>
@@ -236,8 +236,7 @@ inferred:
 -   The result is `true` if the variable is `false`.
 -   The result is `false` if the variable is `true`.
 
-Truth tables are the base of Boolean algebra, which is beyond the scope
-of this book. However, let\'s cover two additional interesting
+Let's cover two additional interesting
 properties that occur when we combine the negation operator with the AND
 and OR operators.
 
@@ -272,7 +271,7 @@ Here is another truth table:
 
 
 ![Figure 3.7: Truth table of flipped operators
-](3_files/C14197_03_07.jpg)
+](./images/C14197_03_07.jpg)
 
 
 </div>
@@ -354,7 +353,7 @@ The output should look like this:
 <div>
 
 
-![Figure 3.9: Output for truthiness ](3_files/C14197_03_09.jpg)
+![Figure 3.9: Output for truthiness ](./images/C14197_03_09.jpg)
 
 
 </div>
@@ -484,7 +483,7 @@ steps will help you with the solution:
 
     
     ![Figure 3.11: Output for Boolean operators
-    ](3_files/C14197_03_11.jpg)
+    ](./images/C14197_03_11.jpg)
 
 
 Figure 3.11: Output for Boolean operators
@@ -568,7 +567,7 @@ The output should look like this:
 <div>
 
 
-![Figure 3.13: Output for the else statement ](3_files/C14197_03_13.jpg)
+![Figure 3.13: Output for the else statement ](./images/C14197_03_13.jpg)
 
 
 </div>
@@ -646,7 +645,7 @@ The output should look like this:
 
 
 ![Figure 3.15: Output for the unless statement
-](3_files/C14197_03_13.jpg)
+](./images/C14197_03_13.jpg)
 
 
 </div>
@@ -750,7 +749,7 @@ Ruby:
 Figure 3.17: Comparison operators
 
 Let\'s now write a method that combines all of the concepts in this
-chapter. We will be comparing two variables, `x` and
+lab. We will be comparing two variables, `x` and
 `y`, and putting them through different comparison conditions:
 
 ``` {.language-markup}
@@ -1715,7 +1714,7 @@ Here, we are establishing a block of code using the `begin`
 and `end` keywords. `Begin` and `end`
 blocks are useful not just for `do`/`while` loops
 but also for defining blocks of code for catching exceptions or errors
-in code. We will learn more about this later in the book.
+in code. We will learn more about this later in the course.
 
 
 
@@ -1974,7 +1973,7 @@ Something to keep in mind here that is not obvious about Ruby is that
 the last line of the block is what\'s returned to the iterator. You
 might think that you should use the `return` keyword but that
 is not how Ruby is implemented. We will learn more about methods and the
-`return` keyword in the next chapter.
+`return` keyword in the next lab.
 
 Also, an alternative syntax you can use to define the iteration loop is
 with curly braces, as follows:
@@ -2102,7 +2101,7 @@ The output should look like this:
 
 
 ![Figure 3.37: Output for block as an argument
-](6_files/C14197_03_37.jpg)
+](./images/C14197_03_37.jpg)
 
 
 </div>
@@ -2113,7 +2112,7 @@ In this form, the `block` is explicitly passed as an argument
 to the method. An ampersand is used as a prefix to tell the Ruby
 interpreter that the argument is a `proc` object. A
 `proc` object is a block of transportable, runnable code and
-will be covered in *Chapter 11*, *Introduction to Ruby on Rails I*.
+will be covered in *Lab 11*, *Introduction to Ruby on Rails I*.
 
 
 
@@ -2183,7 +2182,7 @@ iteration:
 
     
     ![Figure 3.38: Output for the math method
-    ](6_files/C14197_03_38.jpg)
+    ](./images/C14197_03_38.jpg)
 
 
     Figure 3.38: Output for the math method
@@ -2278,7 +2277,7 @@ The following steps will help you with the solution of the activity:
     `Yes` condition and continue to play:
 
     
-    ![Figure 3.40: Output for the yes input ](6_files/C14197_03_40.jpg)
+    ![Figure 3.40: Output for the yes input ](./images/C14197_03_40.jpg)
 
 
     Figure 3.40: Output for the yes input
@@ -2287,7 +2286,7 @@ The following steps will help you with the solution of the activity:
     `thank you` message, as shown in the following figure:
 
     
-    ![Figure 3.41: Output for a no input ](6_files/C14197_03_41.jpg)
+    ![Figure 3.41: Output for a no input ](./images/C14197_03_41.jpg)
 
 
     Figure 3.41: Output for a no input
@@ -2312,7 +2311,7 @@ The following steps will help you with the solution of the activity:
     Here\'s the expected output:
 
     
-    ![](6_files/C14197_03_43.jpg)
+    ![](./images/C14197_03_43.jpg)
 
 
 Figure 3.43: Output for the HiLow game
@@ -2326,7 +2325,7 @@ Summary
 =======
 
 
-In this chapter, we learned about program flow. Program flow is a
+In this lab, we learned about program flow. Program flow is a
 foundational concept in programming that allows programmers to change
 execution paths dynamically depending on any number of conditions. A
 core concept within program flow is understanding the Boolean data type
@@ -2342,6 +2341,6 @@ We also learned how to loop and were introduced to Ruby blocks, which
 are bundles of code that get executed along with each iteration of a
 loop. Bundling code into reusable chunks is also a foundational concept.
 Another way to bundle code is by using methods, which we\'ve looked at
-only briefly so far. In the next chapter, we will go into greater depth
+only briefly so far. In the next lab, we will go into greater depth
 about methods by learning how to define them, how to set different types
 of parameters, and how to return values from them.

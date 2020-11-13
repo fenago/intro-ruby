@@ -8,12 +8,12 @@
 
 Overview
 
-By the end of this chapter, you will be able to use blocks to improve
+By the end of this lab, you will be able to use blocks to improve
 code reusability; implement yield with blocks to maintain control over
 program flows; implement procs and lambdas with blocks and compare procs
 and lambdas.
 
-This chapter aims to give you a general overview of metaprogramming.
+This lab aims to give you a general overview of metaprogramming.
 
 
 Introduction
@@ -21,7 +21,7 @@ Introduction
 
 
 In the previous chapters, we learned how to debug Ruby programs using
-the `logger` class. In this chapter, we will learn about some
+the `logger` class. In this lab, we will learn about some
 of the advanced topics of the Ruby programming language, such as
 `blocks`, `procs`, and `lambdas`. By now,
 you must have realized that it\'s really easy to start writing Ruby
@@ -30,7 +30,7 @@ new Ruby developer (and sometimes the experienced ones too) will have a
 question buzzing in their mind about how it actually works.
 
 We can safely call it the Ruby magic, and that\'s what we are planning
-to crack in this chapter. We are going to learn about advanced
+to crack in this lab. We are going to learn about advanced
 programming techniques that are present in other languages, but this
 time the Ruby-specific implementation is our focus. We will tear down
 the curtain from the syntactic sugar and take a look under the hood to
@@ -111,7 +111,7 @@ The output would be as follows:
 <div>
 
 
-![Figure 9.1: Output using do/end ](3_files/C14197_09_01.jpg)
+![Figure 9.1: Output using do/end ](./images/C14197_09_01.jpg)
 
 
 </div>
@@ -134,7 +134,7 @@ The output would be as follows:
 <div>
 
 
-![Figure 9.2: Output using curly brackets ](3_files/C14197_09_02.jpg)
+![Figure 9.2: Output using curly brackets ](./images/C14197_09_02.jpg)
 
 
 </div>
@@ -174,7 +174,7 @@ The output would be as follows:
 <div>
 
 
-![Figure 9.3: Using a block as an iterator ](3_files/C14197_09_03.jpg)
+![Figure 9.3: Using a block as an iterator ](./images/C14197_09_03.jpg)
 
 
 </div>
@@ -232,7 +232,7 @@ The output would be like the following:
 <div>
 
 
-![Figure 9.4: Output for yield with blocks ](3_files/C14197_09_04.jpg)
+![Figure 9.4: Output for yield with blocks ](./images/C14197_09_04.jpg)
 
 
 </div>
@@ -273,7 +273,7 @@ be as follows:
 
 
 ![Figure 9.5: Output for yield with one statement
-](3_files/C14197_09_05.jpg)
+](./images/C14197_09_05.jpg)
 
 
 </div>
@@ -296,7 +296,7 @@ The output should be as follows:
 
 
 ![Figure 9.6: Output for yield with multiple statements
-](3_files/C14197_09_06.jpg)
+](./images/C14197_09_06.jpg)
 
 
 </div>
@@ -361,7 +361,7 @@ you complete the exercise:
 
     
     ![Figure 9.7: Output for the arithmetic operation using yield with a
-    block ](3_files/C14197_09_07.jpg)
+    block ](./images/C14197_09_07.jpg)
 
 
 Figure 9.7: Output for the arithmetic operation using yield with a block
@@ -397,7 +397,7 @@ output:
 
 
 ![Figure 9.8: Output for the block\_given? method
-](3_files/C14197_09_08.jpg)
+](./images/C14197_09_08.jpg)
 
 
 </div>
@@ -417,7 +417,7 @@ The output would be as follows:
 <div>
 
 
-![Figure 9.9: Output with an empty block ](3_files/C14197_09_09.jpg)
+![Figure 9.9: Output with an empty block ](./images/C14197_09_09.jpg)
 
 
 </div>
@@ -440,7 +440,7 @@ still expecting a block as an argument:
 
 
 ![Figure 9.10: Output for my\_method without the block\_given? method
-and an empty block ](3_files/C14197_09_10.jpg)
+and an empty block ](./images/C14197_09_10.jpg)
 
 
 </div>
@@ -521,7 +521,7 @@ The following steps will help you complete the exercise:
 
     
     ![Figure 9.11: Output for my\_method with an empty block
-    ](3_files/C14197_09_11.jpg)
+    ](./images/C14197_09_11.jpg)
 
 
 Figure 9.11: Output for my\_method with an empty block
@@ -533,7 +533,7 @@ follows:
 
 
 ![Figure 9.12: Output for my\_method with an argument
-](3_files/C14197_09_12.jpg)
+](./images/C14197_09_12.jpg)
 
 
 </div>
@@ -567,7 +567,7 @@ The output would be as follows:
 <div>
 
 
-![Figure 9.13: Output for proc ](3_files/C14197_09_13.jpg)
+![Figure 9.13: Output for proc ](./images/C14197_09_13.jpg)
 
 
 </div>
@@ -611,7 +611,7 @@ The output would be as follows:
 <div>
 
 
-![Figure 9.14: Output for Proc.new ](3_files/C14197_09_14.jpg)
+![Figure 9.14: Output for Proc.new ](./images/C14197_09_14.jpg)
 
 
 </div>
@@ -680,7 +680,7 @@ The following steps will help you with the solution:
 
 
 ![Figure 9.15: Output for the sum function using proc
-](3_files/C14197_09_15.jpg)
+](./images/C14197_09_15.jpg)
 
 
 </div>
@@ -750,7 +750,7 @@ The following steps will help you to complete the exercise:
 
     
     ![Figure 9.16: Output with profit-inclusive prices
-    ](3_files/C14197_09_16.jpg)
+    ](./images/C14197_09_16.jpg)
 
 
 Figure 9.16: Output with profit-inclusive prices
@@ -764,7 +764,7 @@ Just like `proc` objects, lambdas are also examples of closure
 in Ruby. Lambdas, just like `proc`, are simply a function with
 a name. Additionally, just like `proc`, they are objects too.
 We will be looking at the specific differences between `proc`
-and lambdas later on in the chapter.
+and lambdas later on in the lab.
 
 Let\'s now look at the following syntax to learn more about lambdas:
 
@@ -839,7 +839,7 @@ exercise:
 <div>
 
 
-![](3_files/C14197_09_17.jpg)
+![](./images/C14197_09_17.jpg)
 
 
 </div>
@@ -895,7 +895,7 @@ The output would be as follows:
 <div>
 
 
-![Figure 9.18: Output for proc versus lambda ](3_files/C14197_09_18.jpg)
+![Figure 9.18: Output for proc versus lambda ](./images/C14197_09_18.jpg)
 
 
 </div>
@@ -1004,7 +1004,7 @@ following output:
 <div>
 
 
-![Figure 9.19 Output for recipe preparation ](3_files/C14197_09_19.jpg)
+![Figure 9.19 Output for recipe preparation ](./images/C14197_09_19.jpg)
 
 
 </div>
@@ -1012,7 +1012,7 @@ following output:
 Figure 9.19 Output for recipe preparation
 
 Let\'s now solve an activity, where we will be implementing every topic
-we have learned about in this chapter.
+we have learned about in this lab.
 
 
 
@@ -1051,7 +1051,7 @@ The output would be as follows:
 <div>
 
 
-![Figure 9.20: The invoice generator output ](3_files/C14197_09_20.jpg)
+![Figure 9.20: The invoice generator output ](./images/C14197_09_20.jpg)
 
 
 </div>
@@ -1067,7 +1067,7 @@ Summary
 =======
 
 
-In this chapter, we learned about the key concepts of metaprogramming.
+In this lab, we learned about the key concepts of metaprogramming.
 We learned about concepts such as blocks and how to use
 `yield` and `block_given?` to make our blocks of
 code powerful. We then learned about `proc` and
@@ -1075,5 +1075,5 @@ code powerful. We then learned about `proc` and
 `lambda`, and we also discovered how a subtle difference can
 help avoid confusion and bugs.
 
-In the next chapter, we will be learning more about metaprogramming in
+In the next lab, we will be learning more about metaprogramming in
 Ruby.

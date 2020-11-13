@@ -8,7 +8,7 @@
 
 Overview
 
-By the end of this chapter, you will be able to import external data and
+By the end of this lab, you will be able to import external data and
 code to improve the functionality of an application; use Ruby gems in
 programs; interact with file systems and file modes in Ruby; read and
 write files to and from disk using Ruby; import and export external CSV
@@ -20,14 +20,14 @@ Introduction
 ============
 
 
-In the previous chapter, we learned about code reusability and how to
+In the previous lab, we learned about code reusability and how to
 clean up our code base by extracting common functionality and logic from
 modules that can be included as needed throughout our project,
 preventing unnecessary code duplication.
 
 This is an important concept to grasp as it forms the base for Ruby\'s
 excellent package management system known as **RubyGems**, which we will
-dive into further in this chapter.
+dive into further in this lab.
 
 Most applications consist of inputs and outputs. Facebook will have data
 in the form of photos and status updates (as input), and users, in turn,
@@ -50,7 +50,7 @@ another system. Following this, some sort of processing is then
 performed on the values and, finally, a result is outputted to the user
 in a way that helps them to understand the data.
 
-In this chapter, we will look at handling this exact type of scenario.
+In this lab, we will look at handling this exact type of scenario.
 We will look at importing and exporting CSV data, processing it, and
 then outputting a result using an external library that\'s going to
 format the data into a nice readable table for us.
@@ -478,7 +478,7 @@ also need to call `close` afterward to tell Ruby to release
 the handle it has opened for the file. When using the
 `File.open` method with a block, `close` is
 automatically called for us. We shall discuss this in more detail later
-on in the chapter.
+on in the lab.
 
 You might be wondering what that `w` parameter that appears
 after the filename is. This tells Ruby what mode we want to use. In this
@@ -1945,8 +1945,8 @@ Activity 7.01: Presenting Voting Data in CSV Format Using Ruby Gems
 -------------------------------------------------------------------
 
 In this activity, we\'re going to put into practice everything that
-we\'ve learned in this chapter. We\'re going to expand our voting
-program, initiated in *Chapter 4*, *Methods*, to allow the importing of
+we\'ve learned in this lab. We\'re going to expand our voting
+program, initiated in *Lab 4*, *Methods*, to allow the importing of
 external voting data from a CSV file, and we\'re also going to improve
 our user experience by using the `terminal-table` gem to print
 our vote results to the Terminal in a nice, readable, formatted table.
@@ -2051,7 +2051,7 @@ Summary
 =======
 
 
-In this chapter, we\'ve covered how to import and export raw CSV data in
+In this lab, we\'ve covered how to import and export raw CSV data in
 our application, how to extend the functionality of our applications by
 including external libraries with Ruby gems, and how to interact with
 the filesystem using Ruby.
@@ -2074,6 +2074,6 @@ by using external libraries to provide a more user-friendly
 representation of data.
 
 We can safely say now that we\'re getting the hang of this. In the next
-chapter, we will dive a little deeper and go beyond the basics,
+lab, we will dive a little deeper and go beyond the basics,
 extending our knowledge of Ruby by looking a little closer at some more
 advanced functionality.

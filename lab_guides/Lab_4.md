@@ -8,7 +8,7 @@ Lab 4. Ruby Methods
 
 Overview
 
-By the end of this chapter, you will be able to define and call your own
+By the end of this lab, you will be able to define and call your own
 methods for Ruby programs; set parameters for methods in Ruby; provide
 default values for a parameter in Ruby; implement methods in Ruby that
 return multiple values and write code using the built-in modules of Time
@@ -19,7 +19,7 @@ Introduction
 ============
 
 
-In the previous chapter, we learned about Boolean variables, conditional
+In the previous lab, we learned about Boolean variables, conditional
 expressions, and loops, including the core Ruby concepts of using
 blocks. We will now zoom out a little in the Ruby world and learn about
 methods. In fact, we\'ve been using methods in the previous chapters,
@@ -61,7 +61,7 @@ handle each of these cases. A common approach to handling all these
 cases is actually not to worry about the specific types of arguments,
 but to worry about whether the arguments behave as we need them to
 instead. This is called **duck typing** and will be covered in this
-chapter.
+lab.
 
 
 The Basic Structure of the Ruby Method
@@ -115,7 +115,7 @@ object is simply a type of the Ruby `Object` class.
 
 In Ruby, everything is an object; even classes are objects. This can be
 a bit confusing and we will discuss more about classes in the next
-chapter, *Chapter 5*, *Object-Oriented Programming with Ruby*. For now,
+lab, *Lab 5*, *Object-Oriented Programming with Ruby*. For now,
 just know that we can call methods on objects. Or, in Ruby parlance, we
 can send messages to receivers, or an object can receive a message.
 
@@ -180,8 +180,8 @@ learn their signatures. As long as the signature of a method remains the
 same, a developer can feel free to reimplement a method however they
 wish, and we can count on our code not breaking from this change. This
 is called encapsulation and is a core concept in OOP. We will talk more
-about method signatures throughout this chapter, while we will talk more
-about encapsulation in the next chapter, *Chapter 5*, *Object-Oriented
+about method signatures throughout this lab, while we will talk more
+about encapsulation in the next lab, *Lab 5*, *Object-Oriented
 Programming with Ruby*.
 
 There is a nuance about method signatures, implementations, and
@@ -402,7 +402,7 @@ arguments to methods.
 
 Understanding variable scope is important to consider as each new
 concept of Ruby is learned. Variable scope will depend on the context.
-We will learn more about variable scope in the next chapter, *Chapter 5,
+We will learn more about variable scope in the next lab, *Lab 5,
 Object-Oriented Programming with Ruby*.
 
 
@@ -532,7 +532,7 @@ cleaner because the arguments are named ahead of time. We don\'t need to
 extract them from a hash. The other advantage here is that keyword
 arguments can be listed in any order in the method signature or the
 method invocation. Contrast this with the positional arguments that we
-learned about in the first section of this chapter.
+learned about in the first section of this lab.
 
 This advantage allows us to add or remove arguments from the method
 signature without having to worry about other code that may reference
@@ -928,7 +928,7 @@ not clear by reading the method signature what types of arguments the
 method can handle.
 
 That said, knowing the splat operator exists and how it works can come
-in handy. We\'ll learn in the final chapter about a special Ruby method
+in handy. We\'ll learn in the final lab about a special Ruby method
 called `method_missing`, which uses the splat operator. In
 brief, this method is called by Ruby on an object when the object
 receives a message (method) that is not defined.
@@ -1262,7 +1262,7 @@ call_anything({a: 1, b: 2},gets.chomp.to_sym)
 ```
 
 
-Additionally, we will learn, in Chapter 5, Object-Oriented Programming
+Additionally, we will learn, in Lab 5, Object-Oriented Programming
 with Ruby, how `send` can bypass method visibility when using
 OOP in Ruby.
 
@@ -1437,7 +1437,7 @@ Ruby to perform basic mathematical operations:
     this into your spreadsheet software. It should show up as follows:
 
     
-    ![Figure 4.21: x-y pairs ](7_files/C14197_04_21.jpg)
+    ![Figure 4.21: x-y pairs ](./images/C14197_04_21.jpg)
 
 
     Figure 4.21: x-y pairs
@@ -1458,7 +1458,7 @@ Ruby to perform basic mathematical operations:
 <div>
 
 
-![Figure 4.22: Converting text into columns ](7_files/C14197_04_22.jpg)
+![Figure 4.22: Converting text into columns ](./images/C14197_04_22.jpg)
 
 
 </div>
@@ -1475,7 +1475,7 @@ straight-line series). You should end up with a nice-looking sine wave:
 <div>
 
 
-![Figure 4.23: Sine-wave output ](7_files/C14197_04_23.jpg)
+![Figure 4.23: Sine-wave output ](./images/C14197_04_23.jpg)
 
 
 </div>
@@ -1548,7 +1548,7 @@ of Ruby and perform various operations with it:
     The output should be as follows:
 
     
-    ![Figure 4.25: Time.now ](7_files/C14197_04_25.jpg)
+    ![Figure 4.25: Time.now ](./images/C14197_04_25.jpg)
 
 
     Figure 4.25: Time.now
@@ -1570,7 +1570,7 @@ of Ruby and perform various operations with it:
 
     
     ![Figure 4.26: The .class method on time.now
-    ](7_files/C14197_04_26.jpg)
+    ](./images/C14197_04_26.jpg)
 
 
     Figure 4.26: The .class method on time.now
@@ -1692,7 +1692,7 @@ of Ruby and perform various operations with it:
 
     
     ![Figure 4.30: Sum of the two Time instances
-    ](7_files/C14197_04_30.jpg)
+    ](./images/C14197_04_30.jpg)
 
 
     Figure 4.30: Sum of the two Time instances
@@ -1711,7 +1711,7 @@ of Ruby and perform various operations with it:
     The output should be as follows:
 
     
-    ![Figure 4.31: Adding two Time instances ](7_files/C14197_04_31.jpg)
+    ![Figure 4.31: Adding two Time instances ](./images/C14197_04_31.jpg)
 
 
     Figure 4.31: Adding two Time instances
@@ -1733,7 +1733,7 @@ of Ruby and perform various operations with it:
 
 
 ![Figure 4.32: Subtracting two Time instances
-](7_files/C14197_04_32.jpg)
+](./images/C14197_04_32.jpg)
 
 
 </div>
@@ -1803,7 +1803,7 @@ Here is the expected output:
 <div>
 
 
-![Figure 4.33: Output for Blackjack](7_files/C14197_04_33.jpg)
+![Figure 4.33: Output for Blackjack](./images/C14197_04_33.jpg)
 
 
 </div>
@@ -1819,7 +1819,7 @@ Summary
 =======
 
 
-In this chapter, we covered the significance of methods, how to define
+In this lab, we covered the significance of methods, how to define
 them, and the different ways to send arguments to them. Indeed, methods
 are one of the foundational concepts of Ruby, so it\'s important to feel
 comfortable using them. The main purpose of a method is to wrap up a
@@ -1835,4 +1835,4 @@ Methods, like atoms, are building blocks of software programming. Once
 we start having a lot of methods, we will want to bundle them up into a
 higher-order concept. In Ruby, there are two higher-order concepts in
 which to group methods: classes and modules. We will look at both of
-these in the next chapter, beginning with classes.
+these in the next lab, beginning with classes.

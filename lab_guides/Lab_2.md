@@ -7,7 +7,7 @@
 
 Overview
 
-By the end of this chapter, you will be able to perform operations on
+By the end of this lab, you will be able to perform operations on
 arrays and hashes; use Ruby methods on arrays and hashes; create your
 own Ruby method and write a Ruby program for rolling dice.
 
@@ -29,12 +29,12 @@ Introduction
 ============
 
 
-In the previous chapter, we studied variables, constants, strings, and
+In the previous lab, we studied variables, constants, strings, and
 various data types. We performed various operations on strings and
 numbers. We were also introduced to the **Interactive Ruby Shell**
 (**IRB**), which makes coding in Ruby easier.
 
-This chapter is dedicated to bringing you up to speed with arrays,
+This lab is dedicated to bringing you up to speed with arrays,
 hashes, and methods in Ruby. You could say that these are among the most
 fundamental topics. We will take a closer look at the different ways of
 creating arrays and hashes, as there are a wide variety of options.
@@ -72,7 +72,7 @@ arrays. Let\'s now look at a few examples in relation to arrays.
 Note
 
 We will be using Interactive Ruby Shell (IRB) extensively in this
-chapter for all examples, exercises, and activities.
+lab for all examples, exercises, and activities.
 
 Beginning with arrays, here is the code for creating an empty array:
 
@@ -86,7 +86,7 @@ The output will appear as follows:
 <div>
 
 
-![Figure 2.1: Output for an empty array ](3_files/C14197_02_01.jpg)
+![Figure 2.1: Output for an empty array ](./images/C14197_02_01.jpg)
 
 
 </div>
@@ -108,7 +108,7 @@ The output will appear as follows:
 
 
 ![Figure 2.2: Output for an array with predefined values
-](3_files/C14197_02_02.jpg)
+](./images/C14197_02_02.jpg)
 
 
 </div>
@@ -130,7 +130,7 @@ The output on IRB would appear as follows:
 <div>
 
 
-![Figure 2.3: Output with Array.new ](3_files/C14197_02_03.jpg)
+![Figure 2.3: Output with Array.new ](./images/C14197_02_03.jpg)
 
 
 </div>
@@ -158,7 +158,7 @@ The output will be as shown in the following code block:
 
 
 ![Figure 2.4: Output for an array with the first four values empty
-](3_files/C14197_02_04.jpg)
+](./images/C14197_02_04.jpg)
 
 
 </div>
@@ -179,7 +179,7 @@ The output will appear as follows :
 
 
 ![Figure 2.5: Output for arrays with different types of elements
-](3_files/C14197_02_05.jpg)
+](./images/C14197_02_05.jpg)
 
 
 </div>
@@ -209,7 +209,7 @@ The code for both scenarios is presented as follows:
     The output will be as follows:
 
     
-    ![Figure 2.6: Iterating without an index ](3_files/C14197_02_06.jpg)
+    ![Figure 2.6: Iterating without an index ](./images/C14197_02_06.jpg)
 
 
 Figure 2.6: Iterating without an index
@@ -229,7 +229,7 @@ Figure 2.6: Iterating without an index
     The output will be as follows:
 
     
-    ![Figure 2.7: Iterating with an index ](3_files/C14197_02_07.jpg)
+    ![Figure 2.7: Iterating with an index ](./images/C14197_02_07.jpg)
 
 
 Figure 2.7: Iterating with an index
@@ -263,7 +263,7 @@ The output will appear as follows:
 
 
 ![Figure 2.8: Output for the each\_with\_index function
-](3_files/C14197_02_08.jpg)
+](./images/C14197_02_08.jpg)
 
 
 </div>
@@ -297,7 +297,7 @@ The output on IRB would appear as follows:
 <div>
 
 
-![Figure 2.9: Output for the array class ](3_files/C14197_02_09.jpg)
+![Figure 2.9: Output for the array class ](./images/C14197_02_09.jpg)
 
 
 </div>
@@ -319,7 +319,7 @@ The output will be as follows:
 <div>
 
 
-![Figure 2.10: Methods for an array ](3_files/C14197_02_10.jpg)
+![Figure 2.10: Methods for an array ](./images/C14197_02_10.jpg)
 
 
 </div>
@@ -349,7 +349,7 @@ The output will appear as follows:
 
 
 ![Figure 2.11: Output using the .respond\_to? function on an array
-](3_files/C14197_02_11.jpg)
+](./images/C14197_02_11.jpg)
 
 
 </div>
@@ -399,7 +399,7 @@ The output will appear as follows:
 <div>
 
 
-![Figure 2.12: Merging two arrays ](3_files/C14197_02_12.jpg)
+![Figure 2.12: Merging two arrays ](./images/C14197_02_12.jpg)
 
 
 </div>
@@ -432,7 +432,7 @@ The output will be as shown in the following code block:
 
 
 ![Figure 2.13: Removing similar elements from the array
-](3_files/C14197_02_13.jpg)
+](./images/C14197_02_13.jpg)
 
 
 </div>
@@ -469,7 +469,7 @@ The output will be as shown in the following code block:
 
 
 ![Figure 2.14: Inserting elements into an array using the push method
-](3_files/C14197_02_14.jpg)
+](./images/C14197_02_14.jpg)
 
 
 </div>
@@ -496,7 +496,7 @@ The output will be as shown in the following code block:
 
 
 ![Figure 2.15: Inserting elements into an array using the \<\< operator
-](3_files/C14197_02_15.jpg)
+](./images/C14197_02_15.jpg)
 
 
 </div>
@@ -526,7 +526,7 @@ The output will be as shown in the following code block:
 
 
 ![Figure 2.16: Finding the last element of the array
-](3_files/C14197_02_16.jpg)
+](./images/C14197_02_16.jpg)
 
 
 </div>
@@ -556,7 +556,7 @@ The output will be as shown in the following code block:
 
 
 ![Figure 2.17: Eliminating the last element from an array
-](3_files/C14197_02_17.jpg)
+](./images/C14197_02_17.jpg)
 
 
 </div>
@@ -609,7 +609,7 @@ The following steps will help you to complete the exercise:
 
     
     ![Figure 2.18: Output of the colors\_3 array
-    ](3_files/C14197_02_18.jpg)
+    ](./images/C14197_02_18.jpg)
 
 
     Figure 2.18: Output of the colors\_3 array
@@ -634,7 +634,7 @@ The following steps will help you to complete the exercise:
 
     
     ![Figure 2.19: Output of the colors\_new array
-    ](3_files/C14197_02_19.jpg)
+    ](./images/C14197_02_19.jpg)
 
 
     Figure 2.19: Output of the colors\_new array
@@ -659,7 +659,7 @@ The following steps will help you to complete the exercise:
 
     
     ![Figure 2.20: Output of the colors\_1 and colors\_2 arrays
-    ](3_files/C14197_02_20.jpg)
+    ](./images/C14197_02_20.jpg)
 
 
     Figure 2.20: Output of the colors\_1 and colors\_2 arrays
@@ -683,7 +683,7 @@ The following steps will help you to complete the exercise:
     The output will be as follows:
 
     
-    ![Figure 2.21: Last element of the array ](3_files/C14197_02_21.jpg)
+    ![Figure 2.21: Last element of the array ](./images/C14197_02_21.jpg)
 
 
     Figure 2.21: Last element of the array
@@ -706,7 +706,7 @@ The following steps will help you to complete the exercise:
 
     
     ![Figure 2.22: Output of the colors\_2 array without the last
-    element ](3_files/C14197_02_22.jpg)
+    element ](./images/C14197_02_22.jpg)
 
 
 Figure 2.22: Output of the colors\_2 array without the last element
@@ -742,7 +742,7 @@ The output will be as shown in the following code block:
 <div>
 
 
-![Figure 2.23: FrozenError ](3_files/C14197_02_23.jpg)
+![Figure 2.23: FrozenError ](./images/C14197_02_23.jpg)
 
 
 </div>
@@ -774,7 +774,7 @@ The output will be as shown in the following code block:
 <div>
 
 
-![Figure 2.24: Output of the uniq function ](3_files/C14197_02_24.jpg)
+![Figure 2.24: Output of the uniq function ](./images/C14197_02_24.jpg)
 
 
 </div>
@@ -797,7 +797,7 @@ The output will be as shown in the following code block:
 <div>
 
 
-![Figure 2.25: Output for the uniq! function ](3_files/C14197_02_25.jpg)
+![Figure 2.25: Output for the uniq! function ](./images/C14197_02_25.jpg)
 
 
 </div>
@@ -831,7 +831,7 @@ The output will be as shown in the following code block:
 <div>
 
 
-![Figure 2.26: Sorting elements ](3_files/C14197_02_26.jpg)
+![Figure 2.26: Sorting elements ](./images/C14197_02_26.jpg)
 
 
 </div>
@@ -862,7 +862,7 @@ The output will be as shown in the following code block:
 
 
 ![Figure 2.27: Output for the length and size methods
-](3_files/C14197_02_27.jpg)
+](./images/C14197_02_27.jpg)
 
 
 </div>
@@ -901,7 +901,7 @@ The output will be as shown in the following code block:
 <div>
 
 
-![Figure 2.28: Output of the include? method ](3_files/C14197_02_28.jpg)
+![Figure 2.28: Output of the include? method ](./images/C14197_02_28.jpg)
 
 
 </div>
@@ -936,7 +936,7 @@ The output will be as shown in the following code block:
 <div>
 
 
-![Figure 2.29: Output of the join method ](3_files/C14197_02_29.jpg)
+![Figure 2.29: Output of the join method ](./images/C14197_02_29.jpg)
 
 
 </div>
@@ -979,7 +979,7 @@ The following steps will help you to complete the exercise:
 
     
     ![Figure 2.30: Output of the frozen array
-    ](3_files/C14197_02_30.jpg)
+    ](./images/C14197_02_30.jpg)
 
 
     Figure 2.30: Output of the frozen array
@@ -1001,7 +1001,7 @@ The following steps will help you to complete the exercise:
     The array should now be as shown in the following code block:
 
     
-    ![Figure 2.31: Output for .uniq ](3_files/C14197_02_31.jpg)
+    ![Figure 2.31: Output for .uniq ](./images/C14197_02_31.jpg)
 
 
     Figure 2.31: Output for .uniq
@@ -1023,7 +1023,7 @@ The following steps will help you to complete the exercise:
 
     
     ![Figure 2.32: Output for the .sort method
-    ](3_files/C14197_02_32.jpg)
+    ](./images/C14197_02_32.jpg)
 
 
     Figure 2.32: Output for the .sort method
@@ -1046,7 +1046,7 @@ The following steps will help you to complete the exercise:
 
     
     ![Figure 2.33: Output for the size and length of the array
-    ](3_files/C14197_02_33.jpg)
+    ](./images/C14197_02_33.jpg)
 
 
     Figure 2.33: Output for the size and length of the array
@@ -1069,7 +1069,7 @@ The following steps will help you to complete the exercise:
 
     
     ![Figure 2.34: Output for the .include method
-    ](3_files/C14197_02_34.jpg)
+    ](./images/C14197_02_34.jpg)
 
 
     Figure 2.34: Output for the .include method
@@ -1091,7 +1091,7 @@ The following steps will help you to complete the exercise:
     The output will be as shown in the following code block:
 
     
-    ![Figure 2.35: Output for .inspect ](3_files/C14197_02_35.jpg)
+    ![Figure 2.35: Output for .inspect ](./images/C14197_02_35.jpg)
 
 
 Figure 2.35: Output for .inspect
@@ -2318,7 +2318,7 @@ Summary
 =======
 
 
-In this chapter, we took a journey into data types and some very common
+In this lab, we took a journey into data types and some very common
 operations that can be performed on them. We started out with array
 operations and took a closer look at adding, removing, and iterating
 over this data type. Then, we moved on to the hash data type and
@@ -2326,12 +2326,12 @@ discovered the hidden magic that powers most of the web and desktop
 applications written in Ruby. Hashes are a very common way to store and
 manipulate data inside web applications. We added, removed, and iterated
 over hashes, and then performed some symbol-based sorting with nested
-hashes. Our final destination in this chapter was the methods and
+hashes. Our final destination in this lab was the methods and
 functions that allow us to create either functional or procedural
 applications in Ruby. Functions and methods in themselves are not of
 much use, so we imbued them with arguments. We also took a closer look
 at how optional and default arguments are handled in case multiple
-arguments are passed. This constituted a very important chapter, namely,
+arguments are passed. This constituted a very important lab, namely,
 how the extra arguments are mapped to the predefined arguments. In the
-next chapter, we will be studying methods in detail and how they define
+next lab, we will be studying methods in detail and how they define
 the program workflows.

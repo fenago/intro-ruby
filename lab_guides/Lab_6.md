@@ -8,7 +8,7 @@
 
 Overview
 
-By the end of the chapter, you will be able to implement modules within
+By the end of the lab, you will be able to implement modules within
 the Ruby object model; add instance methods by including a module into a
 class; add class methods by extending a class with a module; create a
 namespace with a module; distinguish between prepending modules into
@@ -20,13 +20,13 @@ Introduction
 ============
 
 
-In the previous chapter, we learned about the basics of object-oriented
+In the previous lab, we learned about the basics of object-oriented
 programming using Ruby. We learned that classes serve as templates for
 objects. We also learned that classes can also serve as templates for
 other classes by using the mechanism of inheritance. However, there may
 be situations where we might have to share code among different classes
 that don\'t really fit into an inheritance architecture. For example, we
-could be designing a reality simulator. In the previous chapter, we
+could be designing a reality simulator. In the previous lab, we
 talked about how cars have four wheels, bicycles have two wheels, and
 boats have no wheels, but they still fall under the \"Vehicles\" class.
 Imagine that we had previously been tasked with modeling houses or
@@ -167,7 +167,7 @@ The output would show up as follows:
 <div>
 
 
-![Figure 6.1: Output after including modules ](3_files/C14197_06_01.jpg)
+![Figure 6.1: Output after including modules ](./images/C14197_06_01.jpg)
 
 
 </div>
@@ -198,7 +198,7 @@ Note
 
 The `Logger` module is a tool used for debugging in Ruby. We
 will be looking at the `Logger` module in more detail in
-*Chapter 8*, *Debugging with Ruby*.
+*Lab 8*, *Debugging with Ruby*.
 
 The following steps will help you complete the exercise:
 
@@ -255,7 +255,7 @@ The following steps will help you complete the exercise:
     follows:
 
     
-    ![Figure 6.2: Service logs output ](3_files/C14197_06_02.jpg)
+    ![Figure 6.2: Service logs output ](./images/C14197_06_02.jpg)
 
 
 Figure 6.2: Service logs output
@@ -273,7 +273,7 @@ instance methods into a class. This is a very important point in
 understanding modules. `include` brings in the methods of a
 module into a class as instance methods.Because they are brought in as
 instance methods, all of the concepts that we learned about in the
-previous chapter about object-oriented programming and inheritance will
+previous lab about object-oriented programming and inheritance will
 apply to these methods.
 
 Consider the following code block:
@@ -329,7 +329,7 @@ The output would be as follows:
 
 
 ![Figure 6.3: Output for subclass overriding a method
-](3_files/C14197_06_03.jpg)
+](./images/C14197_06_03.jpg)
 
 
 </div>
@@ -380,7 +380,7 @@ The output will be as follows:
 
 
 ![Figure 6.4: Output error for inclusion ordering
-](3_files/C14197_06_04.jpg)
+](./images/C14197_06_04.jpg)
 
 
 </div>
@@ -411,7 +411,7 @@ The output would be as follows:
 
 
 ![Figure 6.5: Output after changing the order
-](3_files/C14197_06_05.jpg)
+](./images/C14197_06_05.jpg)
 
 
 </div>
@@ -485,7 +485,7 @@ the methods to be defined, will inform whether you `include`
 the module or `extend` it.
 
 There is nothing stopping you from including the preceding module as
-follows (restart IRB for this chapter):
+follows (restart IRB for this lab):
 
 ``` {.language-markup}
 class User
@@ -795,7 +795,7 @@ class. There are a few things to point out here:
 
 -   The `included` method callback is defined with
     `self.` in front of it. This is known as a module method,
-    and we will cover it in the next chapter.
+    and we will cover it in the next lab.
 -   The `base_class` argument can be called anything. However,
     it will always represent the class that did the including of the
     module.
@@ -805,7 +805,7 @@ class. There are a few things to point out here:
     further modify class definitions within the module.
 
 Understanding class loading is a complex topic, especially when using a
-framework such as Ruby on Rails. For the purposes of this book, we can
+framework such as Ruby on Rails. For the purposes of this course, we can
 consider that all class loading will be done ahead of all program
 execution; however, it should be noted that, in reality, class loading
 is much more dynamic and can occur anywhere in program execution, even
@@ -1051,7 +1051,7 @@ Ruby as a symbol, or output a human-readable label:
 
 
     Here, we\'ve added some new magic. As discussed in the previous
-    chapter, using the `included` callback is a powerful
+    lab, using the `included` callback is a powerful
     paradigm for modules. As we\'ve seen, we first extend
     `ClassMethods`; we\'re going to leave the
     `ClassMethods` submodule empty for now. The next line runs
@@ -1082,7 +1082,7 @@ Ruby as a symbol, or output a human-readable label:
 
 
     This is a basic constructor and uses the basic `include`
-    module principles we learned at the beginning of the chapter. The
+    module principles we learned at the beginning of the lab. The
     `initialize` method will be added to all instances of the
     class that include `Enum`.
 
@@ -1213,7 +1213,7 @@ Ruby as a symbol, or output a human-readable label:
     interrogation methods for us? If you\'ve been paying attention, then
     you\'ll know the answer is yes. There are a few approaches here, but
     we\'ll use our old friend `method_missing` from the
-    previous chapter.
+    previous lab.
 
 7.  Respond to interrogation methods using `method_missing`:
 
@@ -1667,7 +1667,7 @@ calls `super`, which then calls the `ClassLogger`
 implementation. This is why we see the string output with
 `time` first and then `class` second.
 
-When we started this chapter, we said that calling `include`
+When we started this lab, we said that calling `include`
 was essentially like copying and pasting the code into the class. This
 isn\'t entirely true. As we can see, what\'s actually happening is that
 it\'s being added into the class hierarchy in an ordered fashion. That
@@ -1998,7 +1998,7 @@ Activity 6.01: Implementing Categories on the Voting Application Program
 ------------------------------------------------------------------------
 
 In this activity, we\'re going to expand the voting program we wrote in
-*Chapter 5*, *Object-Oriented Programming with Ruby*. We will enable the
+*Lab 5*, *Object-Oriented Programming with Ruby*. We will enable the
 voting program to allow multiple categories and make it so that users
 can create categories via the menu. Once a category is created, votes
 can start being recorded for that category. A category could be
@@ -2044,7 +2044,7 @@ Summary
 =======
 
 
-This chapter aimed to provide you with the knowledge necessary to create
+This lab aimed to provide you with the knowledge necessary to create
 modules with the Ruby object model. We have added instance methods by
 including modules into classes. We have added class methods to extend
 class functionality. We have created namespaces for our modules. As a
@@ -2061,6 +2061,6 @@ to keep in mind as you start using third-party modules in your
 application code.
 
 Now that we\'ve covered all the major fundamentals in Ruby, in the next
-chapter, we\'ll use what we have learned to focus on importing data from
+lab, we\'ll use what we have learned to focus on importing data from
 external sources, processing it using the models we\'ll create, and
 outputting that data in a common format such as CSV.

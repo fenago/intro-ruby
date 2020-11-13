@@ -8,7 +8,7 @@
 
 Overview
 
-By the end of this chapter, you will be able to implement standard
+By the end of this lab, you will be able to implement standard
 logging practices to display application data; create log files and use
 log levels to segregate and filter logs; perform basic debugging using
 byebug and Visual Studio Code and use breakpoints and expressions to
@@ -19,7 +19,7 @@ Introduction
 ============
 
 
-In the previous chapter, we learned about extending the functionality of
+In the previous lab, we learned about extending the functionality of
 our application with gems, interacting with the filesystem with the
 `File` and `IO` classes, importing external data
 using CSV files, and how to wrap all this up in a nicely encapsulated
@@ -33,7 +33,7 @@ when things go wrong, we\'re armed with the tools and required knowledge
 to solve the problem efficiently.
 
 Understanding how and why issues occur is a critical part of software
-engineering. In this chapter, we\'re going to learn how to use a proper
+engineering. In this lab, we\'re going to learn how to use a proper
 logging solution to gain visibility of our application\'s operation
 rather than just printing variables to the screen.
 
@@ -87,7 +87,7 @@ application behavior.
 
 Thankfully, Ruby has a number of great debugging tools that are at our
 disposal. We\'ll cover a few of the most popular ways to perform
-debugging in this chapter. We\'ll cover both Terminal- and editor-based
+debugging in this lab. We\'ll cover both Terminal- and editor-based
 debugging so you are fully armed to debug any issues that come your way.
 
 
@@ -201,7 +201,7 @@ Note
 
 If you don\'t like the content or the format of the log output, don\'t
 worry -- we\'ll be covering custom formatting options later in the
-chapter.
+lab.
 
 
 
@@ -575,7 +575,7 @@ Let\'s try creating a basic exception logger for ourselves now.
 Exercise 8.02: Creating a Basic Exception Logger
 ------------------------------------------------
 
-In this exercise, we will use the zero-division example from *Chapter
+In this exercise, we will use the zero-division example from *Lab
 7*, *Ruby Gems* to demonstrate the usage of log levels:
 
 1.  Import the `logger` class by using the `require`
@@ -1225,7 +1225,7 @@ Debugging Concepts
 ------------------
 
 We need to understand some basic debugging theory before we get started.
-This will be referred to throughout the chapter.
+This will be referred to throughout the lab.
 
 Breakpoints, call stacks, and debugger stepping are not specific to
 Ruby. These concepts are common to most languages, so it\'s worth taking
@@ -1256,7 +1256,7 @@ editor with two breakpoints set on lines **7** and **14**:
 <div>
 
 
-![Figure 8.6: Breakpoints while debugging ](5_files/C14197_08_06.jpg)
+![Figure 8.6: Breakpoints while debugging ](./images/C14197_08_06.jpg)
 
 
 </div>
@@ -1373,7 +1373,7 @@ view the stack trace by simply typing `caller`:
 <div>
 
 
-![Figure 8.7: Stack trace using caller ](5_files/C14197_08_07.jpg)
+![Figure 8.7: Stack trace using caller ](./images/C14197_08_07.jpg)
 
 
 </div>
@@ -1409,7 +1409,7 @@ line. Consider the following example:
 <div>
 
 
-![Figure 8.8: The StepOver output ](5_files/C14197_08_08.jpg)
+![Figure 8.8: The StepOver output ](./images/C14197_08_08.jpg)
 
 
 </div>
@@ -1508,7 +1508,7 @@ Let\'s run this code. The output should look like the following figure:
 <div>
 
 
-![Figure 8.10: Debugging with byebug ](5_files/C14197_08_10.jpg)
+![Figure 8.10: Debugging with byebug ](./images/C14197_08_10.jpg)
 
 
 </div>
@@ -1527,7 +1527,7 @@ rerun the program:
 <div>
 
 
-![Figure 8.11: Variable inspection in byebug ](5_files/C14197_08_11.jpg)
+![Figure 8.11: Variable inspection in byebug ](./images/C14197_08_11.jpg)
 
 
 </div>
@@ -1561,7 +1561,7 @@ be the next user in the `users` array:
 
 
 ![Figure 8.12: Stepping from one breakpoint to another
-](5_files/C14197_08_12.jpg)
+](./images/C14197_08_12.jpg)
 
 
 </div>
@@ -1615,7 +1615,7 @@ When we run the code, we get the following:
 
 
 ![Figure 8.13: Detecting odd characters in the array
-](5_files/C14197_08_13.jpg)
+](./images/C14197_08_13.jpg)
 
 
 </div>
@@ -1666,7 +1666,7 @@ navigational commands:
 <div>
 
 
-![Figure 8.14: Navigation commands in byebug ](5_files/C14197_08_14.jpg)
+![Figure 8.14: Navigation commands in byebug ](./images/C14197_08_14.jpg)
 
 
 </div>
@@ -1714,7 +1714,7 @@ following steps to complete the exercise:
 
     
     ![Figure 8.15: Output for byebug debugging
-    ](5_files/C14197_08_15.jpg)
+    ](./images/C14197_08_15.jpg)
 
 
     Figure 8.15: Output for byebug debugging
@@ -1733,7 +1733,7 @@ following steps to complete the exercise:
 
 
 ![Figure 8.16: Output for byebug debugging with completion
-](5_files/C14197_08_16.jpg)
+](./images/C14197_08_16.jpg)
 
 
 </div>
@@ -1761,7 +1761,7 @@ Studio Code looks like:
 
 
 ![Figure 8.17: Debugging with Visual Studio Code
-](5_files/C14197_08_17.jpg)
+](./images/C14197_08_17.jpg)
 
 
 </div>
@@ -1801,7 +1801,7 @@ updated to reflect the change:
 
 
 ![Figure 8.19: Variables list on Visual Studio Code
-](5_files/C14197_08_19.jpg)
+](./images/C14197_08_19.jpg)
 
 
 </div>
@@ -1883,7 +1883,7 @@ Figure 8.22: Breakpoints listing on Visual Studio Code
 Setting Breakpoints
 -------------------
 
-As we saw earlier in the chapter, the small red dots on the left-hand
+As we saw earlier in the lab, the small red dots on the left-hand
 side of the main panel are our breakpoints. We can set breakpoints by
 simply clicking in this column on any line of our code, as shown in the
 following figure:
@@ -1892,7 +1892,7 @@ following figure:
 
 
 ![Figure 8.23: Setting breakpoints in Visual Studio Code
-](5_files/C14197_08_23.jpg)
+](./images/C14197_08_23.jpg)
 
 
 </div>
@@ -1931,7 +1931,7 @@ To set a conditional breakpoint:
 
 
 ![Figure 8.24: Conditional breakpoint in Visual Studio Code
-](5_files/C14197_08_24.jpg)
+](./images/C14197_08_24.jpg)
 
 
 </div>
@@ -2049,7 +2049,7 @@ listed, by `Peng Lv`. Click `Install`:
 
 
 ![Figure 8.28: Installation of Ruby on Visual Studio Code
-](5_files/C14197_08_28.jpg)
+](./images/C14197_08_28.jpg)
 
 
 </div>
@@ -2074,7 +2074,7 @@ Now, perform the followings steps:
     following figure:
 
     
-    ![Figure 8.29: Debug option ](5_files/C14197_08_29.jpg)
+    ![Figure 8.29: Debug option ](./images/C14197_08_29.jpg)
 
 
     Figure 8.29: Debug option
@@ -2100,7 +2100,7 @@ Now, perform the followings steps:
 
     
     ![Figure 8.31: The contents of launch.json file
-    ](5_files/C14197_08_31.jpg)
+    ](./images/C14197_08_31.jpg)
 
 
     Figure 8.31: The contents of launch.json file
@@ -2150,7 +2150,7 @@ Now, perform the followings steps:
     following figure:
 
     
-    ![Figure 8.32: Debugging with VS Code ](5_files/C14197_08_32.jpg)
+    ![Figure 8.32: Debugging with VS Code ](./images/C14197_08_32.jpg)
 
 
     Figure 8.32: Debugging with VS Code
@@ -2175,7 +2175,7 @@ Activity 8.01: Perform Debugging on a Voting Application
 --------------------------------------------------------
 
 In this activity, we\'ll refactor our voting machine application that we
-have been building since Chapter 5, Object-Oriented Programming with
+have been building since Lab 5, Object-Oriented Programming with
 Ruby, to output a log trail that we can use for debugging purposes.
 
 The voting machine application has reported duplicate votes and
@@ -2240,7 +2240,7 @@ language.
 Logging is one of those things that you don\'t truly appreciate until
 you really need it, and when you need it, you\'ll be glad you spent that
 extra little bit of time setting it up properly. As we\'ve seen in this
-chapter, it really doesn\'t take much effort to dramatically improve
+lab, it really doesn\'t take much effort to dramatically improve
 your application\'s logging; even less if you set it up correctly from
 the very start of a project. With handy classes such as the
 `Logger` class, we can achieve very useful results with
@@ -2257,11 +2257,11 @@ worth of content alone. With these new tools at our disposal, we\'re
 ready to tackle any bugs that arise, be they in development or
 production.
 
-In the next chapter, we will look at a more advanced programming
+In the next lab, we will look at a more advanced programming
 concept, known as metaprogramming. Metaprogramming is like a subset of
 software engineering that allows code to use other code as input, or in
 some cases, code that can generate new code. This opens up a whole new
 world of programming possibilities and expands our software engineering
 toolbox with an array of exciting functionality and algorithms. When
 you\'re ready, let\'s take our skills up a notch and start learning
-about metaprogramming with Ruby in the next chapter.
+about metaprogramming with Ruby in the next lab.
