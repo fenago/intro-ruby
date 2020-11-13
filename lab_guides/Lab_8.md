@@ -1466,7 +1466,7 @@ editor with two breakpoints set on lines **7** and **14**:
 <div>
 
 ::: {#_idContainer317 .IMG---Figure}
-![Figure 8.6: Breakpoints while debugging ](5_files/C14197_08_06.jpg)
+![Figure 8.6: Breakpoints while debugging ](./images/C14197_08_06.jpg)
 :::
 
 </div>
@@ -1593,7 +1593,7 @@ view the stack trace by simply typing `caller`{.literal}:
 <div>
 
 ::: {#_idContainer318 .IMG---Figure}
-![Figure 8.7: Stack trace using caller ](5_files/C14197_08_07.jpg)
+![Figure 8.7: Stack trace using caller ](./images/C14197_08_07.jpg)
 :::
 
 </div>
@@ -1629,7 +1629,7 @@ line. Consider the following example:
 <div>
 
 ::: {#_idContainer319 .IMG---Figure}
-![Figure 8.8: The StepOver output ](5_files/C14197_08_08.jpg)
+![Figure 8.8: The StepOver output ](./images/C14197_08_08.jpg)
 :::
 
 </div>
@@ -1738,7 +1738,7 @@ Let\'s run this code. The output should look like the following figure:
 <div>
 
 ::: {#_idContainer321 .IMG---Figure}
-![Figure 8.10: Debugging with byebug ](5_files/C14197_08_10.jpg)
+![Figure 8.10: Debugging with byebug ](./images/C14197_08_10.jpg)
 :::
 
 </div>
@@ -1757,7 +1757,7 @@ rerun the program:
 <div>
 
 ::: {#_idContainer322 .IMG---Figure}
-![Figure 8.11: Variable inspection in byebug ](5_files/C14197_08_11.jpg)
+![Figure 8.11: Variable inspection in byebug ](./images/C14197_08_11.jpg)
 :::
 
 </div>
@@ -1791,7 +1791,7 @@ be the next user in the `users`{.literal} array:
 
 ::: {#_idContainer323 .IMG---Figure}
 ![Figure 8.12: Stepping from one breakpoint to another
-](5_files/C14197_08_12.jpg)
+](./images/C14197_08_12.jpg)
 :::
 
 </div>
@@ -1850,7 +1850,7 @@ When we run the code, we get the following:
 
 ::: {#_idContainer324 .IMG---Figure}
 ![Figure 8.13: Detecting odd characters in the array
-](5_files/C14197_08_13.jpg)
+](./images/C14197_08_13.jpg)
 :::
 
 </div>
@@ -1901,7 +1901,7 @@ navigational commands:
 <div>
 
 ::: {#_idContainer325 .IMG---Figure}
-![Figure 8.14: Navigation commands in byebug ](5_files/C14197_08_14.jpg)
+![Figure 8.14: Navigation commands in byebug ](./images/C14197_08_14.jpg)
 :::
 
 </div>
@@ -1955,7 +1955,7 @@ following steps to complete the exercise:
 
     ::: {#_idContainer326 .IMG---Figure}
     ![Figure 8.15: Output for byebug debugging
-    ](5_files/C14197_08_15.jpg)
+    ](./images/C14197_08_15.jpg)
     :::
 
     Figure 8.15: Output for byebug debugging
@@ -1974,7 +1974,7 @@ following steps to complete the exercise:
 
 ::: {#_idContainer327 .IMG---Figure}
 ![Figure 8.16: Output for byebug debugging with completion
-](5_files/C14197_08_16.jpg)
+](./images/C14197_08_16.jpg)
 :::
 
 </div>
@@ -2002,7 +2002,7 @@ Studio Code looks like:
 
 ::: {#_idContainer328 .IMG---Figure}
 ![Figure 8.17: Debugging with Visual Studio Code
-](5_files/C14197_08_17.jpg)
+](./images/C14197_08_17.jpg)
 :::
 
 </div>
@@ -2042,7 +2042,7 @@ updated to reflect the change:
 
 ::: {#_idContainer330 .IMG---Figure}
 ![Figure 8.19: Variables list on Visual Studio Code
-](5_files/C14197_08_19.jpg)
+](./images/C14197_08_19.jpg)
 :::
 
 </div>
@@ -2133,7 +2133,7 @@ following figure:
 
 ::: {#_idContainer334 .IMG---Figure}
 ![Figure 8.23: Setting breakpoints in Visual Studio Code
-](5_files/C14197_08_23.jpg)
+](./images/C14197_08_23.jpg)
 :::
 
 </div>
@@ -2177,7 +2177,7 @@ To set a conditional breakpoint:
 
 ::: {#_idContainer335 .IMG---Figure}
 ![Figure 8.24: Conditional breakpoint in Visual Studio Code
-](5_files/C14197_08_24.jpg)
+](./images/C14197_08_24.jpg)
 :::
 
 </div>
@@ -2295,7 +2295,7 @@ listed, by `Peng Lv`{.literal}. Click `Install`{.literal}:
 
 ::: {#_idContainer339 .IMG---Figure}
 ![Figure 8.28: Installation of Ruby on Visual Studio Code
-](5_files/C14197_08_28.jpg)
+](./images/C14197_08_28.jpg)
 :::
 
 </div>
@@ -2323,7 +2323,7 @@ Now, perform the followings steps:
     following figure:
 
     ::: {#_idContainer340 .IMG---Figure}
-    ![Figure 8.29: Debug option ](5_files/C14197_08_29.jpg)
+    ![Figure 8.29: Debug option ](./images/C14197_08_29.jpg)
     :::
 
     Figure 8.29: Debug option
@@ -2349,7 +2349,7 @@ Now, perform the followings steps:
 
     ::: {#_idContainer342 .IMG---Figure}
     ![Figure 8.31: The contents of launch.json file
-    ](5_files/C14197_08_31.jpg)
+    ](./images/C14197_08_31.jpg)
     :::
 
     Figure 8.31: The contents of launch.json file
@@ -2402,7 +2402,7 @@ Now, perform the followings steps:
     following figure:
 
     ::: {#_idContainer343 .IMG---Figure}
-    ![Figure 8.32: Debugging with VS Code ](5_files/C14197_08_32.jpg)
+    ![Figure 8.32: Debugging with VS Code ](./images/C14197_08_32.jpg)
     :::
 
     Figure 8.32: Debugging with VS Code

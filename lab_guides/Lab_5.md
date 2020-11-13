@@ -2632,7 +2632,7 @@ The output will be as follows:
 
 ::: {#_idContainer252 .IMG---Figure}
 ![Figure 5.34: Output of the public method calling the private method
-](6_files/C14197_05_34.jpg)
+](./images/C14197_05_34.jpg)
 :::
 
 </div>
@@ -2682,7 +2682,7 @@ The output will be as follows:
 <div>
 
 ::: {#_idContainer253 .IMG---Figure}
-![Figure 5.35: Using the protected method ](6_files/C14197_05_35.jpg)
+![Figure 5.35: Using the protected method ](./images/C14197_05_35.jpg)
 :::
 
 </div>
@@ -2735,7 +2735,7 @@ to maintain the privacy of methods.
 
     ::: {#_idContainer254 .IMG---Figure}
     ![Figure 5.36: Output for the method behaviors
-    ](6_files/C14197_05_36.jpg)
+    ](./images/C14197_05_36.jpg)
     :::
 
     Figure 5.36: Output for the method behaviors
@@ -2790,7 +2790,7 @@ to maintain the privacy of methods.
 
     ::: {#_idContainer255 .IMG---Figure}
     ![Figure 5.37: Output after calling each method
-    ](6_files/C14197_05_37.jpg)
+    ](./images/C14197_05_37.jpg)
     :::
 
     Figure 5.37: Output after calling each method
@@ -2834,7 +2834,7 @@ to maintain the privacy of methods.
 
     ::: {#_idContainer256 .IMG---Figure}
     ![Figure 5.38: Output for calling the call\_each method using self
-    ](6_files/C14197_05_38.jpg)
+    ](./images/C14197_05_38.jpg)
     :::
 
     Figure 5.38: Output for calling the call\_each method using self
@@ -2900,7 +2900,7 @@ to maintain the privacy of methods.
 
     ::: {#_idContainer257 .IMG---Figure}
     ![Figure 5.39: Output after using the equality operator
-    ](6_files/C14197_05_39.jpg)
+    ](./images/C14197_05_39.jpg)
     :::
 
     Figure 5.39: Output after using the equality operator
@@ -2953,7 +2953,7 @@ to maintain the privacy of methods.
 
     ::: {#_idContainer258 .IMG---Figure}
     ![Figure 5.40: Calling the protected method on a different class
-    ](6_files/C14197_05_40.jpg)
+    ](./images/C14197_05_40.jpg)
     :::
 
 Figure 5.40: Calling the protected method on a different class
@@ -3017,7 +3017,7 @@ You should be able to see the following output:
 <div>
 
 ::: {#_idContainer259 .IMG---Figure}
-![Figure 5.41: Using the URI module ](6_files/C14197_05_41.jpg)
+![Figure 5.41: Using the URI module ](./images/C14197_05_41.jpg)
 :::
 
 </div>
@@ -3157,7 +3157,7 @@ The following steps will help you to complete the activity:
 
     ::: {#_idContainer261 .IMG---Figure}
     ![Figure 5.43: Output for the voting application
-    ](6_files/C14197_05_43.jpg)
+    ](./images/C14197_05_43.jpg)
     :::
 
 Figure 5.43: Output for the voting application

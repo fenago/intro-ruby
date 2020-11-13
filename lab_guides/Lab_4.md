@@ -1669,7 +1669,7 @@ Ruby to perform basic mathematical operations:
     this into your spreadsheet software. It should show up as follows:
 
     ::: {#_idContainer203 .IMG---Figure}
-    ![Figure 4.21: x-y pairs ](7_files/C14197_04_21.jpg)
+    ![Figure 4.21: x-y pairs ](./images/C14197_04_21.jpg)
     :::
 
     Figure 4.21: x-y pairs
@@ -1690,7 +1690,7 @@ Ruby to perform basic mathematical operations:
 <div>
 
 ::: {#_idContainer204 .IMG---Figure}
-![Figure 4.22: Converting text into columns ](7_files/C14197_04_22.jpg)
+![Figure 4.22: Converting text into columns ](./images/C14197_04_22.jpg)
 :::
 
 </div>
@@ -1707,7 +1707,7 @@ straight-line series). You should end up with a nice-looking sine wave:
 <div>
 
 ::: {#_idContainer205 .IMG---Figure}
-![Figure 4.23: Sine-wave output ](7_files/C14197_04_23.jpg)
+![Figure 4.23: Sine-wave output ](./images/C14197_04_23.jpg)
 :::
 
 </div>
@@ -1786,7 +1786,7 @@ of Ruby and perform various operations with it:
     The output should be as follows:
 
     ::: {#_idContainer207 .IMG---Figure}
-    ![Figure 4.25: Time.now ](7_files/C14197_04_25.jpg)
+    ![Figure 4.25: Time.now ](./images/C14197_04_25.jpg)
     :::
 
     Figure 4.25: Time.now
@@ -1811,7 +1811,7 @@ of Ruby and perform various operations with it:
 
     ::: {#_idContainer208 .IMG---Figure}
     ![Figure 4.26: The .class method on time.now
-    ](7_files/C14197_04_26.jpg)
+    ](./images/C14197_04_26.jpg)
     :::
 
     Figure 4.26: The .class method on time.now
@@ -1945,7 +1945,7 @@ of Ruby and perform various operations with it:
 
     ::: {#_idContainer212 .IMG---Figure}
     ![Figure 4.30: Sum of the two Time instances
-    ](7_files/C14197_04_30.jpg)
+    ](./images/C14197_04_30.jpg)
     :::
 
     Figure 4.30: Sum of the two Time instances
@@ -1967,7 +1967,7 @@ of Ruby and perform various operations with it:
     The output should be as follows:
 
     ::: {#_idContainer213 .IMG---Figure}
-    ![Figure 4.31: Adding two Time instances ](7_files/C14197_04_31.jpg)
+    ![Figure 4.31: Adding two Time instances ](./images/C14197_04_31.jpg)
     :::
 
     Figure 4.31: Adding two Time instances
@@ -1992,7 +1992,7 @@ of Ruby and perform various operations with it:
 
 ::: {#_idContainer214 .IMG---Figure}
 ![Figure 4.32: Subtracting two Time instances
-](7_files/C14197_04_32.jpg)
+](./images/C14197_04_32.jpg)
 :::
 
 </div>
@@ -2062,7 +2062,7 @@ Here is the expected output:
 <div>
 
 ::: {#_idContainer215 .IMG---Figure}
-![Figure 4.33: Output for Blackjack](7_files/C14197_04_33.jpg)
+![Figure 4.33: Output for Blackjack](./images/C14197_04_33.jpg)
 :::
 
 </div>

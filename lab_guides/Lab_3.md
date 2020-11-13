@@ -212,7 +212,7 @@ table. Here is a sample truth table for the `AND`{.literal} and
 
 ::: {#_idContainer140 .IMG---Figure}
 ![Figure 3.4: Truth table for the AND and OR operators
-](3_files/C14197_03_04.jpg)
+](./images/C14197_03_04.jpg)
 :::
 
 </div>
@@ -286,7 +286,7 @@ Here is another truth table:
 
 ::: {#_idContainer143 .IMG---Figure}
 ![Figure 3.7: Truth table of flipped operators
-](3_files/C14197_03_07.jpg)
+](./images/C14197_03_07.jpg)
 :::
 
 </div>
@@ -373,7 +373,7 @@ The output should look like this:
 <div>
 
 ::: {#_idContainer145 .IMG---Figure}
-![Figure 3.9: Output for truthiness ](3_files/C14197_03_09.jpg)
+![Figure 3.9: Output for truthiness ](./images/C14197_03_09.jpg)
 :::
 
 </div>
@@ -519,7 +519,7 @@ steps will help you with the solution:
 
     ::: {#_idContainer147 .IMG---Figure}
     ![Figure 3.11: Output for Boolean operators
-    ](3_files/C14197_03_11.jpg)
+    ](./images/C14197_03_11.jpg)
     :::
 
 Figure 3.11: Output for Boolean operators
@@ -613,7 +613,7 @@ The output should look like this:
 <div>
 
 ::: {#_idContainer149 .IMG---Figure}
-![Figure 3.13: Output for the else statement ](3_files/C14197_03_13.jpg)
+![Figure 3.13: Output for the else statement ](./images/C14197_03_13.jpg)
 :::
 
 </div>
@@ -701,7 +701,7 @@ The output should look like this:
 
 ::: {#_idContainer151 .IMG---Figure}
 ![Figure 3.15: Output for the unless statement
-](3_files/C14197_03_13.jpg)
+](./images/C14197_03_13.jpg)
 :::
 
 </div>
@@ -2365,7 +2365,7 @@ The output should look like this:
 
 ::: {#_idContainer173 .IMG---Figure}
 ![Figure 3.37: Output for block as an argument
-](6_files/C14197_03_37.jpg)
+](./images/C14197_03_37.jpg)
 :::
 
 </div>
@@ -2461,7 +2461,7 @@ iteration:
 
     ::: {#_idContainer174 .IMG---Figure}
     ![Figure 3.38: Output for the math method
-    ](6_files/C14197_03_38.jpg)
+    ](./images/C14197_03_38.jpg)
     :::
 
     Figure 3.38: Output for the math method
@@ -2569,7 +2569,7 @@ The following steps will help you with the solution of the activity:
     `Yes`{.literal} condition and continue to play:
 
     ::: {#_idContainer176 .IMG---Figure}
-    ![Figure 3.40: Output for the yes input ](6_files/C14197_03_40.jpg)
+    ![Figure 3.40: Output for the yes input ](./images/C14197_03_40.jpg)
     :::
 
     Figure 3.40: Output for the yes input
@@ -2578,7 +2578,7 @@ The following steps will help you with the solution of the activity:
     `thank you`{.literal} message, as shown in the following figure:
 
     ::: {#_idContainer177 .IMG---Figure}
-    ![Figure 3.41: Output for a no input ](6_files/C14197_03_41.jpg)
+    ![Figure 3.41: Output for a no input ](./images/C14197_03_41.jpg)
     :::
 
     Figure 3.41: Output for a no input
@@ -2603,7 +2603,7 @@ The following steps will help you with the solution of the activity:
     Here\'s the expected output:
 
     ::: {#_idContainer179 .IMG---Figure}
-    ![](6_files/C14197_03_43.jpg)
+    ![](./images/C14197_03_43.jpg)
     :::
 
 Figure 3.43: Output for the HiLow game

@@ -68,7 +68,7 @@ that make it a delight to program with:
 -   Reflection
 -   Metaprogramming
     ::: {#_idContainer011 .IMG---Figure}
-    ![Figure 1.1: Key features of Ruby ](2_files/C14197_01_01.jpg)
+    ![Figure 1.1: Key features of Ruby ](./images/C14197_01_01.jpg)
     :::
 
 Figure 1.1: Key features of Ruby
@@ -334,7 +334,7 @@ IRB comes out of the box with Ruby, and you can access it using the
 <div>
 
 ::: {#_idContainer012 .IMG---Figure}
-![Figure 1.2: Output for \"Hello World\" ](3_files/C14197_01_02.jpg)
+![Figure 1.2: Output for \"Hello World\" ](./images/C14197_01_02.jpg)
 :::
 
 </div>
@@ -367,7 +367,7 @@ Let\'s do some addition with the Interactive Ruby Shell:
 <div>
 
 ::: {#_idContainer013 .IMG---Figure}
-![Figure 1.3: Addition output on irb ](3_files/C14197_01_03.jpg)
+![Figure 1.3: Addition output on irb ](./images/C14197_01_03.jpg)
 :::
 
 </div>
@@ -422,7 +422,7 @@ variable, such as the number of students, and print it in IRB:
 <div>
 
 ::: {#_idContainer014 .IMG---Figure}
-![Figure 1.4: Output for assigning variables ](3_files/C14197_01_04.jpg)
+![Figure 1.4: Output for assigning variables ](./images/C14197_01_04.jpg)
 :::
 
 </div>
@@ -489,7 +489,7 @@ integer and another variable that has a string value:
 
 ::: {#_idContainer015 .IMG---Figure}
 ![Figure 1.5: The output for variables assigned to a different data type
-](3_files/C14197_01_05.jpg)
+](./images/C14197_01_05.jpg)
 :::
 
 </div>
@@ -535,7 +535,7 @@ operator on the variable itself.
 
     ::: {#_idContainer016 .IMG---Figure}
     ![Figure 1.6: Output of the data type of a variable
-    ](3_files/C14197_01_06.jpg)
+    ](./images/C14197_01_06.jpg)
     :::
 
     Figure 1.6: Output of the data type of a variable
@@ -588,7 +588,7 @@ The output should be as follows:
 <div>
 
 ::: {#_idContainer017 .IMG---Figure}
-![Figure 1.7: Output for public methods ](3_files/C14197_01_07.jpg)
+![Figure 1.7: Output for public methods ](./images/C14197_01_07.jpg)
 :::
 
 </div>
@@ -656,7 +656,7 @@ Terminal.
 
 ::: {#_idContainer018 .IMG---Figure}
 ![Figure 1.8: Output of the hello world program
-](3_files/C14197_01_08.jpg)
+](./images/C14197_01_08.jpg)
 :::
 
 </div>
@@ -719,7 +719,7 @@ perform a simple addition. To do so, follow these steps:
 <div>
 
 ::: {#_idContainer019 .IMG---Figure}
-![Figure 1.9: Output for user input in Ruby ](3_files/C14197_01_09.jpg)
+![Figure 1.9: Output for user input in Ruby ](./images/C14197_01_09.jpg)
 :::
 
 </div>
@@ -765,7 +765,7 @@ height="1"}
 Search
 
 ::: {.navbar-brand .ng-scope ng-if="!$ctrl.canGoBack()"}
-![](4_files/e402412b40b3af8e306f122a9f53ea5d.png)
+![](./images/e402412b40b3af8e306f122a9f53ea5d.png)
 :::
 :::
 
@@ -837,7 +837,7 @@ Let\'s look at the class hierarchy for various number types:
 <div>
 
 ::: {#_idContainer020 .IMG---Figure}
-![Figure 1.10: Number class hierarchy ](4_files/C14197_01_10.jpg)
+![Figure 1.10: Number class hierarchy ](./images/C14197_01_10.jpg)
 :::
 
 </div>
@@ -855,7 +855,7 @@ In Ruby, integers are represented by two classes: **Fixnum** and
 <div>
 
 ::: {#_idContainer021 .IMG---Figure}
-![Figure 1.11: Integer types ](4_files/C14197_01_11.jpg)
+![Figure 1.11: Integer types ](./images/C14197_01_11.jpg)
 :::
 
 </div>
@@ -900,7 +900,7 @@ addition (`+`{.literal}), subtraction (`-`{.literal}), multiplication
 
     ::: {#_idContainer022 .IMG---Figure}
     ![Figure 1.12: Output for the addition operator
-    ](4_files/C14197_01_12.jpg)
+    ](./images/C14197_01_12.jpg)
     :::
 
     Figure 1.12: Output for the addition operator
@@ -921,7 +921,7 @@ addition (`+`{.literal}), subtraction (`-`{.literal}), multiplication
 
     ::: {#_idContainer023 .IMG---Figure}
     ![Figure 1.13: Output for the subtraction operator
-    ](4_files/C14197_01_13.jpg)
+    ](./images/C14197_01_13.jpg)
     :::
 
     Figure 1.13: Output for the subtraction operator
@@ -942,7 +942,7 @@ addition (`+`{.literal}), subtraction (`-`{.literal}), multiplication
 
     ::: {#_idContainer024 .IMG---Figure}
     ![Figure 1.14: Output for the multiplication operator
-    ](4_files/C14197_01_14.jpg)
+    ](./images/C14197_01_14.jpg)
     :::
 
     Figure 1.14: Output for the multiplication operator
@@ -965,7 +965,7 @@ addition (`+`{.literal}), subtraction (`-`{.literal}), multiplication
 
 ::: {#_idContainer025 .IMG---Figure}
 ![Figure 1.15: Output for the division operator
-](4_files/C14197_01_15.jpg)
+](./images/C14197_01_15.jpg)
 :::
 
 </div>
@@ -1021,7 +1021,7 @@ The following steps should help you with the solution:
 
     ::: {#_idContainer026 .IMG---Figure}
     ![Figure 1.16: Output for the next number
-    ](4_files/C14197_01_16.jpg)
+    ](./images/C14197_01_16.jpg)
     :::
 
     Figure 1.16: Output for the next number
@@ -1041,7 +1041,7 @@ The following steps should help you with the solution:
     The output should be as follows:
 
     ::: {#_idContainer027 .IMG---Figure}
-    ![](4_files/C14197_01_17.jpg)
+    ![](./images/C14197_01_17.jpg)
     :::
 
     Figure 1.17: Output for the previous number
@@ -1061,7 +1061,7 @@ The following steps should help you with the solution:
     The output should be as follows:
 
     ::: {#_idContainer028 .IMG---Figure}
-    ![](4_files/C14197_01_18.jpg)
+    ![](./images/C14197_01_18.jpg)
     :::
 
     Figure 1.18: Output for the LCM of 2 and 3
@@ -1083,7 +1083,7 @@ The following steps should help you with the solution:
 <div>
 
 ::: {#_idContainer029 .IMG---Figure}
-![](4_files/C14197_01_19.jpg)
+![](./images/C14197_01_19.jpg)
 :::
 
 </div>
@@ -1122,7 +1122,7 @@ The output should be as follows:
 <div>
 
 ::: {#_idContainer030 .IMG---Figure}
-![](4_files/C14197_01_20.jpg)
+![](./images/C14197_01_20.jpg)
 :::
 
 </div>
@@ -1220,7 +1220,7 @@ number completely or up to a certain decimal point:
 
 ::: {#_idContainer031 .IMG---Figure}
 ![Figure 1.21: Output for floating-point number operations
-](4_files/C14197_01_21.jpg)
+](./images/C14197_01_21.jpg)
 :::
 
 </div>
@@ -1249,7 +1249,7 @@ The output should be as follows:
 <div>
 
 ::: {#_idContainer032 .IMG---Figure}
-![Figure 1.22: Methods for the Float class ](4_files/C14197_01_22.jpg)
+![Figure 1.22: Methods for the Float class ](./images/C14197_01_22.jpg)
 :::
 
 </div>
@@ -1361,7 +1361,7 @@ most common ones:
 <div>
 
 ::: {#_idContainer033 .IMG---Figure}
-![Figure 1.23: Ways to write strings in Ruby ](4_files/C14197_01_23.jpg)
+![Figure 1.23: Ways to write strings in Ruby ](./images/C14197_01_23.jpg)
 :::
 
 </div>
@@ -1400,7 +1400,7 @@ class\' built-in methods. Lastly, we will discuss the bang
 
     ::: {#_idContainer034 .IMG---Figure}
     ![Figure 1.24: Output for string definition
-    ](4_files/C14197_01_24.jpg)
+    ](./images/C14197_01_24.jpg)
     :::
 
     Figure 1.24: Output for string definition
@@ -1426,7 +1426,7 @@ class\' built-in methods. Lastly, we will discuss the bang
 
     ::: {#_idContainer035 .IMG---Figure}
     ![Figure 1.25: Character count of a string
-    ](4_files/C14197_01_25.jpg)
+    ](./images/C14197_01_25.jpg)
     :::
 
     Figure 1.25: Character count of a string
@@ -1447,7 +1447,7 @@ class\' built-in methods. Lastly, we will discuss the bang
     The output should be as follows:
 
     ::: {#_idContainer036 .IMG---Figure}
-    ![Figure 1.26: String length calculation ](4_files/C14197_01_26.jpg)
+    ![Figure 1.26: String length calculation ](./images/C14197_01_26.jpg)
     :::
 
     Figure 1.26: String length calculation
@@ -1475,7 +1475,7 @@ class\' built-in methods. Lastly, we will discuss the bang
 
     ::: {#_idContainer037 .IMG---Figure}
     ![Figure 1.27: Uppercase string characters
-    ](4_files/C14197_01_27.jpg)
+    ](./images/C14197_01_27.jpg)
     :::
 
     Figure 1.27: Uppercase string characters
@@ -1497,7 +1497,7 @@ class\' built-in methods. Lastly, we will discuss the bang
 
     ::: {#_idContainer038 .IMG---Figure}
     ![Figure 1.28: Lowercase string characters
-    ](4_files/C14197_01_28.jpg)
+    ](./images/C14197_01_28.jpg)
     :::
 
     Figure 1.28: Lowercase string characters
@@ -1519,7 +1519,7 @@ class\' built-in methods. Lastly, we will discuss the bang
 
     ::: {#_idContainer039 .IMG---Figure}
     ![Figure 1.29: Capitalized string characters
-    ](4_files/C14197_01_29.jpg)
+    ](./images/C14197_01_29.jpg)
     :::
 
     Figure 1.29: Capitalized string characters
@@ -1540,7 +1540,7 @@ class\' built-in methods. Lastly, we will discuss the bang
     The output should be as follows:
 
     ::: {#_idContainer040 .IMG---Figure}
-    ![Figure 1.30: Original string object ](4_files/C14197_01_30.jpg)
+    ![Figure 1.30: Original string object ](./images/C14197_01_30.jpg)
     :::
 
     Figure 1.30: Original string object
@@ -1567,7 +1567,7 @@ class\' built-in methods. Lastly, we will discuss the bang
 <div>
 
 ::: {#_idContainer041 .IMG---Figure}
-![Figure 1.31: Bang operation on a string ](4_files/C14197_01_31.jpg)
+![Figure 1.31: Bang operation on a string ](./images/C14197_01_31.jpg)
 :::
 
 </div>
@@ -1624,7 +1624,7 @@ The following steps will help you to perform the exercise:
     The output should be as follows:
 
     ::: {#_idContainer042 .IMG---Figure}
-    ![Figure 1.32: Output using whitespace ](4_files/C14197_01_32.jpg)
+    ![Figure 1.32: Output using whitespace ](./images/C14197_01_32.jpg)
     :::
 
     Figure 1.32: Output using whitespace
@@ -1650,7 +1650,7 @@ The following steps will help you to perform the exercise:
 
     ::: {#_idContainer043 .IMG---Figure}
     ![Figure 1.33: Output using the .concat method
-    ](4_files/C14197_01_33.jpg)
+    ](./images/C14197_01_33.jpg)
     :::
 
     Figure 1.33: Output using the .concat method
@@ -1679,7 +1679,7 @@ The following steps will help you to perform the exercise:
 
 ::: {#_idContainer044 .IMG---Figure}
 ![Figure 1.34: Concatenation using the \<\< operator
-](4_files/C14197_01_34.jpg)
+](./images/C14197_01_34.jpg)
 :::
 
 </div>
@@ -1720,7 +1720,7 @@ for Ruby Fundamentals and interpolate it in a sentence:
     The output should be as follows:
 
     ::: {#_idContainer045 .IMG---Figure}
-    ![Figure 1.35: String interpolation ](4_files/C14197_01_35.jpg)
+    ![Figure 1.35: String interpolation ](./images/C14197_01_35.jpg)
     :::
 
     Figure 1.35: String interpolation
@@ -1744,7 +1744,7 @@ for Ruby Fundamentals and interpolate it in a sentence:
 
 ::: {#_idContainer046 .IMG---Figure}
 ![Figure 1.36: Addition operation in string interpolation
-](4_files/C14197_01_36.jpg)
+](./images/C14197_01_36.jpg)
 :::
 
 </div>
@@ -1782,7 +1782,7 @@ To extract certain characters from a string, follow these steps:
 
     ::: {#_idContainer047 .IMG---Figure}
     ![Figure 1.37: Extracting characters from a string
-    ](4_files/C14197_01_37.jpg)
+    ](./images/C14197_01_37.jpg)
     :::
 
     Figure 1.37: Extracting characters from a string
@@ -1811,7 +1811,7 @@ To extract certain characters from a string, follow these steps:
 <div>
 
 ::: {#_idContainer048 .IMG---Figure}
-![](4_files/C14197_01_38.jpg)
+![](./images/C14197_01_38.jpg)
 :::
 
 </div>
@@ -1874,7 +1874,7 @@ sentence \"My favorite book is Java Fundamentals\" with the word
 <div>
 
 ::: {#_idContainer049 .IMG---Figure}
-![Figure 1.39: Replacing string characters ](4_files/C14197_01_39.jpg)
+![Figure 1.39: Replacing string characters ](./images/C14197_01_39.jpg)
 :::
 
 </div>
@@ -1924,7 +1924,7 @@ the instances of Java with Ruby in a sentence:
 
 ::: {#_idContainer050 .IMG---Figure}
 ![Figure 1.40: Using the gsub method to replace characters in a string
-](4_files/C14197_01_40.jpg)
+](./images/C14197_01_40.jpg)
 :::
 
 </div>
@@ -1966,7 +1966,7 @@ going to split a string of words into an array of words.
     The output should be as follows:
 
     ::: {#_idContainer051 .IMG---Figure}
-    ![Figure 1.41: Splitting a string ](4_files/C14197_01_41.jpg)
+    ![Figure 1.41: Splitting a string ](./images/C14197_01_41.jpg)
     :::
 
     Figure 1.41: Splitting a string
@@ -1988,7 +1988,7 @@ going to split a string of words into an array of words.
 
     ::: {#_idContainer052 .IMG---Figure}
     ![Figure 1.42: Splitting a string using a unique character
-    ](4_files/C14197_01_42.jpg)
+    ](./images/C14197_01_42.jpg)
     :::
 
     Figure 1.42: Splitting a string using a unique character
@@ -2012,7 +2012,7 @@ going to split a string of words into an array of words.
 
 ::: {#_idContainer053 .IMG---Figure}
 ![Figure 1.43: Joining arrays to form a string
-](4_files/C14197_01_43.jpg)
+](./images/C14197_01_43.jpg)
 :::
 
 </div>
@@ -2041,7 +2041,7 @@ string class:
 <div>
 
 ::: {#_idContainer054 .IMG---Figure}
-![Figure 1.44: String methods ](4_files/C14197_01_44.jpg)
+![Figure 1.44: String methods ](./images/C14197_01_44.jpg)
 :::
 
 </div>
@@ -2082,7 +2082,7 @@ Observe the following steps to complete the activity:
 
 ::: {#_idContainer055 .IMG---Figure}
 ![Figure 1.45: Output for email address generation
-](4_files/C14197_01_45.jpg)
+](./images/C14197_01_45.jpg)
 :::
 
 </div>
@@ -2124,7 +2124,7 @@ The output should be as follows:
 <div>
 
 ::: {#_idContainer056 .IMG---Figure}
-![Figure 1.46: True and false classes ](4_files/C14197_01_46.jpg)
+![Figure 1.46: True and false classes ](./images/C14197_01_46.jpg)
 :::
 
 </div>
@@ -2161,7 +2161,7 @@ Follow these steps to complete the activity:
 <div>
 
 ::: {#_idContainer057 .IMG---Figure}
-![Figure 1.47: Output for area and perimeter ](4_files/C14197_01_47.jpg)
+![Figure 1.47: Output for area and perimeter ](./images/C14197_01_47.jpg)
 :::
 
 </div>
