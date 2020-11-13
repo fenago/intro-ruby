@@ -57,8 +57,11 @@ All examples are present in `work/intro-ruby/Lab01` folder. You can access lab a
 
 To copy and paste: use **Control-C** and to paste inside of a terminal, use **Control-V**
 
-**Note:** To open new terminal, click `File` > `New` > `Terminal`.
+**Note:** 
 
+- To open new terminal, click `File` > `New` > `Terminal`.
+- Open file browser to open lab exercise(s) as shown below:
+    ![](./images/filebrowser.png)
 
 
 Key Features of Ruby
