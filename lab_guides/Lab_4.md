@@ -4,7 +4,7 @@ Lab 4. Ruby Methods
 ===================
 
 
-Overview
+#### Overview
 
 By the end of this lab, you will be able to define and call your own
 methods for Ruby programs; set parameters for methods in Ruby; provide
@@ -13,53 +13,22 @@ return multiple values and write code using the built-in modules of Time
 and Math.
 
 
-Introduction
-============
+#### Pre-reqs:
+- Google Chrome (Recommended)
 
+#### Lab Environment
+Exercises are ready to run. All packages have been installed. There is no requirement for any setup.
 
-In the previous lab, we learned about Boolean variables, conditional
-expressions, and loops, including the core Ruby concepts of using
-blocks. We will now zoom out a little in the Ruby world and learn about
-methods. In fact, we\'ve been using methods in the previous chapters,
-and we will look at them in more depth now.
+All examples are present in `~/work/intro-ruby/Lab04` folder. You can access lab at `http://<host-ip>/lab/workspaces/lab4_Methods`
 
-Methods are foundational units in Ruby. They allow you to wrap code in
-chunks that can be called with different parameters to get different
-outputs. Methods commonly have descriptive names and, as such, make
-clear what the underlying bundle of code does. For instance, we
-previously learned about the `each` method on arrays. This
-method enumerates over each item in the array, and so is very
-descriptive. In fact, method naming is an art where you balance
-simplicity with descriptiveness. It is considered that the difficult
-things in computer science are caching, naming things, and off-by-one
-errors. Commonly known as OBOB errors, off-by-one bugs are logical
-errors that occur when there are too many iterations in a program or
-when there are mistakes in the comparisons in code.
+To copy and paste: use **Control-C** and to paste inside of a terminal, use **Control-V**
 
-Methods are like atoms. They have can have internal parts; however, for
-the most part, they are fundamental units of code with a defined
-interface. In addition to this, methods are the building blocks for
-classes, which are the higher-order building blocks for Ruby programs.
+**Note:**
 
-Methods should be designed so that they are simple and can accomplish a
-basic purpose. If a method gets too long or complicated, then that is a
-good sign that you need to break up the method into smaller, more
-clearly labeled methods. By having clearly labeled single-purpose
-methods, readability, maintainability, and testability are increased.
-These three attributes are the cornerstones of great code.
+- To open new terminal, click `File` > `New` > `Terminal`.
+- Open file browser to open lab exercise(s) as shown below:
 
-Additionally, by defining a clear interface to the method, we can change
-the implementation at any time without fear of breaking any code that
-calls the method. In Ruby, this can be a bit trickier because Ruby is a
-dynamically typed language. This means that the arguments passed to a
-method or the values returned from a method can be of any type. For
-instance, a method can accept a string or an integer or any other type
-of object in its arguments. It\'s up to the method\'s implementation to
-handle each of these cases. A common approach to handling all these
-cases is actually not to worry about the specific types of arguments,
-but to worry about whether the arguments behave as we need them to
-instead. This is called **duck typing** and will be covered in this
-lab.
+![](./images/filebrowser.png)
 
 
 The Basic Structure of the Ruby Method
@@ -80,11 +49,6 @@ We are defining a method named `echo` that accepts the
 keyword marks the end of the block of code. The code between the
 `def` and `end` statements is known as the **method
 body** or the **method implementation**.
-
-Methods are always called on an object. In Ruby, a method is called a
-message, and the object is called the receiver. The online Ruby
-documentation uses this language specifically, so it is good to get used
-to this vocabulary.
 
 In the previous example, however, it doesn\'t seem like there is an
 object. Let\'s investigate this through IRB:
@@ -110,12 +74,6 @@ object. In IRB, when we call `self`, we can see that the
 current object is `main`. We can call `class` on any
 object to find out what type of object it is. Here, the `main`
 object is simply a type of the Ruby `Object` class.
-
-In Ruby, everything is an object; even classes are objects. This can be
-a bit confusing and we will discuss more about classes in the next
-lab, *Lab 5*, *Object-Oriented Programming with Ruby*. For now,
-just know that we can call methods on objects. Or, in Ruby parlance, we
-can send messages to receivers, or an object can receive a message.
 
 In Ruby, the `.` (dot) notation is the syntax for how we send
 a message to a receiver.
@@ -167,18 +125,7 @@ order to utilize methods from other libraries or sections of code, we
 learn their signatures. As long as the signature of a method remains the
 same, a developer can feel free to reimplement a method however they
 wish, and we can count on our code not breaking from this change. This
-is called encapsulation and is a core concept in OOP. We will talk more
-about method signatures throughout this lab, while we will talk more
-about encapsulation in the next lab, *Lab 5*, *Object-Oriented
-Programming with Ruby*.
-
-There is a nuance about method signatures, implementations, and
-encapsulations to be aware of. Ruby is not statically typed, which means
-a method could be reimplemented such that the return value could change.
-The same method could be reimplemented where it previously returned a
-number and now returns a string. Ruby does not enforce return types; so,
-as a method developer, it is your responsibility to manage what types of
-values are being returned and to keep things consistent.
+is called encapsulation and is a core concept in OOP.
 
 Here are some quick examples from the Ruby library:
 
@@ -210,12 +157,9 @@ The output should be as follows:
 ![](data:application/octet-stream;base64,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)
 
 
-
 Here, we call the `length` method on an actual instance of an
 array; it does not take any arguments and returns an integer.
 
-**Note** To learn more about method signatures, refer to
-<https://packt.live/2p3kw9a>.
 
 Method Arguments
 ----------------
@@ -348,11 +292,6 @@ previous example, which is **pass by value**.
 reference\" in Google to learn more about variable scope and passing
 arguments to methods.
 
-Understanding variable scope is important to consider as each new
-concept of Ruby is learned. Variable scope will depend on the context.
-We will learn more about variable scope in the next lab, *Lab 5,
-Object-Oriented Programming with Ruby*.
-
 Optional Parentheses and Code Style
 -----------------------------------
 
@@ -373,12 +312,6 @@ def echo age1, age2 # valid syntax, bad style.
 end
 ```
 
-
-In any programming language, there are many ways to write code, and this
-gives rise to \"coding style.\" In Ruby, there is a generally accepted
-style guide, which can be found here: <https://packt.live/2Vr542N>. The
-Ruby style guide advises us to not use parentheses when there are no
-parameters and to always use parentheses when there are parameters.
 
 Mandatory and Optional Arguments
 --------------------------------

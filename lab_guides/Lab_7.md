@@ -3,8 +3,7 @@
 ============================
 
 
-
-Overview
+#### Overview
 
 By the end of this lab, you will be able to import external data and
 code to improve the functionality of an application; use Ruby gems in
@@ -14,54 +13,7 @@ data into Ruby applications and use service objects to package code for
 reuse within applications.
 
 
-Introduction
-============
-
-
-In the previous lab, we learned about code reusability and how to
-clean up our code base by extracting common functionality and logic from
-modules that can be included as needed throughout our project,
-preventing unnecessary code duplication.
-
-This is an important concept to grasp as it forms the base for Ruby\'s
-excellent package management system known as **RubyGems**, which we will
-dive into further in this lab.
-
-Most applications consist of inputs and outputs. Facebook will have data
-in the form of photos and status updates (as input), and users, in turn,
-will see other users\' photos and status updates (as output).
-Additionally, a banking application will load data from a database (as
-input) and present it to the user in the form of charts and tables (as
-output). The input data sources will vary per application, but the
-concept of inputs and outputs is essentially the same.
-
-Data is fed into the application, some sort of processing is performed,
-and there is an output action, be it saving to a database, exporting
-data to another format, or simply printing out a processed version of
-the input.
-
-A common scenario in the workplace is the need to process data in the
-form of
-
-**comma-separated values** (**CSV**) that may have been imported from
-another system. Following this, some sort of processing is then
-performed on the values and, finally, a result is outputted to the user
-in a way that helps them to understand the data.
-
-In this lab, we will look at handling this exact type of scenario.
-We will look at importing and exporting CSV data, processing it, and
-then outputting a result using an external library that\'s going to
-format the data into a nice readable table for us.
-
-We will also take a closer look at **RubyGems**, how we can interact
-with the package manager, and how to utilize external gems in our own
-code base. We\'ll then wrap everything up by implementing everything
-we\'ve learned about as a service object in our code.
-
-
-RubyGems and the require Method
-===============================
-
+#### RubyGems and the require Method
 
 Similar to the concept of including modules, Ruby has another way of
 including external code into your project, which is known as a gem.
@@ -69,56 +21,6 @@ Essentially, a Ruby gem is a package of code that can be included in
 your project, much like a module, with a few key differences such as the
 ability to version a particular package and the ability to load other
 dependent gems at the same time.
-
-Generally speaking, a gem is more of a collection of modules and classes
-than a single module or class. Gems can be tiny and can solve a single
-problem, such as formatting screen output, or they can be an entire
-application framework. The Ruby on Rails framework, for example, is a
-gem itself.
-
-Most modern languages have an equivalent way of loading external code
-packages into an application. These are commonly referred to as package
-managers.
-
-For Node.js, you would use `npm` or `yarn`; for
-Python, you would use `PIP`; for C\#, you would use NuGet; and
-for Ruby, we use `RubyGems`.
-
-So, why would we want to include other external code and libraries in
-our own code base? Well, quite simply, to save us time and effort.
-Consider the following examples.
-
-You\'re building a new application and you want to allow for user
-registration so that customers can sign in to your website. Creating a
-robust user authentication and registration system is no small task. You
-would probably need to answer the following questions before you begin:
-
--   Do you understand cryptography well enough to implement a secure
-    password hashing algorithm?
--   What about allowing users to reset their password?
--   How about sending a user a confirmation email on sign up?
--   What if you want to allow people to sign in with Facebook or
-    Twitter?
-
-You could write these yourself, but it would take a lot of time and
-effort and you\'ll more than likely make mistakes that could compromise
-the security of your application. Thankfully, with RubyGems, we can
-simply include the `devise` gem (<https://packt.live/318fy8k>)
-into our project and have a fully featured authentication and user
-registration system that solves our problems in a matter of minutes.
-
-But why stop at user authentication? Let\'s say our application needs to
-upload files to a remote location; well, we can just add the
-`carrierwave` gem (<https://packt.live/33nzOV2>).
-
-What if you need to paginate the results of your web page? In that case,
-you just add the `will_paginate` gem.
-
-You can begin to see how we can create a very functional application in
-no time at all by leveraging this external code in the form of gems.
-This allows us to focus on what our core application functionality needs
-to do, rather than the standard functionality that we all expect from
-any application, such as being able to sign up and log in.
 
 Now let\'s take a look at how we can interact with Ruby gems. The
 following are the gem functions we are going to study next:
@@ -717,10 +619,6 @@ whether a file has any content or not.
 This returns the birth time (that is, the time of creation) of a file.
 Use this when you want to know how old a file is.
 
-**Note** You can read more about all the available file options in the official
-Ruby documentation for the File class here:
-<https://packt.live/35nehxE>.
-
 
 Handling CSV Data
 =================
@@ -749,22 +647,12 @@ $ gem list | grep csv
 csv (default: 1.0.0)
 ```
 
-
-Ruby has even published this gem publicly on GitHub
-(<https://packt.live/35qKCUf>), just like any other gem.
-
 All modern versions of Ruby (1.9 and later) will have a default CSV gem.
 The Ruby CSV gem from Ruby 1.9.3 and later is actually based on a
 popular CSV parsing gem called **FasterCSV**. This was an optional
 replacement for the core CSV gem before Ruby 1.9.3; however, as it was
 so popular, the Ruby team simply replaced the default CSV gem with
 **FasterCSV** as the default CSV gem.
-
-There are other CSV gems out there if you have more specific needs.
-**SmarterCSV** is another well-known replacement for the default CSV gem
-that offers parallel import processing for the better handling of larger
-files.
-
 
 Similar to the `File` class we covered previously, the CSV gem
 has a number of different ways in which we can interact with CSV data
@@ -1693,10 +1581,7 @@ service\_object\_class\_method.rb
 ```
 
 
-<https://packt.live/2M9n8LY>
-
-This looks the same, right? Well, it is, except for the
-`self.perform` class method:
+This looks the same, right? Well, it is, except for the `self.perform` class method:
 
 ```
   def self.perform(*args)
@@ -1827,11 +1712,7 @@ steps:
     ```
 
 
-4.  Create a folder called `fixtures` under the
-    `tests` folder, and then download the
-    `votes.csv` file from <https://packt.live/2OzNN6a>. It
-    should contain the following data:
-
+4.  `votes.csv` file should contain the following data:
 
     ```
     category,votee,count
@@ -1888,11 +1769,6 @@ our application, how to extend the functionality of our applications by
 including external libraries with Ruby gems, and how to interact with
 the filesystem using Ruby.
 
-These are powerful tools that can turn our applications from toys into
-real services with just a few simple lines of code. With these new
-tools, we can import data from databases, spreadsheets, or any number of
-other sources and process them programmatically with Ruby in any way we
-want; the options are endless.
 
 We\'ve also learned some best practices regarding how to structure code
 that doesn\'t necessarily fit within our domain models by refactoring
@@ -1905,7 +1781,3 @@ importing external data, and we\'ve seen how to improve what we output
 by using external libraries to provide a more user-friendly
 representation of data.
 
-We can safely say now that we\'re getting the hang of this. In the next
-lab, we will dive a little deeper and go beyond the basics,
-extending our knowledge of Ruby by looking a little closer at some more
-advanced functionality.

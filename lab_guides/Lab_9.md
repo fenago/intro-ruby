@@ -3,8 +3,7 @@
 ===========================
 
 
-
-Overview
+#### Overview
 
 By the end of this lab, you will be able to use blocks to improve
 code reusability; implement yield with blocks to maintain control over
@@ -14,72 +13,49 @@ and lambdas.
 This lab aims to give you a general overview of metaprogramming.
 
 
-Introduction
-============
+#### Pre-reqs:
+- Google Chrome (Recommended)
 
+#### Lab Environment
+Exercises are ready to run. All packages have been installed. There is no requirement for any setup.
 
-In the previous chapters, we learned how to debug Ruby programs using
-the `logger` class. In this lab, we will learn about some
-of the advanced topics of the Ruby programming language, such as
-`blocks`, `procs`, and `lambdas`. By now,
-you must have realized that it\'s really easy to start writing Ruby
-code, create sample apps, and get instant gratification; however, every
-new Ruby developer (and sometimes the experienced ones too) will have a
-question buzzing in their mind about how it actually works.
+All examples are present in `~/work/intro-ruby/Lab09` folder. You can access lab at `http://<host-ip>/lab/workspaces/lab9_Rubyl`
 
-We can safely call it the Ruby magic, and that\'s what we are planning
-to crack in this lab. We are going to learn about advanced
-programming techniques that are present in other languages, but this
-time the Ruby-specific implementation is our focus. We will tear down
-the curtain from the syntactic sugar and take a look under the hood to
-reveal what metaprogramming is. Additionally, we will lay a strong
-foundation that will allow you to reuse these techniques and enable you
-to utilize the libraries provided by Ruby. Later, when we learn about
-Ruby on Rails in the upcoming chapters, it will be easier to comprehend
-various features and how they operate behind the scenes.
+To copy and paste: use **Control-C** and to paste inside of a terminal, use **Control-V**
 
+**Note:**
+
+- To open new terminal, click `File` > `New` > `Terminal`.
+- Open file browser to open lab exercise(s) as shown below:
+
+![](./images/filebrowser.png)
 
 Metaprogramming
 ===============
 
 
-You might be wondering what **metaprogramming** actually is. Well, it is
-utilized by most programming languages. Technically, it\'s a piece of
+It's a piece of
 code that writes code by itself dynamically. With metaprogramming, you
 can create methods and classes at runtime. It allows you to reopen or
 even modify classes, as well as add methods to classes on the fly. It
 helps to maintain the **Don\'t Repeat Yourself** (**DRY**) principle in
 programming; however, it is a hard concept to grasp and get right.
 
-Let\'s imagine the scenario of a chef in a restaurant. This chef needs
-to know many recipes and be able to put together food for their
-customers. Each food item requires different steps for preparation.
-There are some steps that need to be done before, during, and after the
-food is prepared. In order to create a simulation for these steps to be
-performed by an automated system, you might consider using the
-metaprogramming feature provided by the Ruby language.
-
 Metaprogramming makes use of multiple elements available within the Ruby
 language. Let\'s take a look at the first building block, which is
 called `blocks` in Ruby.
 
-Blocks
-------
+
+#### Blocks
+
 
 Blocks are like anonymous functions -- `lambdas` -- that can
 be passed into a method. You may also refer to the use of a block as
 passing a method into a method. The slight difference in blocks and
-methods is that they do not belong to an object. In other languages,
-such as C\#, Java, or Python, this concept is called
-`closures`. Blocks are just the Ruby way of implementing
-closures. Blocks are typically used when we would like to encapsulate
-functionality that is made up of a sequence of statements. For example,
-we could encapsulate an \"Introduction Letter\" email when new people
-arrive at a company, where we just have to pass a template to a block
-and it automatically generates and sends the email. The only variable
-here is the detailed information of the new colleague in the template.
+methods is that they do not belong to an object.
 
-Syntax for Blocks
+
+### Syntax for Blocks
 -----------------
 
 There are two ways to write blocks: they can be either enclosed in
@@ -87,7 +63,7 @@ There are two ways to write blocks: they can be either enclosed in
 (`{}`). Let\'s examine a simple example showing how to write
 them.
 
-### With do/end
+#### With do/end
 
 Consider the following example:
 

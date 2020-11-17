@@ -446,9 +446,6 @@ The following steps will enable you to complete the exercise:
     15     <%= form.label :commenter %><br>
     ```
 
-
-    <https://packt.live/2MLy4OT>
-
     Here, we have created a form that will allow the user to submit a
     comment for a review. On submission, the `create` action
     will be called in the controller. Before that, we should also add
@@ -562,8 +559,6 @@ show.html.erb
 43     <strong>Commenter:</strong>
 ```
 
-
-<https://packt.live/2BplYpv>
 
 Here, we have added a section to display all the comments associated
 with this review. Run `rails server` to check it on the

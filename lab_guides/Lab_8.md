@@ -645,19 +645,12 @@ logger = Logger.new(STDOUT)
 That `STDOUT` parameter passed into the initializer is a Ruby
 *predefined global constant* that represents the standard output.
 
-**Note** You can see global constants defined in the Ruby docs, here:
-
-<https://packt.live/33mla0q>
-
-As you might infer from the name, standard output is where standard text
-is sent when you print the text to the console.
 
 Consider the following example:
 
 ```
 puts "some text"
 ```
-
 
 This will simply write `some text` to the standard output,
 which will appear normally on your Terminal screen.
@@ -825,16 +818,6 @@ This could potentially cause problems with your application considering
 time zone differences, external systems that ingest the log files,
 international users, and so on.
 
-**Note** There is a large selection of formatting options you can choose from to
-suit your needs.
-
-You can visit <https://packt.live/2nNPx0G> for more information.
-
-Dealing with time can be tricky when it comes to the matter of time
-zones. If your server is set to the UTC time zone, then these times may
-not appear as you expect. Be sure to check what time zone your server
-uses so there\'s no confusion. The `logger` class will use
-whatever time zone your server is set to by default.
 
 ### Custom String Formats
 
@@ -1789,8 +1772,6 @@ poke around. Once you find what you\'re looking for, be it an expression
 or variable, you can add it to the `watch` panel for quick
 reference.
 
-**Note** The Visual Studio Code documentation covers these topics in greater
-detail. You can read more at <https://packt.live/2VGaYwZ>.
 
 It\'s easier to learn by doing rather than reading in this situation, so
 let\'s set up the Visual Studio Code debugger and try it for ourselves.
@@ -1863,9 +1844,6 @@ Now, perform the followings steps:
     correct file. For example, if our application always started with a
     file named `run.rb` at the root of our application
     directory, we would use `${workspaceRoot}/run.rb`.
-
-    **Note**     You can read more about these options at
-    <https://packt.live/2IPf9RV>.
 
     You can add multiple launch configurations for different purposes.
     For example, one for debugging the application and one for debugging

@@ -1,10 +1,11 @@
-
-6. Modules and Mixins
-=====================
+<img align="right" src="../logo.png">
 
 
+Lab 6. Modules and Mixins
+=========================
 
-Overview
+
+#### Overview
 
 By the end of the lab, you will be able to implement modules within
 the Ruby object model; add instance methods by including a module into a
@@ -13,66 +14,30 @@ namespace with a module; distinguish between prepending modules into
 classes and including and extending them and use modules to address
 multiple inheritance in Ruby.
 
+#### Pre-reqs:
+- Google Chrome (Recommended)
 
-Introduction
-============
+#### Lab Environment
+Exercises are ready to run. All packages have been installed. There is no requirement for any setup.
 
+All examples are present in `~/work/intro-ruby/Lab06` folder. You can access lab at `http://<host-ip>/lab/workspaces/lab6_Modules`
 
-In the previous lab, we learned about the basics of object-oriented
-programming using Ruby. We learned that classes serve as templates for
-objects. We also learned that classes can also serve as templates for
-other classes by using the mechanism of inheritance. However, there may
-be situations where we might have to share code among different classes
-that don\'t really fit into an inheritance architecture. For example, we
-could be designing a reality simulator. In the previous lab, we
-talked about how cars have four wheels, bicycles have two wheels, and
-boats have no wheels, but they still fall under the \"Vehicles\" class.
-Imagine that we had previously been tasked with modeling houses or
-places to live, which we can easily do using classes. Now we are tasked
-with modeling a mobile home or RV, which serves as both a vehicle and a
-home.
+To copy and paste: use **Control-C** and to paste inside of a terminal, use **Control-V**
 
-In other object-oriented languages, this problem is solved with a
-concept known as \"multiple inheritance\". For instance, in C++, a class
-could inherit from more than one base class. Ruby does not support
-multiple inheritance. Instead, Ruby solves this code reusability problem
-using the concept of modules.
+**Note:** To open new terminal, click `File` > `New` > `Terminal`.
 
-Modules provide a way to conveniently wrap code in a way that can be
-shared among many other pieces of code. Modules can be included,
-extended, and prepended into other code. Modules can also serve as a way
-to namespace code. The nuances of each of these approaches require a bit
-more discussion of the Ruby object model. We\'ll be talking about the
-Ruby object model. This will give us a foundation for understanding how
-modules work so we can then learn about `extend` and
-`prepend` and how and when to use them. We will also study the
-mixin characteristic of modules. The idea of mixins essentially refers
-to the property of multiple modules being used by a class to improve
-code functionality and provide multiple inheritance in Ruby.
 
 Let\'s begin with the `include` functionality of modules.
 
 
-Including Modules
-=================
-
+#### Including Modules
 
 Modules, in their simplest definition, are a way to wrap code into a
 bundle so the code can be reused within other code without needing to be
 duplicated.
 
-This definition sounds very similar to that of a Ruby class.
-Specifically, what makes a Ruby module distinct is that it cannot be
-instantiated into an object like a class. It can, however, be included
-in a class so the methods and variables defined in the module are
-accessible by the class. This refers to the mixin property of modules.
-Also, the methods and variables in a class can also be accessible to the
-code in the module. Essentially, when a module is included in a class,
-Ruby treats that code as if it were written right into that class. All
-the previous concepts we learned about classes and inheritance still
-apply to the module code when called.
 
-For instance, if you call a module method from inside a class, that
+If you call a module method from inside a class, that
 module method calls `super` and it will call the
 `super` class method of the class that the module was included
 in. This will be made clearer through the following example.
@@ -137,12 +102,6 @@ The preceding code is using instance variables in the module to
 demonstrate a point but could also use the accessor methods created by
 `attr_accessor`.
 
-This is a great way of sharing code. It is a clean way to reuse code. If
-any new models are necessary in the future and they need an address, we
-basically get it for free by simply including the module. This is the
-power of Ruby and object-oriented programming in action.
-
-Let\'s dive deeper into how this works by working with some objects.
 
 Consider the following code example:
 
@@ -164,7 +123,6 @@ The output would show up as follows:
 
 
 ![](./images/C14197_06_01.jpg)
-
 
 
 There is an important point in the preceding output. While the module is
@@ -282,8 +240,6 @@ inheritancewithmodulemethods.rb 
 14 
 ```
 
-
-<https://packt.live/322sM7Y>
 
 Here, we\'ve amended our `Address` module to include a
 `region` method. We\'ve also created a `Department`
@@ -684,15 +640,10 @@ functions from the `ApiWrapper` module, which are called
     end
     ```
 
-
-    **Note**     Read more about Ruby life cycle callbacks here:
-    <https://packt.live/35ts4D4>.
-
 4.  Add testing code to the file:
 
-
     ```
-    Facebook.send_message("Packt","Students","thank you!")
+    Facebook.send_message("Fenago","Students","thank you!")
     Facebook.new_post("Author","Extending your classes","Extend imports functions from modules as class methods!")
     ```
 
@@ -1225,11 +1176,6 @@ module methods:
     ```
 
 
-    **Note**     You can explore more modules by going to the Ruby documentation
-    here: <https://packt.live/2M6n8MM>. Modules have an \"M\" next to
-    them.
-
-
 Namespaces
 ==========
 
@@ -1242,14 +1188,8 @@ for constants. With the exception of raw global methods, the entry point
 for most code will be through a constant, whether it be a class constant
 or a module constant.
 
-We\'ve learned how to create classes and modules. Really, what we are
-doing is creating constants that point to those objects in memory. When
-we create constants (classes, modules, or otherwise) in IRB, we are
-creating a constant in the global namespace. This can quickly get
-crowded, especially if you are creating a class or module constant that
-may have a common name.
 
-For instance, in the previous topic, we created an `Enum`
+In the previous topic, we created an `Enum`
 module. `Enum` is a very common word in the Ruby world, and do
 we really think our `Enum` module is the best and that we
 should own that word? It is possible there is a more official
@@ -1260,9 +1200,7 @@ declaring a unique namespace that you can then put other constants
 inside of to make them safe from name collision.
 
 As such, let\'s rename our `Enum` module to be a bit more
-specific to what the module
-
-is doing:
+specific to what the module is doing:
 
 ```
 module ActsAsEnum
@@ -1271,7 +1209,6 @@ class PaymentTypes
   include ActsAsEnum
 end
 ```
-
 
 The name `ActsAsEnum` is not very inspired, but it is
 descriptive and as such makes it easy to read and understand what might
@@ -1676,9 +1613,6 @@ inheritedcallback.rb
 15 
 ```
 
-
-<https://packt.live/2IH18pl>
-
 The output would be as follows:
 
 
@@ -1716,8 +1650,6 @@ inheritedcallback\_withparentclass.rb
 15 end
 ```
 
-
-<https://packt.live/2VDaTKz>
 
 The output would be as follows:
 

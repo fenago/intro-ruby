@@ -22,7 +22,7 @@ class Facebook
   extend ApiWrapper 
 
 end
-Facebook.send_message("Packt","Students","thank you!") 
+Facebook.send_message("Fenago","Students","thank you!") 
 
  
 

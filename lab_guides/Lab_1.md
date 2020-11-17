@@ -5,8 +5,7 @@ Lab 1. Writing and Running Ruby Programs
 ========================================
 
 
-Overview
-============
+#### Overview
 
 By the end of this lab, you will be able to use the Interactive Ruby
 Shell (IRB) to write Ruby programs; execute Ruby code with a Ruby
@@ -17,30 +16,13 @@ operations on integer and floating-point numbers, implement string
 concatenation and interpolation in Ruby programs.
 
 
-Introduction
-============
-
-Ruby is a dynamic, interpreted, object-oriented programming language
-developed by Yukihiro (\"Matz\") Matsumoto at some point in the
-mid-1990s, with its first stable release in 1995. According to the
-creator of Ruby, it is highly influenced by Perl, Smalltalk, Ada, and
-Lisp. 
-
-Being an interpreted scripting language, Ruby has the ability to make
-system calls directly, and has a long list of useful string operations
-where variable declaration and variable type are not required. Ruby
-wholly embraces object-oriented programming because everything in Ruby
-is an object. Ruby has a long list of keywords that make many operations
-a piece of cake. This means you can do more with less code.
-
-
 #### Pre-reqs:
 - Google Chrome (Recommended)
 
 #### Lab Environment
 Exercises are ready to run. All packages have been installed. There is no requirement for any setup.
 
-All examples are present in `work/intro-ruby/Lab01` folder. 
+All examples are present in `~/work/intro-ruby/Lab01` folder. 
 
 You can access lab at `http://<host-ip>/lab/workspaces/lab1_Programs`
 
@@ -68,6 +50,7 @@ that make it a delight to program with:
 -   Multi-paradigm language
 -   Reflection
 -   Metaprogramming
+
 ![](./images/C14197_01_01.jpg)
 
 
@@ -78,16 +61,13 @@ that make it a delight to program with:
 Ruby is thoroughly object-oriented, and objects are the basic building
 block of a Ruby program. Every value in Ruby is an object, even data
 types such as strings, numbers, and Booleans: everything is an object.
-This means that every object is part of a class that gives access to a
-wide range of methods to do incredible things. Each class is also an
-object in Ruby. Here\'s an example:
+
 
 ```
 class Fruit
  #code
 end
 ```
-
 
 The preceding code defines the `Fruit` class. The following
 code shows that two new objects, `fruit1` and
@@ -122,11 +102,7 @@ Hello World
 ### Duck Typing and Dynamic Typing
 
 Dynamic typing means a variable can refer to objects of various types
-when the program is executed. There is no type checking in Ruby. Duck
-typing is a principle that denotes that an object is based on the value
-assigned to it rather than the type of variable. The underlying rule
-here is: \"If it walks like a duck and quacks like a duck, then it must
-be a duck.\" Here\'s an example:
+when the program is executed. There is no type checking in Ruby.
 
 ```
 x= [:a, :b, :c]
@@ -158,7 +134,6 @@ end
 method1 # => "John is developing a program."
 method2 # => "Jane is developing another program."
 ```
-
 
 Here, `method1` and `method2` are defined outside
 the classes; however, they are still a part of the `main`
@@ -210,10 +185,7 @@ This shows that we can inspect every element of the code.
 
 Ruby supports metaprogramming, which is a technique that helps you to
 write code that creates code on its own. This means it is able to create
-methods and classes dynamically. With metaprogramming, you can write
-methods and classes at runtime, which helps us to maintain a **Don\'t**
-**Repeat** **Yourself** (**DRY**) and maintainable code base. Here\'s an
-example:
+methods and classes dynamically. Here\'s an example:
 
 ```
 ['one', 'two', 'three'].each do |num|
@@ -271,8 +243,7 @@ IRB comes out of the box with Ruby, and you can access it using the
 
 
 
-**Note** `puts` or `p` is used to print any string or value
-of a variable that follows `puts` or `p`.
+**Note** `puts` or `p` is used to print any string or value of a variable that follows `puts` or `p`.
 
 Let\'s do some addition with the Interactive Ruby Shell:
 
@@ -283,7 +254,6 @@ Let\'s do some addition with the Interactive Ruby Shell:
     ```
     17 + 13
     ```
-
 
     The output should be as follows:
 
@@ -330,12 +300,6 @@ variable, such as the number of students, and print it in IRB:
 **Note** The Ruby variable stores the value assigned to a variable in one IRB
 session, as seen here with `number_of_students`.
 
-Before we start the next exercise, please note that data types in Ruby
-symbolize various types of data, such as strings, numbers, decimal
-numbers, and text. All of these data types are based on classes; for
-example, `string` is an object of the `String`
-class, since Ruby is an object-oriented language. We will discuss a
-variety of data types in Ruby later in this lab.
 
 Exercise 1.02: Assigning a Variable of One Data Type to a Different Type
 ------------------------------------------------------------------------
@@ -407,10 +371,6 @@ operator on the variable itself.
 ![](./images/C14197_01_06.jpg)
 
 
-    
-
-    `.class` tells us about the class that the variable
-    belongs to.
 
 3.  The same can be achieved using the `::` operator:
 
@@ -982,7 +942,6 @@ class\' built-in methods. Lastly, we will discuss the bang
 ![](./images/C14197_01_24.jpg)
 
 
-    
 
     Here, we are using the `ruby fundamentals` value for the
     title variable on which all the following operations will be
@@ -1015,14 +974,6 @@ class\' built-in methods. Lastly, we will discuss the bang
 
 ![](./images/C14197_01_26.jpg)
 
-
-    
-
-    `.length` is the same as size, but it is more meaningful
-    in certain situations. Mostly, it is a matter of preference. Some
-    developers prefer using `.size` for large collections of
-    data, such as arrays, and hashes, and `.length` for
-    smaller collections of data, such as strings.
 
 6.  Next, we change the case of the string characters to uppercase using
     `.upcase`:
@@ -1069,7 +1020,7 @@ class\' built-in methods. Lastly, we will discuss the bang
 
     
 
-    **Note** that even after the operations are applied on the string, the
+    Note that even after the operations are applied on the string, the
     original string object remains the same:
 
     ```
@@ -1102,9 +1053,9 @@ class\' built-in methods. Lastly, we will discuss the bang
 ![](./images/C14197_01_31.jpg)
 
 
-
 There are other operations as well that we can perform on strings, a
 common one being concatenation.
+
 
 Exercise 1.09: Performing String Concatenation
 ----------------------------------------------
@@ -1145,7 +1096,6 @@ The following steps will help you to perform the exercise:
 ![](./images/C14197_01_32.jpg)
 
 
-    
 
     To add a space between `var1` and `var2` in the
     final result, you can do this by chain two `+` operators
@@ -1256,8 +1206,7 @@ To extract certain characters from a string, follow these steps:
 
 ![](./images/C14197_01_37.jpg)
 
-
-    
+   
 
     Thus, we have extracted characters, starting from the eighth
     position in an index to the second position from it, and hence get
@@ -1301,7 +1250,6 @@ sentence \"My favorite book is Java Fundamentals\" with the word
     title = "My favorite book is Java Fundamentals"
     ```
 
-
 4.  Type the following code, which replaces the word `Java`
     with `Ruby` in `title`:
 
@@ -1317,9 +1265,7 @@ sentence \"My favorite book is Java Fundamentals\" with the word
     title
     ```
 
-
     The output should be as follows:
-
 
 ![](./images/C14197_01_39.jpg)
 
@@ -1354,9 +1300,7 @@ the instances of Java with Ruby in a sentence:
     title.gsub("Java", "Ruby")
     ```
 
-
     The output should be as follows:
-
 
 ![](./images/C14197_01_40.jpg)
 
@@ -1400,7 +1344,6 @@ going to split a string of words into an array of words.
     months = "Jan; Feb; Mar"
     months.split(';')
     ```
-
 
     The output should be as follows:
 
@@ -1457,9 +1400,7 @@ Observe the following steps to complete the activity:
 
 1.  Create variables to accept the first names and last names of the
     individuals.
-
 2.  Use `gets.chomp` to accept string input from users.
-
 3.  Combine the first name and last name with the domain name and print
     the result.
 
@@ -1497,12 +1438,8 @@ The output should be as follows:
 ![](./images/C14197_01_46.jpg)
 
 
+You get Boolean values when you check whether the `a` variable is `nil`.
 
-You get Boolean values when you check whether the `a` variable
-is `nil`.
-
-We will learn more about the Boolean data type in *Lab* *3*,
-*Controlling* *Program* *Flow.*
 
 Activity 1.02: Calculating the Area and Perimeter of a Candy Manufacturing Plant
 --------------------------------------------------------------------------------

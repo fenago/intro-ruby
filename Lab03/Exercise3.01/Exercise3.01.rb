@@ -6,7 +6,7 @@ def truthiness(x, y)
 
   puts "!AND: ", !(x && y) 
 
-  puts "!OR: ", !(x || Y) 
+  puts "!OR: ", !(x || y) 
 
 end 
 

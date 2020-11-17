@@ -1,28 +1,11 @@
+<img align="right" src="../logo.png">
 
-5. Object-Oriented programming with Ruby
+
+Lab 5. Object-Oriented programming with Ruby
 ========================================
 
 
-
-Overview
-
-By the end of this lab you will be able to describe the basics of
-object-oriented programming using Ruby; model data with classes;
-implement instance and class variables in Ruby programs; write instance
-and class methods in application programs; and evaluate getters and
-setters in Ruby.
-
-
-Introduction
-============
-
-
-In the previous lab, we studied different methods and parameters of
-Ruby. We also learned about the built-in libraries of `Math`
-and `Time` in Ruby. It was here that we began to introduce the
-concepts of classes and modules. In this lab, we will dive deeper
-into Ruby classes using object-oriented programming (OOP) concepts as
-our guide.
+#### Introduction
 
 OOP is where the rubber meets the road in programming. In other words,
 this is where the action happens. If you want to write a quick script or
@@ -37,35 +20,25 @@ the following benefits:
 -   It provides foundational units that can be easily extended or built
     upon, so as to construct robust applications.
 
-OOP facilitates writing code in a way that allows you to think about,
-and model, the concepts that you are working with in your program. For
-instance, imagine that you are tasked to write an application that
-allows all your coworkers to vote on who they think should be the
-employee of the month. You are most likely going to need code that deals
-with the abstract concepts in a voting system such as a user, a vote,
-and some code for grouping votes in a certain time period.
+#### Pre-reqs:
+- Google Chrome (Recommended)
 
-This kind of thinking and modeling is also known as domain modeling. The
-problem domain is everything involved in trying to solve the problem. In
-the preceding case, the problem domain is an employee-of-the-month
-voting system. OOP is the tactical way of solving that problem by
-splitting our problem domain specifically into domain models using
-objects and classes.
+#### Lab Environment
+Exercises are ready to run. All packages have been installed. There is no requirement for any setup.
 
-In our example, our concepts, users, and votes are classes. Our code
-will generate specific instances of users and votes and these are called
-objects. In English, we might say \"*Mary (object) is a type of User
-(class)*\" or \"*Bob (User) voted (Vote) for Suzie (User)*\". In this
-lab, we\'ll learn how to model this voting application while
-learning the basics of OOP using classes and objects in Ruby.
+All examples are present in `~/work/intro-ruby/Lab05` folder. You can access lab at `http://<host-ip>/lab/workspaces/lab5_OOP`
 
-**Note** OOP is a large discipline and we will cover this topic in enough detail
-to understand Ruby and learn how to build applications.
+To copy and paste: use **Control-C** and to paste inside of a terminal, use **Control-V**
 
+**Note:**
+
+- To open new terminal, click `File` > `New` > `Terminal`.
+- Open file browser to open lab exercise(s) as shown below:
+
+![](./images/filebrowser.png)
 
 Classes and Objects
 ===================
-
 
 Classes are abstract templates for objects. You can also say that
 objects are instances of classes. Classes contain the template for a set
@@ -84,34 +57,20 @@ end
 ```
 
 
-We\'ve created the base template for a user by using the
+- We\'ve created the base template for a user by using the
 `class` keyword and have given it the name `User`.
-Based on what we\'ve learned so far, we can tell right off the bat that
-we have a `User` class with a method called
-`initialize`, which takes an argument of `name`. The
-body of the `User` class is concluded as usual with an
-`end` keyword. Additionally, we should note that the name of
-the `User` class is stored as an uppercase word, which means
-it\'s a constant.
 
-The `initialize` method is a special method in Ruby that is
+- The `initialize` method is a special method in Ruby that is
 placed inside the class definition. In other languages, the
-`initialize` method is known as the \"constructor.\" This
-method is called automatically when we \"instantiate\" this class,
-meaning when we create objects from this class. The purpose of a
-constructor is to \"initialize\" some state (such as variables) for
-every object that is instantiated.
+`initialize` method is known as the \"constructor.\" 
 
-The user\'s name is stored in an \"instance variable\" denoted by the
+- The user\'s name is stored in an \"instance variable\" denoted by the
 `@var` syntax. Instance variables are as the name suggests --
-they are \"available to instances.\" We\'ll learn more about instance
-variables in the next section. Let\'s first create an instance of the
-`User` class:
+they are \"available to instances.\"
 
 ```
 u = User.new("Suzanne")
 ```
-
 
 Here, we\'ve created an object (that is, an instance) of a
 `User` class by calling the `new` method on
@@ -2447,20 +2406,15 @@ framework from the source control (GitHub) and use your knowledge of
 OOP, such as inheritance, to create additional models and controllers
 that will be used in the voting machine.
 
-**Note** The solution involves using the Lightweight Terminal Framework written
-by the author. This code can be sourced from GitHub. You can find the
-Lightweight Terminal Framework here: <https://packt.live/2VuZ2yc>.
 
 The following steps will help you to complete the activity:
 
 1.  Create a new file.
 
-2.  Open the Terminal and use the following command to clone the
-    `Lightweight Terminal Framework` from GitHub:
-
+2.  Open the Terminal and use the following command to open the framework folder:
 
     ```
-    git clone https://github.com/PacktWorkshops/The-Ruby-Workshop/tree/master/Chapter05/Activity5.01/framework
+    cd ~/work/intro-ruby/Lab05/Activity5.01/framework
     ```
 
 

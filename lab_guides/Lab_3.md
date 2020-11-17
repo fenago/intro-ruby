@@ -5,7 +5,8 @@
 Lab 3. Program Flow
 ==================
 
-Overview
+
+#### Overview
 
 By the end of the lab, you will be able to utilize Boolean operators
 in Ruby programs; create and implement conditional expressions in Ruby;
@@ -15,40 +16,13 @@ until. The lab aims to introduce us to different methods and
 entities involved in the Ruby program workflow.
 
 
-Introduction
-============
-
-
-In the previous lab, we studied the concept of arrays and hashes in
-Ruby. We also looked at different methods applied to arrays and hashes.
-In this lab, we will be looking at how programs in Ruby are designed
-and used in applications.
-
-- Conditionals, also known as branches, are like a fork in the road. Do
-you turn left, or do you turn right? In the case of programming, for
-instance, you can decide what to do if a variable equals a value or is
-less than or greater than a certain value.
-- Loops are another way to control program flow. A section of code will be
-repeated in a loop until a condition is met. In programming, you often
-want to loop over a collection of data such as an array and process the
-values in that collection. 
-- In all types of program flow decisions, the fundamental unit is the
-Boolean. The Boolean represents truthiness or true or false values.
-
-Since program flow is decided by truthiness, which is represented by
-Booleans, we need to learn how Booleans operate. We can do this by first
-learning about Boolean operators; there are three: `AND`,
-`OR`, and `NOT`. This is how we will begin our
-lab.
-
-
 #### Pre-reqs:
 - Google Chrome (Recommended)
 
 #### Lab Environment
 Exercises are ready to run. All packages have been installed. There is no requirement for any setup.
 
-All examples are present in `work/intro-ruby/Lab03` folder. You can access lab at `http://<host-ip>/lab/workspaces/lab3_Flow`
+All examples are present in `~/work/intro-ruby/Lab03` folder. You can access lab at `http://<host-ip>/lab/workspaces/lab3_Flow`
 
 To copy and paste: use **Control-C** and to paste inside of a terminal, use **Control-V**
 

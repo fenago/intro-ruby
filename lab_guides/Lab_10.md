@@ -848,9 +848,7 @@ websites.
 Exercise 10.05: Creating a Ruby Program to Make a Successful GET Request
 ------------------------------------------------------------------------
 
-In this exercise, we will use the Ruby `net/http` library and
-make use of the [https://www.packtpub.com](https://www.packtpub.com/)
-URL to get the data:
+In this exercise, we will use the Ruby `net/http` library to get the data:
 
 1.  Create a new Ruby file, `http_get.rb`.
 
@@ -868,7 +866,7 @@ URL to get the data:
 
 
     ```
-    uri = URI('https://www.packtpub.com')
+    uri = URI('https://www.fenago.com')
     ```
 
 
@@ -944,7 +942,6 @@ This means that the server failed to fulfill an apparently valid
 request. This status code indicates that the server is incapable of
 completing the requests.
 
-**Note** Read more on status codes here: <https://packt.live/2OP9Rtr>.
 
 Exercise 10.06: Creating a POST Request Using Ruby
 --------------------------------------------------
@@ -977,12 +974,9 @@ The following steps will help you to complete the exercise:
     $ gem install httparty
     ```
 
-
     This will install the gem on your system, and you can require it in
     any Ruby program.
 
-    **Note**     To find out more about this gem, you can refer to its documentation
-    at <https://packt.live/2MfSm42>.
 
 3.  Now, we require the `httparty` gem in the program:
 
@@ -1036,12 +1030,6 @@ create the request.
 Creating a Ruby Gem
 ===================
 
-
-As covered in *Lab 7*, *Introduction to Ruby Gems*, a gem is a way
-for Ruby to package and distribute Ruby programs and libraries. So far,
-we have been using many open source Ruby gems, which has a positive
-impact on the speed of development.
-
 In this section, we will learn to create a Ruby gem. Also,
 `RubyGems` is a package manager for the Ruby programming
 language and comes with tools baked in by default, which makes it really
@@ -1049,12 +1037,6 @@ easy to create a gem and distribute it.
 
 Let\'s jump right in to creating a simple Ruby gem.
 
-Before you create your first file for your gem, you must make sure to
-find a suitable name for your gem. RubyGems has official documentation
-for naming conventions and it is advised to use this for improved
-programming experiences.
-
-**Note** You can refer to this naming convention at <https://packt.live/2Bcz1dN>.
 
 Exercise 10.07: Creating Your Own Ruby Gem
 ------------------------------------------

@@ -85,7 +85,7 @@ end
 
 title = "Check out this great coding website!" 
 
-url = "packt.com" 
+url = "fenago.com" 
 [:twitter, :facebook, :linkedin].each.do |platform| 
 
 puts SocialShare.new(platform, title, url).url 
