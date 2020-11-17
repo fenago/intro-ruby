@@ -1,6 +1,6 @@
 <img align="right" src="./logo.png">
 
-<h2><span style="color:red;"></span>Intro to Ruby Programming</h2>
+<h2><span style="color:red;">Intro to Ruby Programming</span></h2>
 
 ### Description
 
